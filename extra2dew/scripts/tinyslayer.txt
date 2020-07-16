@@ -1,0 +1,38 @@
+//Spawn a tiny slayer on top of your head
+//-----------------
+//Use once in frozen court and then it can be used anywhere!
+
+//Conditions, if they are not met, a error message
+//will appear and the execution of the file will be
+//halted. You can configure the error message 
+//adding #ERRORMSG immediately after the condition
+#CONDITION_NPC slayerjenny
+#ERRORMSG Slayerjenny not found, use this in frozen court first, then you will be able|to spawn tiny slayers anywhere!
+
+//Hold slayerjenny in memory, to be spawned everywhere
+spawn slayerjenny -hold
+
+//spawn a slayerjenny facing your direction without ai,
+//it will not walk. She is spawned 50 units 
+//underground, to avoid drawing the shadow on the
+//ground and making it not collide with the player
+spawn slayerjenny -ai null -ittlerot -p 0 -50 0
+
+//Save a reference to the player's head, parented to 
+//ittle. -noui disables find graphics. '-i 1' makes 
+//'find' return the first head found, useful for stacking
+find head -parent ittle -save -noui -i 1
+
+//Change the parent of slayerjenny's graphics (which 
+//are direct children of the slayerjenny object) to 
+//the player's head, then move it to (-0.9, 0, 0) and 
+//scale it to 0.3. '-i 1' makes 'find' return the last
+//created jenny slayer instead of the one closest to 
+//the player
+find slayerjenny -i 1 -parent2 slayerjenny -changep -p -0.9 0 0 -s 0.3 -noui
+
+//print message
+echo Your personal bodyguard!
+
+//You can input this command multiple times, each time 
+//adding a new jenny on top of the old jenny's head!

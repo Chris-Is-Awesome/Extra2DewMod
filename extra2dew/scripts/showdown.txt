@@ -1,0 +1,19 @@
+//Spawns all bosses to fight you!
+//-----------------
+//Use once in any dungeon, then use anywhere!
+
+#CONDITION_NPC cyberjennya
+#ERRORMSG The bosses are not saved in memory!||First use this script in one of the main dungeons, then|you will be able to challenge them anywhere!
+
+//Hold the bosses in memory, to be spawned anywhere
+spawn cyberjennyA -hold
+spawn lennya -hold
+spawn lebiadloA -hold
+
+//Spawn the bosses around Ittle facing her
+spawn cyberjennyA -r 180 -p 0 0 3
+spawn lennya -r 45 -p -1.732 0 -1.732
+spawn lebiadloA -r 315 -p 1.732 0 -1.732
+
+//Print message
+echo Let the battle, BEGIN!

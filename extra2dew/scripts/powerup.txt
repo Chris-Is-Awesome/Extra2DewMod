@@ -1,0 +1,2 @@
+setitem all
+hp -setmaxhp 80 -full

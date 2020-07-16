@@ -1,0 +1,4 @@
+//Use this nearby a sign or speechbubble
+//bubble Well, <i>excuuuuuse</i> me|<b>princess!</b>
+bubble <color="#ff0000">I</color><color="#ff4000">t</color><color="#ff7f00">t</color><color="#ffbf00">l</color><color="#ffff00">e</color><color="#aaff00"> </color><color="#55ff00">w</color><color="#00ff00">a</color><color="#00ff80">s</color><color="#00ffff"> </color><color="#0080ff">h</color><color="#0000ff">e</color><color="#4600ff">r</color><color="#8b00ff">e</color>
+echo What a mean signature!

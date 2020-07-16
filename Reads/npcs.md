@@ -1,0 +1,149 @@
+# ENEMY/NPC & OBJECT REFERENCE
+This here is a list of all enemy and NPC names as they are in Unity. I couldn't think of a good way to sort them other than by alpha, so just Ctrl+F to find what you're after.<br>
+Enemy names that are different from their in-game name will have their in-game name in Parentheses. Some have variants.
+
+## ENEMIES
+- `AngryBee`
+- `ApatheticFrog`
+- `ArchTriangle`
+- `BeeSwarm`
+- `Brutus`
+- `Brutus2` (variant)
+- `Bunboy`
+- `CandySnake`
+- `CandySnake2` (variant)
+- `CarrotFire` (Hexrot Fire)
+- `CarrotIce` (Hexrot Ice)
+- `Chillyroger`
+- `Chillyroger2` (variant)
+- `Construct_Boris`
+- `Construct_Marina`
+- `Construct_Sam`
+- `CyberjennyA` (1st fight)
+- `CyberjennyB` (2nd fight)
+- `CyberjennyC` (3rd fight)
+- `DreamMoth` (Napping Fly (Quietus) (second phase))
+- `DreamMothCocoon` (Napping Fly (Quietus) (first phase))
+- `Evileasel`
+- `Fishbun`
+- `FishbunCow` (Cowbun)
+- `FlowerJenny`
+- `GroundGate`
+- `GroundGate2` (variant)
+- `GhostPather` (black ghost of Ittle found in Syncope)
+- `Harvester` (Dead Beet)
+- `HatlessOgler`
+- `HatlessOgler2` (variant)
+- `Hyperdusa`
+- `Hyperdusa2` (variant)
+- `Hyperdusa_steel`
+- `HyperdusaDream` (cannon (why is this named Hyperdusa??))
+- `Jello_Fire`
+- `Jello_Melee`
+- `Jello_Mercury`
+- `Larvae` (Napping Fly larvae)
+- `LeBiadloA` (1st fight)
+- `LeBiadloB` (2nd fight)
+- `LemonJenny`
+- `LennyA` (1st fight)
+- `LennyB` (2nd fight)
+- `Matriarch` (Napping Fly)
+- `MechabunA` (1st fight)
+- `MechabunB` (2nd fight)
+- `MechabunC` (3rd fight)
+- `MeltyBod`
+- `Mimic` (coast candy fakes)
+- `Mimic_Chest` (chest fakes)
+- `Mimic_Fishbun` (fishbun fakes)
+- `Mimic_Pot` (pot fakes)
+- `Mimic_Robot` (barrel fakes)
+- `Mimic_Trash` (trash fakes)
+- `Monochrome`
+- `Octopurr` (Octacle, non-bridge)
+- `OctopurrBridge` (Octacle, bridge)
+- `Ogler`
+- `OglerDeath` (Dark Ogler)
+- `PasselA` (not moving)
+- `PasselC` (moving)
+- `SafetyJenny`
+- `SafetyJenny2` (variant)
+- `Simulacrum`
+- `SharkJenny` (out of water)
+- `SharkJennyFlop` (in water)
+- `Shellbun`
+- `Shellbun2` (variant)
+- `Skullnip`
+- `Skullnip_lava`
+- `Skullnip_snow`
+- `Skullnip_steel`
+- `Skully`
+- `SlayerJenny`
+- `SlayerJenny2` (variant)
+- `Spikebun`
+- `Spikebun2` (variant)
+- `StupidBee`
+- `SwimmyRoger`
+- `ThatGuy2`
+- `Titan`
+- `Titan2` (variant)
+- `Titan_gold`
+- `Turnip_Bazooka`
+- `Turnip_Coldnip`
+- `Turnip_Nukenip`
+- `Turnip_Rotnip`
+- `Turnip_Spear`
+- `Turnip_Sword`
+- `Volcano`
+- `VolcanoExpress` (Volcano in mine cart)
+
+## NPCS
+- `Biadlo`
+- `BusinessCasual`
+- `Ittle`
+- `Merbun`
+- `NPCBee`
+- `NPCBee2` (variant)
+- `NPCBee3` (variant)
+- `NPCBee4` (variant)
+- `NPCBee5` (variant)
+- `NPCBee6` (variant)
+- `NPCBrutus`
+- `NPCBunboy`
+- `NPCCarrot`
+- `NPCCarrot2` (variant)
+- `NPCCarrot3` (variant)
+- `NPCCrabby`
+- `NPCCrabby2` (variant)
+- `NPCCrabby3` (variant)
+- `NPCCrabby4` (variant)
+- `NPCFlowerJenny2`
+- `NPCGate`
+- `NPCJennyBerry`
+- `NPCJennyCathair` (Jenny Cat)
+- `NPCJennyChill` (ice cream Jenny)
+- `NPCJennyCommoner2` (???)
+- `NPCJennyEmo`	(lake)
+- `NPCJennyMermaid`
+- `NPCJennyMole`
+- `NPCJennyRater` (painter)
+- `NPCOgler`
+- `NPCOgler_bowler`
+- `NPCOgler_strawhat`
+- `NPCPassel`
+- `NPCSafetyJenny3`
+- `NPCSharkJenny`
+- `NPCSlayerJenny`
+- `NPCTurnip3`
+- `NPCTurnip4` (variant)
+- `NPCTurnip5` (variant)
+- `NPCTurnip6` (variant)
+- `NPCTurnip_general`
+- `NPCVolcano`
+- `NPCVolcano2` (variant)
+- `NPCWildMapMan`
+- `ThatGuy`
+
+## OBJECTS (common)
+- `Cannon`
+- `RestorePt1` (checkpoint)
+- TODO: Add more objects!

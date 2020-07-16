@@ -1,0 +1,31 @@
+//Spawn a tiny mjau on top of your head, fully explained!
+//-----------------
+//Use once in fluffy fields and then it can be used anywhere!
+
+#CONDITION_NPC npcjennycat 
+#ERRORMSG No cat found, use this in fluffyfields, then|you will be able to use it anywhere
+
+//Hold jenny cat in memory, to be spawned everywhere
+spawn npcjennycat -hold
+
+//spawn a jenny cat facing your direction without ai,
+//it will not walk. She is spawned 50 units 
+//underground, to avoid drawing the shadow on the
+//ground and making it not collide with the player
+spawn npcjennycat -ai null -ittlerot -p 0 -50 0
+
+//Save a reference to the player's head, parented to 
+//ittle. -noui disables find graphics. '-i 1' makes 
+//'find' return the first head found, useful for stacking
+find head -parent ittle -save -noui -i 1
+
+//Change the parent of jennycat's graphics (which 
+//are direct children of the slayerjenny object) to 
+//the player's head, then move it to (-0.9, 0, 0) and 
+//scale it to 0.3. '-i 1' makes 'find' return the last
+//created jenny slayer instead of the one closest to 
+//the player
+find jennycat -parent2 npcjennycat -i 1 -changep -p -0.9 0 0 -s 0.3 -noui
+
+//print message
+echo Your personal mjau!
