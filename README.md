@@ -1,6 +1,6 @@
 [![Extra 2 Dew Mod](/Images/logo.jpg)](https://www.youtube.com/watch?v=NwmEcC4uuUc)
 
-### [Download! Install instructions below!](https://github.com/Chris-Is-Awesome/Extra-2-Dew/releases)
+### [Download! Install instructions below!](https://github.com/Chris-Is-Awesome/Extra2DewMod/releases)
 
 **Credit: Ludosity** | **Modded by:** **[Chris is Awesome#9819](https://github.com/Chris-Is-Awesome)** & **[Matra#5057](https://github.com/SpaceMatra)** | **Randomizer logic by:** **Linkshot**
 
