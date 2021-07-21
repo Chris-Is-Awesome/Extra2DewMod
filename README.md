@@ -1,35 +1,42 @@
-![Extra 2 Dew Mod](/Images/logo.jpg)
+[![Extra 2 Dew Mod](/Images/logo.jpg)](https://www.youtube.com/watch?v=NwmEcC4uuUc)
 
 ### [Download! Install instructions below!](https://github.com/Chris-Is-Awesome/Extra-2-Dew/releases)
 
-
-**Credit: Ludosity** | **Modded by:** **[Chris is Awesome#9819](https://github.com/Chris-Is-Awesome)** & **Matra#5057**
+**Credit: Ludosity** | **Modded by:** **[Chris is Awesome#9819](https://github.com/Chris-Is-Awesome)** & **[Matra#5057](https://github.com/SpaceMatra)** | **Randomizer logic by:** **Linkshot**
 
 This is a mod meant to add more content to Ittle Dew 2!
-Mainly adds debug console commands, additional game modes, fun stuff, and more.
+Mainly adds several menus with options, additional game modes, a creative mode, debug console commands, fun stuff, and more.
 
-https://www.youtube.com/watch?v=r-vo1ynf5Xs&feature=youtu.be
-
-I have a server for all my Ludo modding hobbies! https://discord.gg/qVjcfT2
+For more Ludosity mods, visit the Ludo modding server! https://discord.gg/qVjcfT2
 
 # INSTRUCTIONS
-**Install:** Download the ID2_Data.zip from [here](https://github.com/Chris-Is-Awesome/Extra-2-Dew/releases). Extract the folder to the directory: `[Steam Games Directory]\steamapps\common\Ittle Dew 2`. You will be asked to confirm to replace some things in the ID2_Data folder. Replace. This will also add a "mods" folder inside the ID2_Data folder which is used specifically by our mod.
+**Install:** Download the latests release from [here](https://github.com/Chris-Is-Awesome/Extra2DewMod/releases). Extract the folder to the directory: `[Steam Games Directory]\steamapps\common\Ittle Dew 2`. You will be asked to confirm to replace one file in the ID2_Data folder.
 
-Speficially what gets installed is a modified `Assembly-CSharp.dll` file, which contains all the game's code. And a "mod" folder is added inside root of the ID2_Data folder. This mod folder is used by various aspects of our mod for writing data to files and such.
-
-**Usage:** Pause the game and press `F1` *(default)* to open the debug console. Type `help` in console window for a list of all commands! There are some miscelanious commands that are not listed below, but they're included in `help`!
+Speficially what gets installed is a modified `Assembly-CSharp.dll` file for a new one with the mod code added. The "extra2dew" folder is added inside root of the ID2_Data folder as well.
 
 **Uninstall:** Go to `Steam -> Right click game -> Properties -> Local Files -> Verify integrity of files...`. You can also make a copy of your original `Assembly-CSharp.dll` file before installing the mod and use it to replace the modded file.
 
+# USING THE MOD
+The mod includes several in-game menus that handle almost all the mod functions. It is recommended to navigate them using the mouse. For more advanced functions, the mod includes a debug menu. It uses commands to make precise changes into the game.
+
 # GAME MODES
-### Heart Rush
-You start with a set amount of HP. When you lose it all, you have to start all over!
-- You start with 30 hearts, but you never gain any except from Crayons, which add 4 hearts!
-- When you take damage, damage is taken from your max HP
-- When you run out of HP, it's game over! You return to main menu and Heart Rush file is deleted, making you start all over!
-- Start a Heart Rush file by making a new file named "hearts"!
+The mod includes several game modes unique to it, which multiple of them can be active at the same time. To turn a game mode on, go to the "Game mode" menu when creating a new file, select the mode you want to play and check the box on the title. The mode will be active when starting the game.
+
+# RANDOMIZERS
+There are currently 2 main randomizers in the game. The door randomizer, which changes how the island is connected together and the item randomizer, which shuffles items spawns locations. These are game modes and should be activated before starting a new game. Once a file is created, the cheat sheet will be generated inside the `extra2dew\randomizer` folder. The item randomizer configs can be found inside `extra2dew\randomizer\config` folder.
+
+For information about how to create/modify item randomizer configs, please refer to `Config Documentation.txt` inside the config folder.
+
+Note: Avoid combining the door randomizer with item randomizer configs that start with no stick or no roll.
+
+# ALTERNATIVE CAMERA MODES
+E2D includes 2 new camera modes to play the game! Those are **First person mode** and **Third person mode**. There is also a camera mode for exploring the map and taking screenshots/doing videos, **Free camera mode**. The mod requires calibrating the mouse for the alternative camera modes, so the first time any camera mode is enabled, the mouse should be left still for a couple of seconds.
+
+# CREATIVE MENU
+The creative menu is a new, GMOD like addition to the mod. It enables moving, modifying or creating new game objects. For instruction in how to use it, please click the "HELP" button on the left-bottom corner of the screen.
 
 # COMMANDS
+Almost all options in the mod menu and more can be activated through the debug menu. Here is a list of available commands.
 - `atk`
   - Description: Change how Ittle's weapons work, making them more powerful and verastile!
   - Modifiers:
@@ -71,7 +78,6 @@ You start with a set amount of HP. When you lose it all, you have to start all o
 	   - `-sens <float>`: Set the sensitivity of the mouse.
 	   - `-lockvertical / -unlockvertical`: Disallow/allow vertical panning.
 	   - `-clip <float>`: Set the farclip of the camera (draw distance).
-	   - `-wheel <float>`: Set how strongly does the mouse wheel change the flying speed (free mode only)
 	   - `-controls <KeyCode> x 8`: Set the key controls for first person mode (case sensitive!)
 	   Order to enter the keycodes: Forward, backward, left, right, stick, force wand, dynamite and ice ring
 	   "Example: `cam -first`
@@ -95,7 +101,7 @@ You start with a set amount of HP. When you lose it all, you have to start all o
 		- Entering "Error" anywhere on the text will make it be shown red in the console and reduce its size if it has too many letters
 		- The text accepts <html> codes for style. You can make the text bold, italic, bigger or change its color. Check https://docs.unity3d.com/Manual/StyledText.html for available codes and how to use them
 - `find`
-	- Description: Finds a gameobject in the scene, giving information about it and allowing manipulating its transform properties. When multiple objects are found, it will return the one closest to the player. This is a command mostly for debugging, but some very fun stuff can be done by moving npcs and objects around. 
+	- Description: Finds a gameobject in the scene, giving information about it and allowing manipulating its transform properties. When multiple objects are found, it will return the one closest to the player. This is a command mostly for debugging, but some very fun stuff can be done by moving npcs and objects around.
 	- Arguments: find gameobjectName (string). This can search for a fragment of the name, making searchs easier.
 	- Modifiers:
 		- `-all`: Include inactive objects in the search
@@ -111,7 +117,7 @@ You start with a set amount of HP. When you lose it all, you have to start all o
 		- `-changep`: Change the parent of the found object to the one saved with -save. The object will move, rotate and scale with the parent.
 		- `-activate <(optional) bool>`: Sets the gameobject to active or inactive
 	- Examples: `find safe` (returns all the object with "safe" in their names
-	- Notes: 
+	- Notes:
 		- Use this to move objects around. You can even do custom HUDs with it!
 		- Changing parents can break the game sometimes, so do it carefully
 		- The player gameobject is called "playerent". The player's graphics are called "Ittle".
@@ -148,7 +154,7 @@ You start with a set amount of HP. When you lose it all, you have to start all o
 	- Notes:
 		- Applies to both Ittle and enemies
 		- You can set this value to negative numbers to pull the victim instead of pushing them away!
-  - Examples: 
+  - Examples:
 - `likeaboss`
 	- Description: 1 hit kill any enemy with any weapon
 	- Examples: `likeaboss`
@@ -202,14 +208,14 @@ You start with a set amount of HP. When you lose it all, you have to start all o
 		- Giving just 1 number will set all axes to number specified.
 		- Setting one axis to a very small number will make the characters flat! For example `size self 1 1 0.01'.
 - `sound`
-	- Description: Prints a list of scene sounds on the screen and plays one of them. You can change the pitch of the played sound. When no arguments are entered, the list will scroll to a different page of sounds. 
+	- Description: Prints a list of scene sounds on the screen and plays one of them. You can change the pitch of the played sound. When no arguments are entered, the list will scroll to a different page of sounds.
 	- Modifiers:
 		- `-play <string>`: Play a sound
 		- `-pitch <float>`: Change the pitch of the sound
 	- Examples: `sound -play eatfruit` `sound -play eatfruit -pitch 0.5`
 	- Notes: The same sound being played with multiple pitchs each one bound to a different key, it is possible to play music!
 - `spawn`
-	- Description: Spawns NPCs on top of ittle facing a random direction. The name of the NPC must be typed exactly as the `-list` modifier shows, but it is not case sensitive. This command can only spawns NPCs present in the scene, that means you normally cannot spawn dungeon bosses outside of dungeons. There is however a way to `hold` that NPC and spawn it anywhere you want. To get a list of all available NPCs, use `-list`. 
+	- Description: Spawns NPCs on top of ittle facing a random direction. The name of the NPC must be typed exactly as the `-list` modifier shows, but it is not case sensitive. This command can only spawns NPCs present in the scene, that means you normally cannot spawn dungeon bosses outside of dungeons. There is however a way to `hold` that NPC and spawn it anywhere you want. To get a list of all available NPCs, use `-list`.
 	- Arguments: `spawn <npcname>` (optional) `<ammountToSpawn>`. For example, `spawn fishbun` `spawn fishbun 5`
 	- Modifiers:
 		- `-list`: Display all NPCs available for spawning in the scene (VERY USEFUL).
@@ -245,7 +251,7 @@ You start with a set amount of HP. When you lose it all, you have to start all o
 	- Description: Spawn a lightning bolt beneath your feet to zap all enemies around you
 	- Notes:
 		- Best used bound to a key. `bind n zap` will run zap every time you press the n key
-  
+
 # PARAMETER REFERENCE
 For a list of all enemy names for use with commands like `spawn`, [click here](/Reads/npcs.md).<br>
 For a list of all map names for use with commands like `goto`, [click here](/Reads/maps.md).
@@ -277,35 +283,9 @@ Examples: `speed`, `knockback`
 Examples: `size`, `bind`, `time`
 - `Modifier commands`: These commands are multi-function, they do multiple things or do one thing with heavy customization. They are controlled by modifiers, these are words that change how the commands work, easily recognizable by their names starting with `-`. They can be put anywhere after the command and multiple of them can be used at the same time. For example, `cam -first` will activate first camera mode while `cam -fov 90` will change the field of vision to 90. Or you can enter `cam -first -fov 90` to do both at the same time! Since these commands are complex, entering any of them without arguments (`cam`) will give you a list of all available modifiers and how to use them. Keep in mind that some commands may require a arguments in a specific order before any modifiers are used.
 Examples: `spawn`, `cam`, `atk`
-  
-# FIRST PERSON MODE AND ALTERNATIVE CAMERA MODES
-E2D includes 2 new camera modes to play the game in completely new ways! Those are **First person mode** and **Third person mode**. There is also a camera mode for exploring the map and taking screenshots/doing videos, **Free camera mode**.
-
-**Note**: Since ID2 lacks proper controla for mouse movement, the method used in this mod requires calibration. During camera mode setup and scene change, mouse movement will be disabled for some time. Please leave the mouse still to make the process quicker.
-
-### FIRST PERSON MODE
-Enter `cam -first` to activate first person mode. This mode simulates a FPS (first person shooter) and adds a fair ammount of difficulty to the game, specially for puzzles. The camera is controlled with the mouse and the movement keys are changed to the classic WASD. To use a weapon, press the primary mouse button (left click in most cases) and press 1-2-3-4 to choose which weapon will be used. Alternatively use the mouse scroll wheel to change weapons. The controls can be changed anytime with the `-controls` argument (however mouse buttons/scroll wheel cannot be changed).
-
-### THIRD PERSON MODE
-Enter `cam -third` to activate third person mode. This mode allows rotating the camera around Ittle. The camera is controlled with the mouse and the movement keys are changed to the WASD. To use a weapon, press the primary mouse button (left click in most cases) and press 1-2-3-4 to choose which weapon will be used. Alternatively use the mouse scroll wheel to change weapons. To zoom in/out, hold the secondary mouse button (right click) and scroll with the mouse wheel. The controls can be changed anytime with the `-controls` argument (however mouse buttons/scroll wheel cannot be changed).
-
-### FREE CAMERA MODE
-Enter `cam -free` to activate free camera mode. You don't control ittle in this mode, all controls are switched to the camera instead. Use it to fly around and take a closer look to the level! Also remember to leave Ittle somewhere safe first! She will be defenseless while you are gone (or make her invincible with the god command). The camera is controlled with the mouse and WASD moves it around. Use the mouse scroll wheel to change your flying speed. The controls can be changed anytime with the `-controls` argument (however the scroll wheel cannot be changed).
-
-### DEFAULT CAMERA MODE
-This is the vanilla camera. Enter `cam -default` to enter this mode.
-
-### CUSTOMIZATION
-You can customize the options below. See the `cam` command in the next sub-section for more details:
-- Camera controls: You can set the camera controls keys anytime. They are set in a specific order and use KeyCodes, more information about them can be found in the Types of Input section.
-- Field of view: Set the camera field of view, the vanilla default is 30 while 65 is used in all E2D camera modes. You can set the field of view for default mode too!
-- Mouse sensitivity: Set the sensitivity of the mouse.
-- Lock/Unlock vertical panning: In ittle dew 2, you cannot point your weapons upwards, so vertical panning can be unnecesary. You can turn it off/on anytime you want.
-- Clipping distance: By default, the camera draws the scene until a certain distance. We moved that value up for this mod, but you can set it even higher if you want. Take in mind though that higher clipping distances are more difficult for your computer.
-- Wheel acceleration: Set how strongly the mouse wheel affects your flying speed (free mode only).
 
 # SCRIPT FILES
-Extra2dew can run basic scripts composed of debugmenu commands. This allows running a large group of commands easily, making it possible to create fun scenarios that can be shared! 
+Extra2dew can run basic scripts composed of debugmenu commands. This allows running a large group of commands easily, making it possible to create fun scenarios that can be shared!
 
 Said scripts are saved as txt files, which can be writen with any text editor. The commands are run in order from top to bottom. The script files will run exactly the same in all copies of ittle dew 2 that have this mod installed.
 
@@ -315,7 +295,7 @@ After installing the mod, the `mod` folder will be created in `[Steam Games Dire
 ### CONDITIONS AND COMMENTS
 The script files can check for conditions during their executions. If the conditions are not met, the execution will halt and an error message will be shown. This can be helpful if an npc needs to be spawned, but it is not yet present on the scene. The error message can be customized.
 
-`#CONDITION_NPC <npcname>`: Looks for an NPC in the scene. 
+`#CONDITION_NPC <npcname>`: Looks for an NPC in the scene.
 `#ERRORMSG <errortext>`: Error message to be displayed in case of a condition not being met. | are replaced by line jumps.
 
 Example:
@@ -355,7 +335,7 @@ Force Wand, Dynamite, and Ice Ring all have level 4 upgrades that are unobtainab
  ### SECRET CODES
 - The debug menu can be opened up in vanilla game by pausing and while holding left control, press the following: up, down, up, down, left, right, left, right, space. This debug menu only has 3 commands: warpto (this was expanded by us in our mod), setentvar and setsavevar. These are more advanced commands.
 - When creating a save file, there is a code to start a new game with all the main items at their highest possible upgrades. The code is: 2AbyssW/Thee as file name.
- 
+
 ### DEFAULT TEXT STRINGS
 It's good practice to specify a default string for a textbox to show if no text is given. In some cases, Ludo had fun with this ;)
 - Default text for signs/speech bubbles: Hello world! What's up? It's a sign"
@@ -393,6 +373,9 @@ Throughout development, it's not uncommon for developers to change the names of 
 - Ittle says "crap"! :mjau:
 
 # CONTRIBUTIONS
+Thanks to Linkshot for filling the entire database used in the item randomizer. It required a lot of time and effort, without his help the item randomizer would not exist today.
+Thanks to Mecrishio for extensively testing the creative menu, providing a lot of ideas to improve it and polish it while at the same time creating a huge amount of top notch content (https://www.youtube.com/channel/UCVQtyhiaGphmGyaGWPSOxgA )
+Thanks to all the testers who spent so many hours testing the item randomizer, finding/reporting bugs and proposing changes: Gigopler, Gamewyrm, Linkshot and Galex8
 Thank you to everyone who makes use of this wonderful mod! I hope it serves you well! :D
 If you would like to contribute or aid in development, feel free to join the [Discord server](https://discord.gg/qVjcfT2) for it!
 We can always use an extra hand! If you know Unity and/or C#, or have experience with reverse engineering, you can help a lot!

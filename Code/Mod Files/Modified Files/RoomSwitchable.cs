@@ -139,7 +139,7 @@ public class RoomSwitchable : EntityAction
 		if (switchActionData.isLevel)
 		{
 			// Boss Rush
-			if (ModeControllerNew.IsBossRush)
+			if (BossRush.Instance.IsActive)
 			{
 				BossRush brm = BossRush.Instance;
 				startPos = brm.GetStartPosition();
@@ -148,25 +148,6 @@ public class RoomSwitchable : EntityAction
 				endDir = startDir;
 				brm.GiveDungeonItem();
 				brm.RestorePlayerHP();
-			}
-
-			// Boss Rush: Set spawn point, facing direction, equips, HP and update HUD text for boss progress counter
-			ModeController mc = GameObject.Find("ModeController").GetComponent<ModeController>();
-			if (mc.isBossRush)
-			{
-				ModeController.BossRush brm = mc.bossRushManager;
-				startPos = brm.GetPlayerSpawnPoint();
-				endPos = brm.GetPlayerEndWalkPosition();
-				startDir = brm.GetPlayerFacingDirection();
-				endDir = startDir;
-				brm.SetItemsForBoss();
-				brm.StartOfGame();
-			}
-			// Dungeon Rush: Save scene data
-			if (mc.isDungeonRush)
-			{
-				ModeController.DungeonRush drm = mc.dungeonRushManager;
-				drm.StartOfGame();
 			}
 
 			this.timer = ((!this._scaleTransitionSpeed) ? this._levelTransitionSpeed : (vector.magnitude / this._levelTransitionSpeed));

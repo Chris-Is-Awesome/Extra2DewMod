@@ -4,9 +4,19 @@ using UnityEngine.SceneManagement;
 
 namespace ModStuff
 {
-	public class DungeonRush : Singleton<DungeonRush>, IModeFuncs
-	{
-		Dictionary<string, string> entranceRooms = new Dictionary<string, string>()
+	public class DungeonRush : E2DGameModeSingleton<DungeonRush>
+    {
+        void Awake()
+        {
+            Mode = ModeControllerNew.ModeType.DungeonRush;
+            Title = "Dungeon Rush";
+            QuickDescription = "Play through all the dungeons in the game, one by one.";
+            Description = "Traverse all the dungeons in the game, including Dream World and The Promised Remedy! Rush through them and see if you can get the best time!"; 
+			FileNames = new List<string> { "dungeons", "dungeonrush", "dungeon rush" };
+            Restrictions = new List<ModeControllerNew.ModeType> { ModeControllerNew.ModeType.BossRush , ModeControllerNew.ModeType.DoorRandomizer, ModeControllerNew.ModeType.ItemRandomizer };
+        }
+
+        Dictionary<string, string> entranceRooms = new Dictionary<string, string>()
 		{
 			// Format: sceneName, roomName for first room
 			{ "PillowFort", "H" },
@@ -52,66 +62,55 @@ namespace ModStuff
 		};
 
 		public float startingHp = 80f;
-		int difficulty = -1;
 
-		public void Initialize(bool activate, RealDataSaver saver = null, int _difficulty = -1)
+		override public void SetupSaveFile(RealDataSaver saver)
 		{
-			if (activate && saver != null)
-			{
-				string hp = startingHp.ToString();
+            if (saver == null) return;
+			string hp = startingHp.ToString();
 
-				// Save data to file
-				if (ModeControllerNew.IsHeartRush) { hp = (HeartRush.Instance.startingHp + startingHp).ToString(); }
+			// Save data to file
+			if (HeartRush.Instance.IsActive) { hp = (HeartRush.Instance.InitialHP + startingHp).ToString(); }
 
-				ModMaster.SetNewGameData("start/level", "PillowFort", saver);
-				ModMaster.SetNewGameData("start/door", "PillowFortInside", saver);
-				ModMaster.SetNewGameData("mod/modes/DungeonRush/enabled", "1", saver);
-				ModMaster.SetNewGameData("player/maxHp", hp, saver);
-				ModMaster.SetNewGameData("player/hp", hp, saver);
-				ModMaster.SetNewGameData("player/vars/easyMode", "0", saver);
-				ModMaster.SetNewGameData("settings/easyMode", "0", saver);
-				ModMaster.SetNewGameData("settings/hideCutscenes", "1", saver);
-				ModMaster.SetNewGameData("settings/showTIme", "1", saver);
-				ModMaster.SetNewGameData("settings/hideMapHints", "1", saver);
+			ModMaster.SetNewGameData("start/level", "PillowFort", saver);
+			ModMaster.SetNewGameData("start/door", "PillowFortInside", saver);
+			ModMaster.SetNewGameData("mod/modes/DungeonRush/enabled", "1", saver);
+			ModMaster.SetNewGameData("player/maxHp", hp, saver);
+			ModMaster.SetNewGameData("player/hp", hp, saver);
+			ModMaster.SetNewGameData("player/vars/easyMode", "0", saver);
+			ModMaster.SetNewGameData("settings/easyMode", "0", saver);
+			ModMaster.SetNewGameData("settings/hideCutscenes", "1", saver);
+			ModMaster.SetNewGameData("settings/showTIme", "1", saver);
+			ModMaster.SetNewGameData("settings/hideMapHints", "1", saver);
 
-				difficulty = _difficulty;
 
-				Activate();
-			}
+			Activate();
 		}
 
-		public void Activate()
+		override public void Activate()
 		{
-			// Set difficulty
-			if (difficulty < 0)
-			{
-				string className = GetType().ToString().Split('.')[1];
-				string value = ModSaverNew.LoadFromSaveFile("mod/modes/active/" + className + "/difficulty");
-
-				if (!string.IsNullOrEmpty(value)) difficulty = int.Parse(value);
-			}
-
 			// Subscribe to events
 			GameStateNew.OnDungeonComplete += OnDungeonComplete;
 			GameStateNew.OnSceneLoad += OnSceneLoad;
+            IsActive = true;
 		}
 
-		public void Deactivate()
+        override public void Deactivate()
 		{
 			// Unsubscribe to events
 			GameStateNew.OnDungeonComplete -= OnDungeonComplete;
 			GameStateNew.OnSceneLoad -= OnSceneLoad;
-		}
+            IsActive = false;
+        }
 
 		// Returns true if you're not in the first room and reloads the scene if you try to leave. Returns false otherwise. Takes in to account Heart Rush death if Heart Rush + Dungeon Rush
 		public bool ReloadDungeon()
 		{
-			if (ModeControllerNew.IsHeartRush && HeartRush.Instance.isDead) { return false; }
+			if (HeartRush.Instance.IsActive && HeartRush.Instance.isDead) { return false; }
 
 			string sceneName = ModMaster.GetMapName();
 			string roomName = ModMaster.GetMapRoom();
-
-			if (roomName == entranceRooms[sceneName]) { return true; }
+            roomName = "";
+            if (roomName == entranceRooms[sceneName]) { return true; }
 			return false;
 		}
 

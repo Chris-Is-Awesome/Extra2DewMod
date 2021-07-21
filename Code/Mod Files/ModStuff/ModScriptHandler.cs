@@ -113,7 +113,7 @@ namespace ModStuff
                 if (console == null) { return; }
                 menuText = console.GetComponent<UIBigFrame>();
             }
-            if (wrapText) text = ModText.WrapText(text, 21f, false);
+            if (wrapText) text = ModText.WrapText(text, 700f, false);
             text = ModText.Instance.FixVerticalShift(text);
             menuText.UIName = text;
         }

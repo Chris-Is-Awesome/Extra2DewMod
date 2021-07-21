@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using ModStuff.Options;
 
 namespace ModStuff
 {
@@ -17,6 +18,10 @@ namespace ModStuff
 		public static event _OnPlayerDeath OnPlayerDeath;
 		public delegate void _OnPlayerSpawn(bool isRespawn);
 		public static event _OnPlayerSpawn OnPlayerSpawn;
+
+		// Enemy events
+		public delegate void _OnEntSpawn(Entity ent);
+		public static event _OnEntSpawn OnEntSpawn;
 
 		// Attack events
 		public delegate void _OnDamageDone(float dmg, Entity toEnt);
@@ -91,11 +96,22 @@ namespace ModStuff
 		// Runs when player spawns ( listens to PlayerSpawner.DoSpawn() and PlayerRespawner.DoRespawn() )
 		public static void OnPlayerSpawned(bool isRespawn)
 		{
-			Scene scene = SceneManager.GetActiveScene();
+			//Scene scene = SceneManager.GetActiveScene();
 			//PlayerPrefs.SetString("test", "The player has spawned in " + scene.name + "!");
 
 			// Invoke events
 			OnPlayerSpawn?.Invoke(isRespawn);
+		}
+
+		// --------------- ENEMY EVENTS --------------- \\
+
+		// Runs when an Entity spawns ( listens to EntitySpawner.DoSpawn() )
+		public static void OnEntSpawned(Entity ent)
+		{
+			//PlayerPrefs.SetString("test", "Entity " + ent.name + " spawned!");
+
+			// Invoke events
+			OnEntSpawn?.Invoke(ent);
 		}
 
 		// --------------- ATTACK EVENTS --------------- \\
@@ -163,7 +179,7 @@ namespace ModStuff
 			if (isNew && !string.IsNullOrEmpty(filePath) && saver != null)
 			{
 				ModMaster.SetNewGameData("mod/filePath", filePath, saver);
-				ModeControllerNew.ActivateMode(fileName, true, saver);
+				ModeControllerNew.ActivateModesByFileName(fileName, saver);
 			}
 
 			// If loading mode file, resume mode
@@ -197,6 +213,8 @@ namespace ModStuff
 			GameOptions.Instance.Initialize();
 
 			ModSaverNew.DeletePref("test");
+
+			OptionsSingleton<Options.GameOptions>.Instance.SubscribeToEvents();
 
 			// Invoke events
 			OnGameStart?.Invoke();

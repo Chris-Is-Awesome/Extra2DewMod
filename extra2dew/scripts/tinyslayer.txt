@@ -7,7 +7,7 @@
 //halted. You can configure the error message 
 //adding #ERRORMSG immediately after the condition
 #CONDITION_NPC slayerjenny
-#ERRORMSG Slayerjenny not found, use this in frozen court first, then you will be able|to spawn tiny slayers anywhere!
+#ERRORMSG Slayerjenny not found, use this in frozen court first, then you will be able to spawn tiny slayers anywhere!
 
 //Hold slayerjenny in memory, to be spawned everywhere
 spawn slayerjenny -hold

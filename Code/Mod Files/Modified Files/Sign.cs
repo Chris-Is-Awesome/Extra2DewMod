@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using ModStuff;
 
 public class Sign : MonoBehaviour
 {
@@ -33,6 +34,10 @@ public class Sign : MonoBehaviour
 
 	public bool PlayerInRadius(float radius)
 	{
+        if (_alwaysShow)
+        {
+            return true;
+        }
 		Sign.OverlapFunc overlapFunc = this.savedFunc;
 		overlapFunc.Setup(base.transform.position, radius * radius);
 		BC_Tracing.Instance.OverlapSphereAll<Sign.OverlapFunc>(base.transform.position, radius, overlapFunc, this._playerLayer.value, false);
@@ -45,8 +50,9 @@ public class Sign : MonoBehaviour
 	}
 
 	private bool TransformNotInRadius(float radius, Transform t)
-	{
-		return t == null || (t.position - base.transform.position).sqrMagnitude > radius * radius;
+    {
+        if (_alwaysShow) return false;
+        return t == null || (t.position - base.transform.position).sqrMagnitude > radius * radius;
 	}
 
 	public void Show()
@@ -73,8 +79,10 @@ public class Sign : MonoBehaviour
 			fullString = new StringHolder.OutString(this._text);
 		}
 		Vector3 pos = (!this._reverseTarget) ? base.transform.position : this.playerT.transform.position;
-		Transform mrSpeaker = (!this._reverseTarget) ? base.transform : this.playerT;
-		pooledWindow.Show(pos, this._objectSize, fullString, this._offset, mrSpeaker, this._reverseTarget);
+        pos += (!this._reverseTarget && customPos) ? _offset : Vector3.zero;
+        Transform mrSpeaker = (!this._reverseTarget) ? base.transform : this.playerT;
+        if (_customMrSpeaker != null) mrSpeaker = _customMrSpeaker;
+        pooledWindow.Show(pos, this._objectSize, fullString, this._offset, mrSpeaker, this._reverseTarget);
 		if (this._showSound != null)
 		{
 			SoundPlayer.Instance.PlayPositionedSound(this._showSound, base.transform.position, null);
@@ -106,7 +114,16 @@ public class Sign : MonoBehaviour
 
 	private void Update()
 	{
-		if (!this.isShowing)
+        
+        if(_showCountdown > 0)
+        {
+            _showCountdown--;
+            if(_showCountdown == 0)
+            {
+                _alwaysShow = true;
+            }
+        }
+        if (!this.isShowing)
 		{
 			if (this.PlayerInRadius(this._showRadius))
 			{
@@ -120,7 +137,12 @@ public class Sign : MonoBehaviour
 		}
 	}
 
+    //---------------------------------------
     //Mod function to set custom text
+
+    //Variable that enables/disables custom text
+    bool useCustomText = false;
+    bool customPos = false;
     public void ChangeText(string newText)
     {
         _text = newText.Replace('|','\n');
@@ -132,8 +154,53 @@ public class Sign : MonoBehaviour
         }
     }
 
-    //Variable that enables/disables custom text
-    private bool useCustomText;
+    public void GivePlayerTransform(Transform player)
+    {
+        playerT = player;
+    }
+
+    public void SetOffset(Vector3 offset)
+    {
+        _offset = offset;
+    }
+
+    Transform _customMrSpeaker = null;
+    public void SetCustomMrSpeaker(Transform speaker)
+    {
+        _customMrSpeaker = speaker;
+    }
+
+    public void SetArrow(bool player)
+    {
+        _reverseTarget = player;
+        customPos = true;
+    }
+
+    bool _StartShowing = false;
+    
+    bool _alwaysShow = false;
+    int _showCountdown = 0;
+    public void ForceAlwaysShow(bool active)
+    {
+        _showCountdown = 3;
+    }
+
+    public void Radius(float radius)
+    {
+        _showRadius = radius;
+        _hideRadius = radius + 0.2f;
+    }
+
+    public void SetObjectSize(float size)
+    {
+        _objectSize = 0.45f;
+    }
+
+    public string GetPrefabName()
+    {
+        return _speechBubblePrefab.name;
+    }
+    //---------------------------------------
 
     [Multiline]
 	[SerializeField]

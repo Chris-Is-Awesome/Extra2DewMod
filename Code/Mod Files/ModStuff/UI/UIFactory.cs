@@ -220,13 +220,14 @@ namespace ModStuff
         {
             //Load image texture and apply as material
             string path = ModMaster.TexturesPath + pngName + ".png";
-            Texture2D tex = new Texture2D(512, 512);
+            Texture2D tex = new Texture2D(512, 512, TextureFormat.RGBA32, false);
             byte[] fileData;
             if (File.Exists(path))
             {
                 fileData = File.ReadAllBytes(path);
                 tex.LoadImage(fileData, false);
             }
+            tex.name = pngName;
             renderer.material.mainTexture = tex;
         }
 
@@ -557,7 +558,7 @@ namespace ModStuff
         //======================
         //2D List
         //======================
-        public UI2DList Create2DList(float posX, float posY, Vector2 arraySize, Vector2 btnScale, Vector2 btnBackground, Transform parent, string name = "2D List")
+        public UI2DList Create2DList(float posX, float posY, Vector2 arraySize, Vector2 btnScale, Vector2 btnBackground, Vector2 separation, Transform parent, string name = "2D List")
         {
             //Create parent GO and set it up
             GameObject uiParent = new GameObject("Mod2DList");
@@ -575,8 +576,9 @@ namespace ModStuff
             //--------------
             //Initialize array variables
             UIButton[] buttonsArray = new UIButton[(int)(arraySize.x * arraySize.y)];
-            float xSeparation = 3.4f * btnScale.x * btnBackground.x;
-            float ySeparation = -1.6f * btnScale.y * btnBackground.y;
+            float xSeparation = 3.4f * btnScale.x * btnBackground.x * separation.x;
+            float yScale = btnScale.y * btnBackground.y;
+            float ySeparation = -1.6f * yScale * separation.y;
             float initialX = xSeparation * (-0.5f) * (arraySize.x - 1);
             float initialY = 1.6f;
             Vector2 backgroundScale = new Vector2(0.75f * btnBackground.x, 1.5f * btnBackground.y);
@@ -586,7 +588,7 @@ namespace ModStuff
             {
                 float buttonXPos = initialX + ((float)(i % (int)arraySize.x)) * xSeparation;
                 float buttonYPos = initialY + ((float)(i / ((int)arraySize.x))) * ySeparation;
-                createdButton = UIFactory.Instance.CreateButton(UIButton.ButtonType.Default, buttonXPos, buttonYPos, uiParent.transform, i.ToString() + "\nTest");
+                createdButton = UIFactory.Instance.CreateButton(UIButton.ButtonType.Default, buttonXPos, buttonYPos, uiParent.transform, "2DLIST" + i.ToString());
                 createdButton.ScaleBackground(backgroundScale, btnScale);
                 buttonsArray[i] = createdButton;
             }
@@ -598,6 +600,11 @@ namespace ModStuff
             output.UIName = name;
 
             return output;
+        }
+
+        public UI2DList Create2DList(float posX, float posY, Vector2 arraySize, Vector2 btnScale, Vector2 btnBackground, Transform parent, string name = "2D List")
+        {
+            return Create2DList(posX, posY, arraySize, btnScale, btnBackground, Vector2.one, parent, name);
         }
 
         //======================
@@ -656,7 +663,9 @@ namespace ModStuff
             UITextFrame title = CreateTextFrame(0f, 0f, uiParent.transform);
             title.name = "UIName";
             title.transform.localPosition = new Vector3(0f, 0.65f, 0.6f);
-            title.ScaleBackground(new Vector2(0.5f, 0.8f));
+            title.transform.localScale *= 0.8f;
+            title.ScaleText(1.25f);
+            title.ScaleBackground(new Vector2(0.625f, 1f));
 
             //Assign component
             UIListExplorer output = uiParent.AddComponent<UIListExplorer>();
@@ -692,6 +701,37 @@ namespace ModStuff
         }
 
         //======================
+        //Text input
+        //======================
+        public UITextInput CreateTextInput(float posX, float posY, Transform parent, string name = "")
+        {
+            UITextFrame uiFrame = CreateTextFrame(posX, posY, parent, name);
+            GameObject go = uiFrame.gameObject;
+            UITextInput output = go.AddComponent<UITextInput>();
+            go.AddComponent<GuiNode>();
+            go.AddComponent<GuiSelectionObject>();
+            go.AddComponent<GuiClickable>();
+            GuiClickRect rect = go.AddComponent<GuiClickRect>();
+            rect.SetSizeAndCenter(new Vector2(4.75f, 1f), Vector2.zero);
+            output.Initialize(_mappedInput, uiFrame);
+
+            return output;
+        }
+
+        //======================
+        //Key input
+        //======================
+        public UIKeyInput CreateKeyInput(float posX, float posY, Transform parent, string name = "")
+        {
+            UIButton uiButton = CreateButton(UIButton.ButtonType.Default, posX, posY, parent, name);
+            uiButton.ScaleBackground(new Vector2(0.5f, 1f));
+            UIKeyInput output = uiButton.gameObject.AddComponent<UIKeyInput>();
+            output.Initialize(_mappedInput, uiButton);
+
+            return output;
+        }
+
+        //======================
         //Utility functions
         //======================
         //Popup frame
@@ -716,6 +756,17 @@ namespace ModStuff
         //NOTE: if the accumulated z shift becomes too big (for example, too many nested UIelements), the accumulated z shift
         //might make the element not visible to the camera anymore
         static Vector3 ZFixVector { get { return new Vector3(0f, 0f, -0.2f); } }
+
+        MappedInput _mappedInput;
+        public void SetMappetInput(MappedInput mappedInput)
+        {
+            _mappedInput = mappedInput;
+        }
+
+        public MappedInput GetMappedInput()
+        {
+            return _mappedInput;
+        }
 
         //Search game object by parent. This is a brutish, slow function and it will return the first value found
         public static GameObject SearchGO(string target, string targetParent)

@@ -35,6 +35,6 @@ namespace ModStuff
 			return "ERROR: " + stateName + " is not a valid state for " + ent.name;
 		}
 
-		// TODO: Animate using Entity.PlayAnimation(string animName, int variation)
+		// Animate using Entity.PlayAnimation(string animName, int variation)
 	}
 }

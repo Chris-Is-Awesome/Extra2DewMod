@@ -3,12 +3,12 @@
 //Here, 'find' is used to search for the gameobjects that have the UI elements inside them.
 //Once found, '-p' is used to move them, '-r' to rotate them and '-s' to scale them 
 
-find infobuttonicon_anchor -p -0.4 -0.5 0
-find mapbuttonicon_anchor -s 4 -p -9 -1 0 -r 0 0 -45
-find dynamiteicon_anchor -p -3 1.2 0
-find forcewandicon_anchor -p -3 1.2 0
-find meleeicon_anchor -p -3 1.2 0
-find iceringicon_anchor -p -3 1.2 0
-find healthmeter_anchor -p -2 -2 0 -s 1.2
+find infobuttonicon_anchor -p -0.4 -0.5 0 -noui
+find mapbuttonicon_anchor -s 4 -p -9 -1 0 -r 0 0 -45 -noui
+find dynamiteicon_anchor -p -3 1.2 0 -noui
+find forcewandicon_anchor -p -3 1.2 0 -noui
+find meleeicon_anchor -p -3 1.2 0 -noui
+find iceringicon_anchor -p -3 1.2 0 -noui
+find healthmeter_anchor -p -2 -2 0 -s 1.2 -noui
 
 echo UI: IMPROVED

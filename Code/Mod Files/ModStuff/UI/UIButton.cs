@@ -8,24 +8,27 @@ namespace ModStuff
         public enum ButtonType { Default, Confirm, Back }
         public delegate void OnInteraction();
         public event OnInteraction onInteraction;
-        public override string UIName
-        {
-            set
-            {
-                base.UIName = value;
-            }
-        }
+
+        static Vector2 originalVector = new Vector2(2f, 0.5f);
 
         public void ScaleBackground(Vector2 backgroundScale, Vector2 uielementScale)
         {
-            if (backgroundScale.x == 0f || backgroundScale.y == 0) { return; }
-            OriginalTextSize = new Vector3(0.175f / backgroundScale.x, 0.175f / backgroundScale.y, 0.1f);
-            NameTextMesh.transform.localScale = OriginalTextSize;
-            
-            gameObject.transform.localScale = new Vector3(uielementScale.x * backgroundScale.x, uielementScale.y * backgroundScale.y, 1f);
+            gameObject.GetComponentInChildren<GuiClickRect>().SetSizeAndCenter(new Vector2(4f * backgroundScale.x, backgroundScale.y), Vector2.zero);
+            gameObject.GetComponentInChildren<NineSlice>().Size = new Vector2(originalVector.x * backgroundScale.x, originalVector.y * backgroundScale.y);
+
+            gameObject.transform.localScale = new Vector3(uielementScale.x, uielementScale.y, gameObject.transform.localScale.z);
 
             LineSize = DefLineSize * backgroundScale.x;
-            UIName = UIName;
+            AutoTextResize = AutoTextResize;
+        }
+
+        public void ScaleBackground(Vector2 backgroundScale)
+        {
+            gameObject.GetComponentInChildren<GuiClickRect>().SetSizeAndCenter(new Vector2(4f * backgroundScale.x, backgroundScale.y), Vector2.zero);
+            gameObject.GetComponentInChildren<NineSlice>().Size = new Vector2(originalVector.x * backgroundScale.x, originalVector.y * backgroundScale.y);
+
+            LineSize = DefLineSize * backgroundScale.x;
+            AutoTextResize = AutoTextResize;
         }
 
         public void Initialize()

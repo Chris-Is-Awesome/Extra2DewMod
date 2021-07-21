@@ -623,9 +623,45 @@ namespace ModStuff
 				return path;
 			}
 		}
+        static public string MaterialsPath
+        {
+            get
+            {
+                string path = Application.dataPath + "\\extra2dew\\textures\\materials\\";
+                if (!System.IO.Directory.Exists(path)) { System.IO.Directory.CreateDirectory(path); }
+                return path;
+            }
+        }
+        static public string RandomizerDataPath
+        {
+            get
+            {
+                string path = Application.dataPath + "\\extra2dew\\randomizer\\data\\";
+                if (!System.IO.Directory.Exists(path)) { System.IO.Directory.CreateDirectory(path); }
+                return path;
+            }
+        }
+        static public string RandomizerCheatSheetsPath
+        {
+            get
+            {
+                string path = Application.dataPath + "\\extra2dew\\randomizer\\cheatsheets\\";
+                if (!System.IO.Directory.Exists(path)) { System.IO.Directory.CreateDirectory(path); }
+                return path;
+            }
+        }
+        static public string RandomizerConfigFilesPath
+        {
+            get
+            {
+                string path = Application.dataPath + "\\extra2dew\\randomizer\\config\\";
+                if (!System.IO.Directory.Exists(path)) { System.IO.Directory.CreateDirectory(path); }
+                return path;
+            }
+        }
 
-		// Returns list of scene names by type
-		static public List<string> GetSceneNames(string sceneType)
+        // Returns list of scene names by type
+        static public List<string> GetSceneNames(string sceneType)
 		{
 			List<string> overworld = new List<string>()
 			{
@@ -776,9 +812,7 @@ namespace ModStuff
 		// Get debugmenu info message
 		static public string GetDebugMenuHelp()
 		{
-			return "[DEBUG MENU] Enter: Activate command - Home/End: Move the cursor - \n" +
-					"PgUp/PgDown: Browse the commands history - Ctrl+C/Ctrl+V: Copy/Paste from\n" +
-					"clipboard - Ctrl+H: Clear command history\n\n";
+			return "Enter: Activate command - Home/End: Move the cursor - PgUp/PgDown: Browse the commands history - Ctrl+C/Ctrl+V: Copy/Paste from clipboard - Ctrl+H: Clear command history and console";
 		}
 
 		// Write info messages to console

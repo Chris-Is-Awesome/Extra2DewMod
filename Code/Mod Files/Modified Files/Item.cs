@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using ModStuff;
+using ModStuff.ItemRandomizer;
 
 [AddComponentMenu("Ittle 2/Item/Item")]
 public class Item : ItemBase, IBC_TriggerEnterListener, IBC_CollisionEventListener
@@ -27,6 +28,15 @@ public class Item : ItemBase, IBC_TriggerEnterListener, IBC_CollisionEventListen
 	bool activated;
 
 	bool wasActivated;
+
+    public string saveId;
+    bool _doRandomize = false;
+    //Item randomizer: Set item as modified
+    public void SetItemAsRandomized(string saveId)
+    {
+        _doRandomize = true;
+        this.saveId = saveId;
+    }
 
 	public ItemId ItemId
 	{
@@ -175,14 +185,29 @@ public class Item : ItemBase, IBC_TriggerEnterListener, IBC_CollisionEventListen
 		// Invoke OnItemGet events
 		GameStateNew.OnItemGotten(this);
 
-		for (int i = this.allComps.Count - 1; i >= 0; i--)
-		{
-			this.allComps[i].Apply(ent, fast);
-		}
-		if (this._important)
-		{
-			ent.SaveState();
-		}
+        //Randomizer code
+        if(_doRandomize && ItemRandomizerGM.Instance.Core.TryGiveRandomizedItem(this))
+        {
+            for (int i = this.allComps.Count - 1; i >= 0; i--)
+            {
+                if (allComps[i] is PickupEffectItem effect) effect.Apply(ent, fast);
+            }
+        }
+        else
+        {
+            for (int i = this.allComps.Count - 1; i >= 0; i--)
+            {
+                this.allComps[i].Apply(ent, fast);
+            }
+            ent.LocalEvents.SendItemGet(ent, this); //Originally on the bottom of the method
+
+            //Initially outside the if/else
+            if (this._important)
+            {
+                ent.SaveState();
+            }
+        }
+
 		Item.OnPickedUpFunc onPickedUpFunc = this.onPickedUp;
 		this.onPickedUp = null;
 		if (onPickedUpFunc != null)
@@ -190,7 +215,6 @@ public class Item : ItemBase, IBC_TriggerEnterListener, IBC_CollisionEventListen
 			onPickedUpFunc(this, ent);
 		}
 		this.Deactivate();
-		ent.LocalEvents.SendItemGet(ent, this);
 	}
 
 	public void ActivateGraphics()

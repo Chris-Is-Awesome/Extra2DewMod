@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using ModStuff;
+using ModStuff.ItemRandomizer;
 using UnityEngine;
 
 public class PauseMenu : EntityOverlayWindow
@@ -115,7 +116,9 @@ public class PauseMenu : EntityOverlayWindow
 		this.menuImpl.AddScreen(new PauseMenu.ModInfoScreen(this, "infomenu", data));
         this.menuImpl.AddScreen(new PauseMenu.TestChamberScreen(this, "testchambermenu", data));
         this.menuImpl.AddScreen(new PauseMenu.ScriptsScreen(this, "scriptsmenu", data));
-        this.menuImpl.AddScreen(new PauseMenu.GameOptions(this, "gameoptions", data)); 
+        this.menuImpl.AddScreen(new PauseMenu.CreativeMenuScreen(this, "creativemenu", data));
+        this.menuImpl.AddScreen(new PauseMenu.GameOptions(this, "gameoptions", data));
+        this.menuImpl.AddScreen(new PauseMenu.RandomizedKeysScreen(this, "randomizedkeysmenu", data));
         //this.menuImpl.AddScreen(new PauseMenu.ModSettings(this, "modoptions", data));
 
         if (this._debugMenu != null)
@@ -148,10 +151,18 @@ public class PauseMenu : EntityOverlayWindow
 		debugMenuButton.name = "OpenDebugScreen";
 		//Setup background
 		UIBigFrame buttonsHolder = UIFactory.Instance.CreateBigFrame(UIBigFrame.FrameType.Default, 0f, -0.9f, pauseMenuContainer.transform);
-		buttonsHolder.transform.localScale = new Vector3(0.28f, 1.1f, 1f);
+		buttonsHolder.ScaleBackground(new Vector2(0.28f, 1.1f));
 		buttonsHolder.gameObject.name = "ModBackground";
 
-        if(ModVersion.IsDevBuild())
+        //Add randomized keys button (if randomizing)
+        if(ItemRandomizerGM.Instance.Core.Randomizing)
+        {
+            Transform randoParent = GameObject.Find("PauseOverlay").transform.Find("Pause").Find("ItemScreen");
+            UIButton randoButton = UIFactory.Instance.CreateButton(UIButton.ButtonType.Default, 0f, 0.35f, randoParent, "Randomizer");
+            randoButton.onInteraction += OpenRandomDungeonKeys;
+        }
+
+        if (ModVersion.IsDevBuild())
         {
             //Setup container
             GameObject devMenuContainer = new GameObject("ModContainer");
@@ -168,8 +179,8 @@ public class PauseMenu : EntityOverlayWindow
             fireTestButton.name = "OpenDebugScreen";
             //Setup background
             UIBigFrame devButtonsHolder = UIFactory.Instance.CreateBigFrame(UIBigFrame.FrameType.Default, 0f, -0.9f, devMenuContainer.transform);
-            devButtonsHolder.transform.localScale = new Vector3(0.28f, 1.1f, 1f);
-            devButtonsHolder.gameObject.name = "ModBackground";
+            devButtonsHolder.ScaleBackground(new Vector2(0.28f, 1.1f));
+            devButtonsHolder.gameObject.name = "TestChamberBackground";
         }
 	}
 
@@ -186,6 +197,11 @@ public class PauseMenu : EntityOverlayWindow
     public void OpenTestChamber()
     {
         menuImpl.SwitchToScreen("testchambermenu", null);
+    }
+
+    public void OpenRandomDungeonKeys()
+    {
+        menuImpl.SwitchToScreen("randomizedkeysmenu", null);
     }
 
     protected override void Start()
@@ -215,8 +231,16 @@ public class PauseMenu : EntityOverlayWindow
 		else if (arg == "cards")
 		{
 			this.menuImpl.SwitchToScreen("cardsRoot", arg2);
-		}
-		else
+        }
+        else if (arg == "debug")
+        {
+            this.menuImpl.SwitchToScreen("debugRoot", null);
+        }
+        else if (arg == "creative")
+        {
+            this.menuImpl.SwitchToScreen("creativemenu", null);
+        }
+        else
 		{
 			this.menuImpl.ShowFirst();
 		}
@@ -428,10 +452,26 @@ public class PauseMenu : EntityOverlayWindow
 
 		protected override bool DoShow(MenuScreen<PauseMenu> previous)
 		{
-			base.Owner._debugMenu.Show(MenuScreen<PauseMenu>.GetRoot(previous), new DebugMenu.OnDoneFunc(base.SwitchToBack));
+			base.Owner._debugMenu.Show(MenuScreen<PauseMenu>.GetRoot(previous), new DebugMenu.OnDoneFunc(ClickedBack));
 			return false;
-		}
-	}
+        }
+
+        protected override bool DoHide(MenuScreen<PauseMenu> next)
+        {
+            base.Owner._debugMenu.Hide();
+            return base.DoHide(next);
+        }
+
+        void ClickedBack()
+        {
+            if (base.Previous == null)
+            {
+                base.Owner.Hide();
+                return;
+            }
+            base.SwitchToBack();
+        }
+    }
 
 	class MapScreen : MenuScreen<PauseMenu>
 	{
@@ -593,7 +633,7 @@ public class PauseMenu : EntityOverlayWindow
 
 		protected override bool StorePrevious(MenuScreen<PauseMenu> previous)
 		{
-			return !(previous is PauseMenu.CardsScreen);
+			return !(previous is PauseMenu.CardsScreen) && !(previous is PauseMenu.RandomizedKeysScreen);
 		}
 	}
 
@@ -655,14 +695,18 @@ public class PauseMenu : EntityOverlayWindow
             {
                 base.StandardSwitch(null, "scriptsmenu");
             };
+            modScreen.GetElement<UIGFXButton>("creative").onInteraction += delegate ()
+            {
+                base.StandardSwitch(null, "creativemenu");
+            };
             modScreen.GetElement<UIGFXButton>("info").onInteraction += delegate ()
 			{
 				base.StandardSwitch(null, "infomenu");
 			};
-			modScreen.GetElement<UIGFXButton>("gameoptions").onInteraction += delegate ()
-			{
-				base.StandardSwitch(null, "gameoptions");
-			};
+			//modScreen.GetElement<UIGFXButton>("gameoptions").onInteraction += delegate ()
+			//{
+			//	base.StandardSwitch(null, "gameoptions");
+			//};
 
             /*
 			modScreen.GetElement<UIGFXButton>("options").onInteraction += delegate ()
@@ -705,6 +749,12 @@ public class PauseMenu : EntityOverlayWindow
 
         //Runs each time the window appears on screen
         protected override bool DoShow(MenuScreen<PauseMenu> previous)
+        {
+            return true;
+        }
+
+        //Runs each time the window is hidden
+        protected override bool DoHide(MenuScreen<PauseMenu> next)
         {
             return true;
         }
@@ -754,21 +804,24 @@ public class PauseMenu : EntityOverlayWindow
     //MOD SCREEN
     class SpawnScreen : MenuScreen<PauseMenu>
 	{
-		UIScreen modScreen;
+        UIScreen modScreen;
 		public SpawnScreen(PauseMenu owner, string root, GuiBindData data) : base(owner, root, data)
 		{
 			modScreen = UIScreen.GetUIScreenComponent(Root);
 			modScreen.BackButton.onInteraction += ClickedBack;
-			/*modScreen.GetElement<UIButton>("backtomain").onInteraction += delegate ()
+
+            /*modScreen.GetElement<UIButton>("backtomain").onInteraction += delegate ()
 			{
 			    base.StandardSwitch(null, "pauseRoot");
 			};*/
-		}
+        }
 
 		//Runs each time the window appears on screen
 		protected override bool DoShow(MenuScreen<PauseMenu> previous)
 		{
-			return true;
+            modScreen.GetElement<UIGFXButton>("destroy").UIName = ModSpawner.Instance.DestroyMessage();
+            modScreen.GetElement<UIVector3>("npcscale").Value = DebugCommands.Instance.resizeEnemiesScale;
+            return true;
 		}
 
 		void ClickedBack()
@@ -798,32 +851,15 @@ public class PauseMenu : EntityOverlayWindow
 		//Runs each time the window appears on screen
 		protected override bool DoShow(MenuScreen<PauseMenu> previous)
 		{
-			modScreen.GetElement<UIListExplorer>("mode").IndexValue = DebugCommands.Instance.fpsmode;
-			UIBigFrame info = modScreen.GetElement<UIBigFrame>("info");
-			switch (DebugCommands.Instance.fpsmode)
-			{
-				case 0:
-					info.UIName = ModText.WrapText(ModText.GetString("pausemenu_camera_default"), 20f);
-					break;
-				case 1:
-					info.UIName = ModText.WrapText(ModText.GetString("pausemenu_camera_firstperson"), 20f);
-					break;
-				case 2:
-					info.UIName = ModText.WrapText(ModText.GetString("pausemenu_camera_thirdperson"), 20f);
-					break;
-				case 3:
-					info.UIName = ModText.WrapText(ModText.GetString("pausemenu_camera_free"), 20f);
-					break;
-				default:
-					break;
-			}
-			modScreen.GetElement<UISlider>("fov").Value = DebugCommands.Instance.cam_fov;
-			modScreen.GetElement<UISlider>("sens").Value = DebugCommands.Instance.cam_sens;
-			modScreen.GetElement<UICheckBox>("lockvert").Value = DebugCommands.Instance.lock_vertical;
-			modScreen.GetElement<UISlider>("wheel").gameObject.SetActive(DebugCommands.Instance.fpsmode == 3);
-			modScreen.GetElement<UISlider>("wheel").Value = DebugCommands.Instance.cam_accel;
+			modScreen.GetElement<UIListExplorer>("mode").IndexValue = ModCamera.Instance.fpsmode;
+			modScreen.GetElement<UIButton>("updatetext").Trigger();
+			modScreen.GetElement<UISlider>("fov").Value = ModCamera.Instance.cam_fov;
+			modScreen.GetElement<UISlider>("sens").Value = ModCamera.Instance.cam_sens;
+			modScreen.GetElement<UICheckBox>("lockvert").Value = ModCamera.Instance.lock_vertical;
+            modScreen.GetElement<UIListExplorer>("unlockplayer").gameObject.SetActive(ModCamera.Instance.fpsmode == 3);
+            modScreen.GetElement<UIListExplorer>("unlockplayer").IndexValue = ModCamera.Instance.cam_fc_unlock_player;
 
-			return true;
+            return true;
 		}
 
 		void ClickedBack()
@@ -839,24 +875,9 @@ public class PauseMenu : EntityOverlayWindow
 
 	class PowerupsScreen : MenuScreen<PauseMenu>
 	{
-		string[] destroyText;
 		UIScreen modScreen;
 		public PowerupsScreen(PauseMenu owner, string root, GuiBindData data) : base(owner, root, data)
 		{
-			destroyText = new string[]
-			{
-			 "Destroy enemies", "Remove enemies", "Erase enemies",
-			 "DESTROY", "Send enemies to\nthe shadow realm", "<i>*snap fingers*</i>",
-			 "Obliterate", "Explodantinate", "<color=red>CONFETTI FOR THE\nCONFETTI GOD</color>",
-			 "Slap 'em", "DYNAMITE!", "Ask the NPCs\nto leave",
-			 "Tell a <i>really</i>\nbad joke", "Outsmart enemies", "<i>*poof*</i>",
-			 "Highlander", "Call the Goddess\nof Explosions", "Find diplomatic\nsolution",
-			 "<size=28>Shawadin-shawadon!\nEnemies are gone!</size>", "Adventurer's glee",
-			 "<size=28>Galactic\nAdventurer Buster</size>", "Confettification",
-			 "what does this\nbutton do?", "Light the fuse", "JUSTICE", "You are all FIRED!",
-			 "<i>Passive</i> agression", "Wish for more\nexplosions",
-			 "<size=28>GETOUTGETOUTGETOUT\nGETOUTGETOUTGETOUT</size>"
-			};
 			modScreen = UIScreen.GetUIScreenComponent(Root);
 			modScreen.BackButton.onInteraction += ClickedBack;
 		}
@@ -887,10 +908,11 @@ public class PauseMenu : EntityOverlayWindow
 			modScreen.GetElement<UICheckBox>("noshake").gameObject.SetActive(DebugCommands.Instance.superAttack);
 			modScreen.GetElement<UISlider>("proj").Value = DebugCommands.Instance.projectile_count;
 			modScreen.GetElement<UIListExplorer>("outfit").IndexValue = ModSaver.LoadFromEnt("outfit");
-			modScreen.GetElement<UIGFXButton>("destroy").UIName = destroyText[UnityEngine.Random.Range(0, destroyText.Length)];
 			modScreen.GetElement<UIVector3>("scale").Value = DebugCommands.Instance.resizeSelfScale;
+            modScreen.GetElement<UICheckBox>("showhud").Value = !DebugCommands.Instance.showHUD;
+            modScreen.GetElement<UISlider>("knockback").Value = DebugCommands.Instance.knockback_multiplier;
 
-			return true;
+            return true;
 		}
 
 		void ClickedBack()
@@ -955,20 +977,20 @@ public class PauseMenu : EntityOverlayWindow
 		//Runs each time the window appears on screen
 		protected override bool DoShow(MenuScreen<PauseMenu> previous)
 		{
-			/*GameObject levelData = GameObject.Find("BaseLevelData");
-			LevelTime timeData = levelData.GetComponent<LevelTime>();
-			LevelTimeUpdater timeFlowData = levelData.transform.Find("TimeStuff").GetComponent<LevelTimeUpdater>();*/
 			LevelTime timer = LevelTime.Instance;
 			float time = Mathf.Repeat(timer.GetTime("currTime") + 12, 24);
 			modScreen.GetElement<UISlider>("tod").Value = time;
-			modScreen.GetElement<UICheckBox>("showhud").Value = !DebugCommands.Instance.showHUD;
-			modScreen.GetElement<UISlider>("knockback").Value = DebugCommands.Instance.knockback_multiplier;
 			modScreen.GetElement<UISlider>("flow").Value = DebugCommands.Instance.timeflow;
-			modScreen.GetElement<UIVector3>("npcscale").Value = DebugCommands.Instance.resizeEnemiesScale;
-			//modScreen.GetElement<UIVector3>("npcscale").Value = DebugCommands.Instance.resizeEnemiesScale;
-			//modScreen.GetElement<UIVector3>("npcscale").Value = DebugCommands.Instance.resizeEnemiesScale;
 
-			return true;
+            float colorSlider;
+            int colorIndex = modScreen.GetElement<UIListExplorer>("skyexplorer").IndexValue;
+            if (colorIndex == 0) colorSlider = CameraSkyColor.Instance.red;
+            else if (colorIndex == 1) colorSlider = CameraSkyColor.Instance.green;
+            else colorSlider = CameraSkyColor.Instance.blue;
+            modScreen.GetElement<UICheckBox>("skybool").Trigger(CameraSkyColor.Instance.UseForceColor);
+            modScreen.GetElement<UISlider>("skyslider").Value = colorSlider;
+
+            return true;
 		}
 
 		void ClickedBack()
@@ -982,8 +1004,47 @@ public class PauseMenu : EntityOverlayWindow
 		}
 	}
 
-	//Info menu
-	class ModInfoScreen : MenuScreen<PauseMenu>
+    //Creative menu
+    class CreativeMenuScreen : MenuScreen<PauseMenu>
+    {
+        UIScreen modScreen;
+        public CreativeMenuScreen(PauseMenu owner, string root, GuiBindData data) : base(owner, root, data)
+        {
+            modScreen = UIScreen.GetUIScreenComponent(Root);
+            modScreen.BackButton.onInteraction += ClickedBack;
+        }
+
+        //Runs each time the window appears on screen
+        protected override bool DoShow(MenuScreen<PauseMenu> previous)
+        {
+            GuiSelectionHandler selectionHandler = TransformUtility.FindInParents<GuiSelectionHandler>(base.Owner.transform);
+            selectionHandler.ListenerToggles(false);
+            selectionHandler.ChangeSelection(null, false);
+            modScreen.GetElement<UIButton>("updatemarkers").Trigger();
+            return true;
+        }
+
+        //Runs each time the window is hidden
+        protected override bool DoHide(MenuScreen<PauseMenu> next)
+        {
+            TransformUtility.FindInParents<GuiSelectionHandler>(base.Owner.transform).ListenerToggles(true);
+            modScreen.GetElement<UIButton>("forceclose").Trigger();
+            return true;
+        }
+
+        void ClickedBack()
+        {
+            if (base.Previous == null)
+            {
+                base.Owner.Hide();
+                return;
+            }
+            base.SwitchToBack();
+        }
+    }
+
+    //Info menu
+    class ModInfoScreen : MenuScreen<PauseMenu>
 	{
 		UIScreen modScreen;
 		public ModInfoScreen(PauseMenu owner, string root, GuiBindData data) : base(owner, root, data)
@@ -1003,8 +1064,36 @@ public class PauseMenu : EntityOverlayWindow
 		}
 	}
 
-	// Added by mod
-	class GameOptions : MenuScreen<PauseMenu>
+    //Randomized keys menu
+    class RandomizedKeysScreen : MenuScreen<PauseMenu>
+    {
+        UIScreen modScreen;
+        public RandomizedKeysScreen(PauseMenu owner, string root, GuiBindData data) : base(owner, root, data)
+        {
+            modScreen = UIScreen.GetUIScreenComponent(Root);
+            modScreen.BackButton.onInteraction += ClickedBack;
+        }
+
+        protected override bool DoShow(MenuScreen<PauseMenu> previous)
+        {
+            // Add UI start values here!
+            ItemRandomizerGM.Instance.UpdateDungeonKeyScreen();
+            return true;
+        }
+
+        void ClickedBack()
+        {
+            if (base.Previous == null)
+            {
+                base.Owner.Hide();
+                return;
+            }
+            base.SwitchToBack();
+        }
+    }
+
+    // Added by mod
+    class GameOptions : MenuScreen<PauseMenu>
 	{
 		UIScreen modScreen;
 		public GameOptions(PauseMenu owner, string root, GuiBindData data) : base(owner, root, data)

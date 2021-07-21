@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
  *		Logic that handles the options in the Game Options menu
  *	Authors:
  *		Chris
- *	TODO:
  *	     Faster transitions
  *	     No delays
  *	     Dark Ogler drop fix

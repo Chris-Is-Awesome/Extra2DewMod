@@ -88,6 +88,11 @@ namespace ModStuff
             rightArrow.transform.localPosition = new Vector3(2f * scaleDistance, 0f, -0.2f);
         }
 
+        public void ScaleTitleBackground(float x)
+        {
+            title.ScaleBackground(new Vector2(0.625f * x, 1f));
+        }
+
         public void Initialize()
         {
             //Set TextMeshes and buttons

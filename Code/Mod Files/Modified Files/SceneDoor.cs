@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using UnityEngine;
 using ModStuff;
-    
+using UnityEngine;
 
 [AddComponentMenu("Ittle 2/Level/Scene door")]
 public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionEventListener, IBC_TriggerExitListener
@@ -218,7 +217,7 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 		FadeEffectData fadeData = this._fadeInData ?? this._fadeData;
 		OverlayFader.OnStartFunc onStartFade = null;
 		OverlayFader.OnDoneFunc startFadeIn = null;
-		startFadeIn = delegate()
+		startFadeIn = delegate ()
 		{
 			startFadeIn = null;
 			if (onStartFade != null)
@@ -258,7 +257,7 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 			}
 			SceneDoor.CheckStartIn(player, targetDoor);
 		};
-		PlayerSpawner.RegisterSpawnListener(delegate(Entity p, GameObject c, PlayerController cont)
+		PlayerSpawner.RegisterSpawnListener(delegate (Entity p, GameObject c, PlayerController cont)
 		{
 			player = p;
 			BC_Collider component = p.GetComponent<BC_Collider>();
@@ -279,7 +278,7 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 			onStartFade = OverlayFader.PrepareFadeOut(fadeData, null);
 			SceneDoor.CheckAndBuild(player, playerCam, refOwner, startFadeIn);
 		});
-		PlayerSpawner.RegisterSpawnDelegation(delegate(PlayerSpawner.DoSpawnFunc func, Vector3 pos, Vector3 dir)
+		PlayerSpawner.RegisterSpawnDelegation(delegate (PlayerSpawner.DoSpawnFunc func, Vector3 pos, Vector3 dir)
 		{
 			onDoSpawn = func;
 			if (!hasFallbackPos)
@@ -287,29 +286,31 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 				defSpawnPos = pos;
 			}
 		});
-		TileMeshRefOwner.RegisterAwakeListener(delegate(TileMeshRefOwner owner)
+		TileMeshRefOwner.RegisterAwakeListener(delegate (TileMeshRefOwner owner)
 		{
 			refOwner = owner;
 			SceneDoor.CheckAndBuild(player, playerCam, refOwner, startFadeIn);
 		});
-		SceneDoor.RegisterListener(wantedDoor, delegate(SceneDoor door)
+		SceneDoor.RegisterListener(wantedDoor, delegate (SceneDoor door)
 		{
 			targetDoor = door;
-			targetDoor.coolDown = 1f;
-			PlayerSpawner.DoSpawnFunc onDoSpawn;
-			if (onDoSpawn != null)
-			{
-				Vector3 pos = targetDoor.transform.TransformPoint(targetDoor._spawnOffset);
-				spawnDir = -targetDoor.transform.forward;
-				onDoSpawn = onDoSpawn;
-				onDoSpawn = null;
-				onDoSpawn(pos, spawnDir);
-			}
+
+			// Game Options: If faster transitions is on, lower cooldown, else set to default
+			ModStuff.Options.GameOptions gameOptions = ModStuff.Options.GameOptions.Instance;
+			if (gameOptions.FastTransitions) targetDoor.coolDown = gameOptions.sceneTransitionTime;
+			else targetDoor.coolDown = 1f;
+
+			if (onDoSpawn == null)
+				return;
+			Vector3 pos = targetDoor.transform.TransformPoint(targetDoor._spawnOffset);
+			spawnDir = -targetDoor.transform.forward;
+			PlayerSpawner.DoSpawnFunc doSpawnFunc = onDoSpawn;
+			onDoSpawn = (PlayerSpawner.DoSpawnFunc)null;
+			doSpawnFunc(pos, spawnDir);
 		});
 		Stopwatch clock = null;
 		LevelLoadListener.RegisterListener(delegate
 		{
-			PlayerSpawner.DoSpawnFunc onDoSpawn;
 			if (onDoSpawn != null)
 			{
 				if (targetDoor == null)
@@ -327,9 +328,9 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 					defSpawnPos = targetDoor.transform.TransformPoint(targetDoor._spawnOffset);
 					spawnDir = -targetDoor.transform.forward;
 				}
-				onDoSpawn = onDoSpawn;
-				onDoSpawn = null;
-				onDoSpawn(defSpawnPos, spawnDir);
+				PlayerSpawner.DoSpawnFunc doSpawnFunc = onDoSpawn;
+				onDoSpawn = (PlayerSpawner.DoSpawnFunc)null;
+				doSpawnFunc(defSpawnPos, spawnDir);
 			}
 			else if (UnityEngine.Object.FindObjectOfType<PlayerSpawner>() == null)
 			{
@@ -354,21 +355,19 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 				clock.ElapsedMilliseconds,
 				" ms"
 			}));
-			TileMeshRefOwner x = UnityEngine.Object.FindObjectOfType<TileMeshRefOwner>();
-			if (x == null && startFadeIn != null)
+			if (UnityEngine.Object.FindObjectOfType<TileMeshRefOwner>() == null && startFadeIn != null)
 			{
 				startFadeIn();
 			}
 		});
 		int prepareCounter = 0;
-		SceneDoor.OnPrepareFunc onPrepareDone = delegate()
+		SceneDoor.OnPrepareFunc onPrepareDone = delegate ()
 		{
-			prepareCounter--;
-			if (prepareCounter <= 0)
-			{
-				clock = Stopwatch.StartNew();
-				Utility.LoadLevel(this._scene);
-			}
+			--prepareCounter;
+			if (prepareCounter > 0)
+				return;
+			clock = Stopwatch.StartNew();
+			Utility.LoadLevel(this._scene);
 		};
 		List<SceneDoor.OnPrepareFunc> list = new List<SceneDoor.OnPrepareFunc>();
 		if (this._saver != null)
@@ -376,7 +375,7 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 			list.Add(delegate
 			{
 				this.SaveStartPos(this._saver, wantedDoor, null);
-				this._saver.SaveAll(true, delegate(bool success, string msg)
+				this._saver.SaveAll(true, delegate (bool success, string msg)
 				{
 					if (!success)
 					{
@@ -394,13 +393,11 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 		if (prepareCounter == 0)
 		{
 			onPrepareDone();
+			return;
 		}
-		else
+		for (int i = 0; i < list.Count; i++)
 		{
-			for (int i = 0; i < list.Count; i++)
-			{
-				list[i]();
-			}
+			list[i]();
 		}
 	}
 
@@ -411,25 +408,25 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 
 	void StartFadeout(RoomSwitchable switcher)
 	{
-		// Dungeon Rush
-		if (ModeControllerNew.IsDungeonRush && ModMaster.GetMapType() == "Dungeon" && DungeonRush.Instance.ReloadDungeon())
+		if (ModeControllerNew.IsDungeonRush && ModMaster.GetMapType("") == "Dungeon" && E2DGameModeSingleton<DungeonRush>.Instance.ReloadDungeon())
 		{
-			_scene = ModMaster.GetMapName();
-			_correspondingDoor = _scene + "Inside";
-
-			if (_scene == "GrandLibrary2" || _scene == "Deep19s") { _correspondingDoor = _scene; }
+			this._scene = ModMaster.GetMapName();
+			this._correspondingDoor = this._scene + "Inside";
+			if (this._scene == "GrandLibrary2" || this._scene == "Deep19s")
+			{
+				this._correspondingDoor = this._scene;
+			}
 		}
-
-		// Dungeon Rush: Reload dungeon if you try to leave it. No escape!
-		ModeController mc = GameObject.Find("ModeController").GetComponent<ModeController>();
-		if (mc.isDungeonRush && ModMaster.GetMapType() == "Dungeon" && mc.dungeonRushManager.CanLoadNextDungeon())
+		ModeController component = GameObject.Find("ModeController").GetComponent<ModeController>();
+		if (component.isDungeonRush && ModMaster.GetMapType("") == "Dungeon" && component.dungeonRushManager.CanLoadNextDungeon())
 		{
-			_scene = ModMaster.GetMapName();
-			_correspondingDoor = _scene + "Inside";
-
-			if (_scene == "GrandLibrary2" || _scene == "Deep19s") { _correspondingDoor = _scene; }
+			this._scene = ModMaster.GetMapName();
+			this._correspondingDoor = this._scene + "Inside";
+			if (this._scene == "GrandLibrary2" || this._scene == "Deep19s")
+			{
+				this._correspondingDoor = this._scene;
+			}
 		}
-
 		Vector3 vector = base.transform.forward;
 		Vector3 vector2 = base.transform.position + vector * this._moveDist;
 		if (switcher != null)
@@ -444,17 +441,22 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 			if (switcher.StartLevelTransition(position, vector2, vector, this._enterAnim))
 			{
 				EffectFactory.Instance.PlayQuickEffect(this._enterEffect, switcher.transform.position, switcher.transform.forward, null);
-				OverlayFader.StartFade(this._fadeData, true, delegate()
+				OverlayFader.StartFade(this._fadeData, true, delegate ()
 				{
 					this.DoLoad();
 				}, new Vector3?(value));
+				return;
 			}
 		}
 		else
 		{
-			OverlayFader.StartFade(this._fadeData, true, delegate()
+			OverlayFader.StartFade(this._fadeData, true, delegate ()
 			{
 				this.DoLoad();
+				if (base.gameObject.name.Contains("Cave"))
+				{
+					PlayerPrefs.SetString("test", this._correspondingDoor.Substring(3));
+				}
 			}, new Vector3?(Vector3.zero));
 		}
 	}
@@ -466,22 +468,25 @@ public class SceneDoor : MonoBehaviour, IBC_TriggerEnterListener, IBC_CollisionE
 
 	void IBC_TriggerEnterListener.OnTriggerEnter(BC_TriggerData other)
 	{
-		if ((!ModOptionsOld.fastTransitions && (this.coolDown > 0f || !this.exited)) || ModOptionsOld.fastTransitions && !exited)
+		bool flag = (!ModOptions.fastTransitions && (this.coolDown > 0f || !this.exited)) || (ModOptions.fastTransitions && !this.exited);
+		if (!flag)
 		{
-			return;
-		}
-		RoomSwitchable component = other.collider.GetComponent<RoomSwitchable>();
-		if (component != null)
-		{
-            //DOOR RANDOMIZER
-            if (DoorsRandomizer.Instance.GetRandomizedDoor(gameObject.name, out string scene, out string door))
-            {
-                _scene = scene;
-                _correspondingDoor = door;
-            }
-            ModSpawner.Instance.EmptySpawnerLists();
-            this.coolDown = 20f;
-		this.StartFadeout(component);
+			RoomSwitchable component = other.collider.GetComponent<RoomSwitchable>();
+			bool flag2 = component != null;
+			if (flag2)
+			{
+				string scene;
+				string correspondingDoor;
+				bool randomizedDoor = Singleton<DoorsRandomizer>.Instance.GetRandomizedDoor(base.gameObject.name, out scene, out correspondingDoor);
+				if (randomizedDoor)
+				{
+					this._scene = scene;
+					this._correspondingDoor = correspondingDoor;
+				}
+				Singleton<ModSpawner>.Instance.EmptySpawnerLists();
+				this.coolDown = 20f;
+				this.StartFadeout(component);
+			}
 		}
 	}
 

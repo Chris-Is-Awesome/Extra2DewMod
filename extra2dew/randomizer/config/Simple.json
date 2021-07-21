@@ -1,0 +1,65 @@
+{
+	"info": "An easy randomization setting.\nMain and secret dungeons\nare randomized.\nSecret Dungeons start opened\nand caves have goodies",
+	"globalTags": ["NO_DKEYS_LOGIC"],
+	"initialItems": ["24Shards", "SecretKey", "SecretKey", "SecretKey"],
+	"itemGroups": [
+		{"groupName": "Outfit", "items": [
+			"SuitSwim",
+			"SuitJenny",
+			"SuitTippsie",
+			"SuitIttleOriginal",
+			"SuitArmor",
+			"SuitCard",
+			"SuitDelinquent"
+		]},
+		{"groupName": "EXTRA", "items": [
+			"Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons",
+			"Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick",
+			"Tracker", "Tracker", "Tracker", "Tracker", "Tracker", "Tracker", "Tracker", "Tracker",
+			"Headband", "Headband", "Headband", "Headband", "Headband",
+			"Amulet", "Amulet", "Amulet", "Amulet", "Amulet",
+			"Tome", "Tome", "Tome", "Tome", "Tome",
+			"Chain", "Chain", "Chain", "Chain",
+			"IceRing",
+			"ForceWand",
+			"Dynamite",
+			"Outfit", "Outfit", "Outfit", "Outfit",
+			"YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart"
+		]}
+	],
+	"pools": [
+		{
+			"name": "Vanilla Items",
+			"tags": ["DREAM_WORLD", "DUNGEON_KEYS", "ITEM_RaftPiece", "SCENE_GrandLibrary2", "SCENE_TombOfSimulacrum", "VANILLA"],
+			"defaultItems": [],
+			"itemsList": []
+		},
+		{
+			"name": "Dungeon Items",
+			"tags": ["DUNGEONS", "SECRET_DUNGEONS"],
+			"defaultItems": ["Nothing"],
+			"allShuffles": [{"start": 0, "end": 26}],
+			"itemsList": 
+			[
+				"ForceWand", "ForceWand",
+				"Dynamite", "Dynamite",
+				"StickLvl",
+				"IceRing", "IceRing",
+				"Chain",
+				"StickLvl",
+				"Tracker",
+				"Headband",
+				"Amulet",
+				"Tome",
+				"Outfit", "Outfit", "Outfit",
+				"Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons"
+			]
+		},
+		{
+			"name": "Cave Bonuses",
+			"tags": ["CAVES", "PORTAL_WORLDS"],
+			"defaultItems": ["EXTRA"],
+			"itemsList": []
+		}
+	]
+}

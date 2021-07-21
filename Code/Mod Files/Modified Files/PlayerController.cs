@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using ModStuff;
 
 public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPauseListener
 {
@@ -101,7 +102,10 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 	{
 	}
 
-	protected override UpdatableLayer GetUpdatableLayer ()
+    public bool AllowStick { get; set; } = true;
+    public bool AllowRoll { get; set; } = true;
+
+    protected override UpdatableLayer GetUpdatableLayer ()
 	{
 		return this._updateLayer;
 	}
@@ -262,7 +266,7 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 		}
 
 		//If in fpsmode, use fpsmode movement keys, otherwise use vanilla ones
-		if (fpsmode)
+		if (fpsControls)
 		{
 			vector.x = (Input.GetKey(fps_right) ? 1f : 0f) - (Input.GetKey(fps_left) ? 1f : 0f);
 			vector.y = (Input.GetKey(fps_forward) ? 1f : 0f) - (Input.GetKey(fps_backward) ? 1f : 0f);
@@ -358,6 +362,7 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 
 	private void UpdateRoll (Vector3 V)
 	{
+        if (!AllowRoll) return;
 		if (this.CheckButtonDown(this._rollButton) && V.sqrMagnitude > 0.001f)
 		{
 			EntityAction.ActionData freeData = this.GetFreeData();
@@ -409,24 +414,14 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 			return;
 		}
 
-		//Check keybind and find debugger
-		if (commands != null)
-		{
-			commands.CheckCustomKeys();
-		}
-		else
-		{
-			if (GameObject.Find("Debugger") != null) { commands = GameObject.Find("Debugger").GetComponent<DebugCommands>(); }
-		}
-		//Pan camera if fpsmode is on, then move if if freecam is on
-		if (fpsmode)
-		{
-			CameraPan();
-			if (freecam)
-			{
-				FreeCamMove();
-				return;
-			}
+        //Check keybind
+        DebugCommands.Instance.CheckCustomKeys();
+
+		//Pan camera if fpsmode is on, then move if freecam is on
+		if (nonDefaultCamera)
+        {
+			ModCamera.Instance.ModCamUpdate();
+            if (lockPlayer) return;
 		}
 
 		Vector3 zero = Vector3.zero;
@@ -434,7 +429,7 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 
 		if (this.GetMoveDir(out vector))
 		{
-			if (fpsmode) { vector = RotByDegrees(vector, -cameraRotation.y); } //If fpsmode, rotate vector to facing direction
+			if (fpsControls) { vector = ModCamera.RotByDegrees(vector, -ModCamera.Instance.cameraRotation.y); } //If fpsmode, rotate vector to facing direction
 			zero = new Vector3(vector.x, 0f, vector.y);
 			if (vector.magnitude < 0.0625f)
 			{
@@ -486,7 +481,7 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 		}
 
 		//In fpsmode, fire actions using left mouse button, otherwise use vanilla code 
-		if (fpsmode)
+		if (fpsControls)
 		{
 			// Check if a new weapon was selected
 			for (int j = 0; j < this.weapon_buttons.Length; j++)
@@ -505,11 +500,7 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 			if (Input.mouseScrollDelta.y < 0 || Input.mouseScrollDelta.y > 0)
 			{
 				int scrollDirection = (Input.mouseScrollDelta.y < 0 ? 1 : -1);
-				if (Input.GetKey(KeyCode.Mouse1) && thirdperson)
-				{
-					camTargetDistance = Mathf.Clamp(camTargetDistance - scrollDirection * 0.4f, -25f, -0.5f);
-				}
-				else
+				if (!(Input.GetKey(KeyCode.Mouse1) && thirdperson))
 				{
 					int new_weapon = active_weapon;
 					for (int i = 0; i < weapon_buttons.Length; i++)
@@ -529,11 +520,12 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 			}
 
 			//Check if mouse button has been pressed
-			if (CheckButtonDown(mouseClick))
+            //If the stick is disallowed and the active weapons is the stick (0), cancel
+			if (CheckButtonDown(mouseClick) && !(active_weapon == 0 && !AllowStick))
 			{
 				EntityAction.ActionData freeData = GetFreeData();
 				//Change attack direction
-				freeData.dir = (thirdperson ? zero : PlayerDirectionToVector3());
+				freeData.dir = (attackFromCamera ? ModCamera.Instance.PlayerDirectionToVector3() : zero);
 				//freeData.dir.y = -Mathf.Sin(cameraRotation.y * 0.0174532924f); //Enable for 3D projectiles!
 				AttackAction attack = _player.GetAttack(_attacks[order_switch[active_weapon]].attackName);
 				if (attack != null && _player.Attack(_attacks[order_switch[active_weapon]].attackName, freeData) && attack.IsReleasable())
@@ -545,8 +537,9 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 		else
 		{
 			for (int j = 0; j < this._attacks.Length; j++)
-			{
-				if (this.CheckButtonDown(this._attacks[j].button))
+            {
+                //If the stick is disallowed and the active weapons is the stick (0), cancel
+                if (this.CheckButtonDown(this._attacks[j].button) && !(j == 0 && !AllowStick))
 				{
 					EntityAction.ActionData freeData = this.GetFreeData();
 					freeData.dir = zero;
@@ -569,7 +562,7 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 
 	void IPauseListener.PauseChanged (bool pause)
 	{
-		if (pause && this._player != null)
+        if (pause && this._player != null)
 		{
 			this._player.StopMoving();
 			for (int i = this.releaseActions.Count - 1; i >= 0; i--)
@@ -585,31 +578,13 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 	//Start of Mod code
 	//====================================================================================
 	//Main bool variables
-	private bool fpsmode;
-	private bool thirdperson;
-	private bool freecam;
-	private bool hideHead;
-
-	//References
-	private DebugCommands commands;
-
-	//Camera transforms
-	public Vector3 cameraRotation;
-	public Vector3 cameraPosition;
-
-	//Mouse calibration
-	private bool centerfound;
-	private int center_counter;
-	private Vector3 oldPosition;
-	private Vector3 screencenter;
-
-	//Transforms
-	private Transform ittle_head;
-	private Transform playerTransform;
-	private Transform playerMesh;
-	private Transform mainCamera;
-	private Transform outlineCamera;
-	private Transform audioListener;
+    bool nonDefaultCamera;
+    bool ittleUsesCameraRot;
+    bool lockPlayer;
+    bool attackFromCamera;
+    bool fpsControls;
+    bool thirdperson;
+	bool freecam;
 
 	//Weapon switching
 	private GameObject[] hud_elements;
@@ -620,25 +595,15 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 	private int[] order_switch;
 
 	//Control keys and variables
-	private InputButton mouseClick;
-	private KeyCode[] weapon_buttons;
-	private KeyCode fps_right;
-	private KeyCode fps_left;
-	private KeyCode fps_forward;
-	private KeyCode fps_backward;
-
-	//Extra controls
-	public float mouse_sensitivity;
-	public bool lock_y_axis;
-	public float flyingSpeed;
-	public float flyingAccel;
-
-	//Third person variables
-	private float camTargetDistance;
-	private float camDistance;
-	private AnimationCurve zoomInCurve;
+	InputButton mouseClick;
+	public KeyCode[] weapon_buttons;
+    public KeyCode fps_right;
+    public KeyCode fps_left;
+    public KeyCode fps_forward;
+    public KeyCode fps_backward;
 
 	//Setup fpsmode
+    //what do I do with you my child?
 	public void SetupFPSMode (int mode)
 	{
 		//Configure HUD scale vectors
@@ -649,205 +614,97 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 			//Default mode
 			case 0:
 				Cursor.visible = true;
-				hideHead = false;
-				fpsmode = false;
-				freecam = false;
+                nonDefaultCamera = false;
+                fpsControls = false;
+                freecam = false;
 				thirdperson = false;
+                ittleUsesCameraRot = false;
+                lockPlayer = false;
+                attackFromCamera = false;
 				break;
 			//First person mode
 			case 1:
-				hideHead = true;
-				fpsmode = true;
-				freecam = false;
+                nonDefaultCamera = true;
+                fpsControls = true;
+                freecam = false;
 				thirdperson = false;
-				break;
+                ittleUsesCameraRot = true;
+                lockPlayer = false;
+                attackFromCamera = true;
+                break;
 			//Third person mode
 			case 2:
-				fpsmode = true;
-				hideHead = false;
+                nonDefaultCamera = true;
+                fpsControls = true;
 				freecam = false;
 				thirdperson = true;
-				camDistance = -5f;
-				camTargetDistance = camDistance;
+                ittleUsesCameraRot = false;
+                lockPlayer = false;
+                attackFromCamera = false;
                 break;
 			//Free mode
 			case 3:
-				fpsmode = true;
-				hideHead = false;
+                nonDefaultCamera = true;
+                fpsControls = false;
 				freecam = true;
-				thirdperson = true;
-				cameraPosition.y += 1f;
-				flyingSpeed = 0.2f;
+				thirdperson = false;
+                ittleUsesCameraRot = false;
+                lockPlayer = true;
+                attackFromCamera = false;
 				break;
 			default:
 				break;
 		}
-		if (mode > 0)
+
+		//If hud_sounds is not set, set all variables for the script
+		if (hud_sounds == null)
 		{
-			//If hud_sounds is not set, set all variables for the script
-			if (hud_sounds == null)
+			//Configure HUD sounds
+			hud_sounds = new SoundClip[3];
+			foreach (SoundClip sound in Resources.FindObjectsOfTypeAll(typeof(SoundClip)))
 			{
-				//Configure HUD sounds
-				hud_sounds = new SoundClip[3];
-				foreach (SoundClip sound in Resources.FindObjectsOfTypeAll(typeof(SoundClip)))
-				{
-					if (sound.RawSoundName == "Menu_Buttons_Forward") { hud_sounds[0] = sound; }
-					if (sound.RawSoundName == "Menu_Buttons_Back") { hud_sounds[1] = sound; }
-					if (sound.RawSoundName == "Menu_Buttons_Browse") { hud_sounds[2] = sound; }
-				}
-				//Change the weapon order to stick/forcewand/dynamite/icering
-				order_switch = new int[] { 0, 1, 3, 2 };
-				//Configure mouse click button
-				mouseClick = new InputButton();
-				mouseClick.AddKey(KeyCode.Mouse0);
-				//Configure transforms
-				playerTransform = _player.RealTransform;
-				playerMesh = playerTransform.Find("Ittle");
-				ittle_head = playerMesh.Find("ittle").Find("Armature").Find("root").Find("chest").Find("head"); ;
-				//Find camera GameObject
-				mainCamera = GameObject.Find("Main Camera").transform;
-				outlineCamera = GameObject.Find("OutlineCamera").transform;
-				audioListener = GameObject.Find("Main Camera").transform.GetChild(0);
-                //Configure animation curves
-                zoomInCurve = AnimationCurve.EaseInOut(0f, 0.5f, 10f, 1.5f);
-				zoomInCurve.preWrapMode = WrapMode.ClampForever;
-				zoomInCurve.postWrapMode = WrapMode.ClampForever;
+				if (sound.RawSoundName == "Menu_Buttons_Forward") { hud_sounds[0] = sound; }
+				if (sound.RawSoundName == "Menu_Buttons_Back") { hud_sounds[1] = sound; }
+				if (sound.RawSoundName == "Menu_Buttons_Browse") { hud_sounds[2] = sound; }
 			}
-            //If third mode, set the camera
-            if (mode == 2) { UpdateThirdPersonCameraPosition(); }
-            //Reset mouse calibration
-            center_counter = 0;
-			centerfound = false;
-			//Set initial rotation and position for the camera
-			cameraRotation = new Vector3(((thirdperson && !freecam) ? 45f : 0f), playerTransform.localRotation.eulerAngles.y, 0f);
-			cameraPosition = new Vector3(playerTransform.position.x,
-										 playerTransform.position.y + playerMesh.localScale.y * (thirdperson ? 1.40f : 1.05f),
-										 playerTransform.position.z);
+			//Change the weapon order to stick/forcewand/dynamite/icering
+			order_switch = new int[] { 0, 1, 3, 2 };
+			//Configure mouse click button
+			mouseClick = new InputButton();
+			mouseClick.AddKey(KeyCode.Mouse0);
 		}
 		RefreshHud();
 	}
 
-	//Control the camera rotation and position
-	private void CameraPan ()
-	{
-		//Lock and unlock the mouse, check how much the mouse moved in a frame and
-		//Use it as the mouse axis
-		Cursor.visible = false;
-		Vector3 newPosition = Input.mousePosition;
-		Cursor.lockState = CursorLockMode.Locked;
-		Cursor.lockState = CursorLockMode.None;
-		//Calibration code. If the mouse stays in the same place for 5 frames, take its current
-		//position as the middle of the screen
-		if (!centerfound)
-		{
-			if (newPosition == oldPosition)
-			{
-				center_counter++;
-				if (center_counter >= 5)
-				{
-					centerfound = true;
-					screencenter = newPosition;
-				}
-			}
-			else
-			{
-				center_counter = 0;
-				oldPosition = newPosition;
-			}
-			return;
-		}
-
-		//Calculate mouse axis
-		Vector3 deltaPosition = newPosition - screencenter;
-		cameraRotation.y += Time.deltaTime * mouse_sensitivity * deltaPosition.x;
-		//If vertical axis is not locked, update it
-		if (!lock_y_axis) { cameraRotation.x = Mathf.Clamp(cameraRotation.x - mouse_sensitivity * Time.deltaTime * deltaPosition.y, -90f, +90f); }
-		//If third person mode isn't selected (used in third person and free), make the player turn to the camera's direction
-		if (!thirdperson)
-		{
-			_player.TurnTo(cameraRotation.y, 0f);
-		}
-		else if (camTargetDistance != camDistance)
-		{
-			//Damp the third person camera zoom in/out
-			float deltaDistance = camTargetDistance - camDistance;
-			camDistance = camDistance + Mathf.Sign(deltaDistance) * zoomInCurve.Evaluate(Mathf.Abs(deltaDistance)) * 0.15f;
-			if (Math.Abs(camDistance - camTargetDistance) < 0.05) { camDistance = camTargetDistance; }
-            UpdateThirdPersonCameraPosition();
-        }
-
-		//If the camera is not free, update its position to the player
-		if (!freecam)
-		{
-			cameraPosition = new Vector3(playerTransform.position.x,
-										 playerTransform.position.y + playerMesh.localScale.y * (thirdperson ? 1.40f : 1.05f),
-										 playerTransform.position.z);
-		}
-	}
-
-    void UpdateThirdPersonCameraPosition()
+    //Free camera movement
+    public void FreeCamPlayerMovement(int mode)
     {
-        mainCamera.localPosition = new Vector3(0f, -0.5f, camDistance);
-        outlineCamera.localPosition = mainCamera.localPosition;
-        audioListener.localPosition = new Vector3(0f, 0f, -camDistance);
+		if (freecam)
+        {
+			switch (mode)
+            {
+                case 0:
+                case 3:
+                    fpsControls = false;
+                    lockPlayer = true;
+					break;
+                case 1:
+                    fpsControls = true;
+                    lockPlayer = false;
+                    break;
+                case 2:
+                    fpsControls = false;
+                    lockPlayer = false;
+					break;
+                default:
+                    break;
+            }
+            RefreshHud();
+        }
     }
 
-	//Free camera movement
-	private void FreeCamMove ()
-	{
-		//Check if the scroll wheel moved
-		if (Input.mouseScrollDelta.y < 0 || Input.mouseScrollDelta.y > 0)
-		{
-			float speedchange = (Input.mouseScrollDelta.y > 0f ? 1f : -1f);
-			flyingSpeed = Mathf.Clamp(flyingSpeed + flyingAccel * speedchange, 0f, 10f);
-		}
-
-		//Check the movement direction with the keys
-		Vector2 vector;
-		vector.x = (Input.GetKey(fps_right) ? 1f : 0f) - (Input.GetKey(fps_left) ? 1f : 0f);
-		vector.y = (Input.GetKey(fps_forward) ? 1f : 0f) - (Input.GetKey(fps_backward) ? 1f : 0f);
-
-		//This is the vector pointing in the camera direction
-		Vector3 movementdirection = new Vector3
-		(
-			Mathf.Cos(cameraRotation.x * 0.0174532924f) * Mathf.Sin(cameraRotation.y * 0.0174532924f),
-			-Mathf.Sin(cameraRotation.x * 0.0174532924f),
-			Mathf.Cos(cameraRotation.x * 0.0174532924f) * Mathf.Cos(cameraRotation.y * 0.0174532924f)
-		);
-		//Set the direction (positive goes forward, negative backward
-		movementdirection *= vector.y;
-
-		//Remove y component of keys vector and rotate it according to the camera direction
-		vector.y = 0f;
-		vector = RotByDegrees(vector, -cameraRotation.y);
-		movementdirection.x += vector.x;
-		movementdirection.z += vector.y;
-
-		//Move
-		cameraPosition += movementdirection * flyingSpeed;
-	}
-
-
-	//Rotate Vector2
-	private Vector2 RotByDegrees (Vector2 v, float degrees)
-	{
-		float num = Mathf.Sin(degrees * 0.0174532924f);
-		float num2 = Mathf.Cos(degrees * 0.0174532924f);
-		float x = v.x;
-		float y = v.y;
-		v.x = num2 * x - num * y;
-		v.y = num * x + num2 * y;
-		return v;
-	}
-
-	//Converts the facing_direction variables to a Vector3 variable
-	private Vector3 PlayerDirectionToVector3 ()
-	{
-		return new Vector3(Mathf.Sin(cameraRotation.y * 0.0174532924f), 0f, Mathf.Cos(cameraRotation.y * 0.0174532924f));
-	}
-
-	//Refresh weapons on hud
-	private void RefreshHud ()
+    //Refresh weapons on hud
+    void RefreshHud ()
 	{
 		//If hud elements is not set, set it. If it failed, exit
 		if (hud_elements == null)
@@ -862,27 +719,8 @@ public class PlayerController : ControllerBase, IUpdatable, IBaseUpdateable, IPa
 		}
 		for (int i = 0; i < hud_elements.Length; i++)
 		{
-			hud_elements[i].transform.GetChild(0).localScale = (fpsmode && (i != active_weapon)) ? hud_unselected : hud_default;
+			hud_elements[i].transform.GetChild(0).localScale = (fpsControls && (i != active_weapon)) ? hud_unselected : hud_default;
 		}
-	}
-
-	//Setup rotation key, this honestly could be inside debugcommands
-	public void SetFpsControls (string[] controls)
-	{
-		fps_forward = (KeyCode)Enum.Parse(typeof(KeyCode), controls[0]);
-		fps_backward = (KeyCode)Enum.Parse(typeof(KeyCode), controls[1]);
-		fps_left = (KeyCode)Enum.Parse(typeof(KeyCode), controls[2]);
-		fps_right = (KeyCode)Enum.Parse(typeof(KeyCode), controls[3]);
-		weapon_buttons = new KeyCode[] {(KeyCode)Enum.Parse(typeof(KeyCode), controls[4]),
-										(KeyCode)Enum.Parse(typeof(KeyCode), controls[5]),
-										(KeyCode)Enum.Parse(typeof(KeyCode), controls[6]),
-										(KeyCode)Enum.Parse(typeof(KeyCode), controls[7])};
-	}
-
-	//Change ittle's head size change for fps mode
-	private void LateUpdate ()
-	{
-		if (hideHead) { ittle_head.localScale = Vector3.zero; }
 	}
 
 }

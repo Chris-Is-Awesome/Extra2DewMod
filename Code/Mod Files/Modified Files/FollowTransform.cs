@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using ModStuff;
 
 public class FollowTransform : CameraBehaviour
 {
@@ -169,17 +170,15 @@ public class FollowTransform : CameraBehaviour
 
 	//Mod code
 	private Boolean fpsmode;
-	private PlayerController playerController;
 
 	public void SetupFPSMode (Boolean mode)
 	{
-		if (playerController == null) { playerController = GameObject.Find("PlayerController").GetComponent<PlayerController>(); }
 		fpsmode = mode;
 	}
 
 	private void FPSDoLateUpdate ()
 	{
-		myTrans.localEulerAngles = playerController.cameraRotation;
-		myTrans.position = playerController.cameraPosition;
+		myTrans.localEulerAngles = ModCamera.Instance.cameraRotation;
+		myTrans.position = ModCamera.Instance.cameraPosition;
 	}
 }

@@ -1,68 +1,105 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.IO;
+using System.Collections.Generic;
 
 namespace ModStuff
 {
-	public class HeartRush : Singleton<HeartRush>, IModeFuncs
+    //Add somewhere later
+    /*
+        // Setup BossRush & DungeonRush
+    if (mc.isBossRush || mc.isDungeonRush)
+    {
+	    ModMaster.SetNewGameData("settings/hideCutscenes", "1", realDataSaver);
+	    ModMaster.SetNewGameData("settings/showTime", "1", realDataSaver);
+    }
+    
+    */
+
+    public class HeartRush : E2DGameModeSingleton<HeartRush>
 	{
+        void Awake()
+        {
+            Mode = ModeControllerNew.ModeType.HeartRush;
+            Title = "Heart Rush";
+            QuickDescription = "Damage reduces your maximum HP. The save file is deleted after getting defeated.";
+            Description = "You start with a lot of HP, but every hit you take reduces your maximum HP. Getting a crayon adds some to your max HP. Run out of HP and it's game over!";
+            FileNames = new List<string> { "hearts", "heartrush", "heart rush" };
+            Restrictions = new List<ModeControllerNew.ModeType>();
+        }
+
 		Killable playerHp;
 
 		// HP: 1 heart = 4
 		public float startingHp = 120f;
 		float hpToAddFromCrayon = 16f;
 		public bool isDead = false;
-		int difficulty = -1;
 
-		public void Initialize(bool activate, RealDataSaver saver = null, int _difficulty = -1)
+        int[] initialHPArray = new int[] { 6 * 120, 3 * 120, 2 * 120, 120, 60, 30, 1 };
+        int initialHPDifficulty;
+        public int InitialHP { get { return initialHPArray[initialHPDifficulty]; } }
+
+        override public void SetupSaveFile(RealDataSaver saver)
 		{
-			if (activate && saver != null)
-			{
-				string hp = startingHp.ToString();
+            if (saver == null) return;
 
-				// Save data to file
-				ModSaverNew.SaveToNewSaveFile("start/level", "FluffyFields", saver);
-				ModSaverNew.SaveToNewSaveFile("start/door", "", saver);
-				ModSaverNew.SaveToNewSaveFile("player/maxHp", hp, saver);
-				ModSaverNew.SaveToNewSaveFile("player/hp", hp, saver);
-				ModSaverNew.SaveToNewSaveFile("player/vars/easyMode", "0", saver);
-				ModSaverNew.SaveToNewSaveFile("settings/easyMode", "0", saver);
-				ModSaverNew.SaveToNewSaveFile("settings/hideCutscenes", "1", saver);
-				ModSaverNew.SaveToNewSaveFile("settings/showTIme", "0", saver);
-				ModSaverNew.SaveToNewSaveFile("settings/hideMapHints", "0", saver);
+			// Save data to file
+			ModSaverNew.SaveToNewSaveFile("player/vars/easyMode", "0", saver);
+			ModSaverNew.SaveToNewSaveFile("settings/easyMode", "0", saver);
+			ModSaverNew.SaveToNewSaveFile("settings/hideCutscenes", "1", saver);
+			ModSaverNew.SaveToNewSaveFile("settings/showTIme", "0", saver);
+			ModSaverNew.SaveToNewSaveFile("settings/hideMapHints", "0", saver);
 
-				difficulty = _difficulty;
+            ModMaster.SetNewGameData("player/maxHp", InitialHP.ToString(), saver);
+            ModMaster.SetNewGameData("player/hp", InitialHP.ToString(), saver);
 
-				Activate();
-			}
+            //If the most difficult option was selected, switch to frog mode
+            if (initialHPDifficulty == initialHPArray.Length - 1)
+            {
+                ModMaster.SetNewGameData("player/vars/danger", "1", saver);
+                ModMaster.SetNewGameData("player/vars/outfit", "8", saver);
+            }
+
+            Activate();
 		}
 
-		public void Activate()
+		override public void Activate()
 		{
-			// Set difficulty
-			if (difficulty < 0)
-			{
-				string className = GetType().ToString().Split('.')[1];
-				string value = ModSaverNew.LoadFromSaveFile("mod/modes/active/" + className + "/difficulty");
-
-				if (!string.IsNullOrEmpty(value)) difficulty = int.Parse(value);
-			}
-
 			// Subscribe to events
 			GameStateNew.OnDamageDone += OnDamageTaken;
 			GameStateNew.OnItemGot += OnItemGet;
 			GameStateNew.OnPlayerDeath += OnPlayerDeath;
-		}
+            IsActive = true;
+        }
 
-		public void Deactivate()
+        override public void Deactivate()
 		{
 			// Unsubscribe from events
 			GameStateNew.OnDamageDone -= OnDamageTaken;
 			GameStateNew.OnItemGot -= OnItemGet;
 			GameStateNew.OnPlayerDeath -= OnPlayerDeath;
-		}
+            IsActive = false;
+        }
 
-		void OnDamageTaken(float dmg, Entity toEnt)
+        public override void CreateOptions()
+        {
+            GameObject output = new GameObject();
+
+            //Heart rush difficulty
+            UIListExplorer hsDifficulty = UIFactory.Instance.CreateListExplorer(0, 0f, output.transform, "Difficulty");
+            hsDifficulty.ScaleTitleBackground(1.6f);
+            hsDifficulty.ExplorerArray = new string[] { "I cannot see", "Very easy", "Easy", "Default", "Hard", "Very Hard", "ReallyJoel's Dad" };
+            hsDifficulty.IndexValue = 3;
+            initialHPDifficulty = 3;
+            hsDifficulty.onInteraction += delegate (bool rightarrow, string text, int index)
+            {
+                initialHPDifficulty = index;
+            };
+
+            MenuGo = output;
+        }
+
+        void OnDamageTaken(float dmg, Entity toEnt)
 		{
 			if (playerHp == null) { playerHp = ModMaster.GetEntComp<Killable>("PlayerEnt"); }
 
@@ -111,3 +148,4 @@ namespace ModStuff
 		}
 	}
 }
+ 

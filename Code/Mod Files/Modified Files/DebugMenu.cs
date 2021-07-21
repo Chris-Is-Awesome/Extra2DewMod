@@ -62,29 +62,29 @@ public class DebugMenu : MonoBehaviour
 
 	int currPrevPos = 0;
 
+    public UIScrollBar scrollBar;
+
 	void Setup ()
 	{
 		this.pauseOverlay = GameObject.Find("PauseOverlay");
 		this.commands = GameObject.Find("Debugger").GetComponent<DebugCommands>();
-		this.PrettyUI();
-		GuiBindInData inData = new GuiBindInData(null, null);
+
+        GuiBindInData inData = new GuiBindInData(null, null);
 		GuiBindData guiBindData = GuiNode.Connect(this._layout, inData);
 		this.menuRoot = guiBindData.GetTracker<GuiWindow>("debugRoot");
 		guiBindData.GetTrackerEvent<IGuiOnclick>("debug.done").onclick = new GuiNode.OnVoidFunc(this.ClickedDone);
 		guiBindData.GetTrackerEvent<IGuiOnclick>("debug.back").onclick = new GuiNode.OnVoidFunc(this.ClickedCancel);
-		GuiContentData guiContentData = new GuiContentData();
-		guiContentData.SetValue("version", this.versionCredit);
+
+        GuiContentData guiContentData = new GuiContentData();
+		guiContentData.SetValue("version", "");
 		this.menuRoot.ApplyContent(guiContentData, true);
-		TextMesh component = this.pauseOverlay.transform.Find("Pause").Find("Debug").Find("Title").Find("Text").GetComponent<TextMesh>();
-		component.text = "Extra 2 Dew (" + ModVersion.GetModVersion() + ")";
-		TextMesh component2 = this.pauseOverlay.transform.Find("Pause").Find("Debug").Find("Version").GetComponent<TextMesh>();
-		component2.text = "\n\n\n" + this.versionCredit;
-		this.PrettyTextMesh(component, Color.black, TextAlignment.Center, 35, FontStyle.Normal, 0f);
-		this.PrettyTextMesh(component2, Color.cyan, TextAlignment.Center, 25, FontStyle.Italic, 0f);
-		UpdateOutput("                     Welcome to the Extra 2 Dew Debug menu!\n\n" +
-				    ModStuff.ModMaster.GetDebugMenuHelp() +
-				   "Enter 'help' to see the command list.");
-	}
+
+        //Preetify
+        PrettyUI();
+
+        //Initialize
+        OutputText(ModText.Instance.GetText());
+    }
 
 	void Start ()
 	{
@@ -149,7 +149,7 @@ public class DebugMenu : MonoBehaviour
 	void MoveCurrCom (int dir)
 	{
 		currPrevPos = Mathf.Clamp(currPrevPos + dir, 0, commands.prevComs.Count);
-		if (currPrevPos == commands.prevComs.Count)
+        if (currPrevPos == commands.prevComs.Count)
 		{
 			currentText = "";
 		}
@@ -157,8 +157,10 @@ public class DebugMenu : MonoBehaviour
 		{
 			currentText = commands.prevComs[currPrevPos];
 		}
-		currentCursorPos = currentText.Length;
-		UpdateValue(true);
+        currentCursorPos = currentText.Length;
+        textScrollPos = currentCursorPos - MAX_PROMPT_LENGTH;
+        if (textScrollPos < 0) textScrollPos = 0;
+        UpdateValue(true);
 	}
 
 	void GotKeyDir (Vector2 dir, bool repeat)
@@ -181,14 +183,29 @@ public class DebugMenu : MonoBehaviour
 	{
 		GuiContentData guiContentData = new GuiContentData();
 		this.hasCaret = false;
+        ScrollText();
+        string textToShow = "";
+        int caretPosition = currentCursorPos - textScrollPos;
+        if (!string.IsNullOrEmpty(currentText))
+        {
+            int maxPos = textScrollPos + MAX_PROMPT_LENGTH;
+            if (maxPos < currentText.Length)
+            {
+                textToShow = currentText.Substring(textScrollPos, MAX_PROMPT_LENGTH);
+            }
+            else
+            {
+                textToShow = currentText.Substring(textScrollPos);
+            }
+        }
 		if (withCaret)
 		{
-			guiContentData.SetValue("currentValue", this.currentText.Insert(currentCursorPos, "|"));
+			guiContentData.SetValue("currentValue", textToShow.Insert(caretPosition, "|"));
 			this.hasCaret = true;
 		}
 		else
 		{
-			guiContentData.SetValue("currentValue", this.currentText);
+			guiContentData.SetValue("currentValue", textToShow);
 		}
 		this.menuRoot.ApplyContent(guiContentData, true);
 		this.blinkTimer = this._blinkTime;
@@ -306,50 +323,7 @@ public class DebugMenu : MonoBehaviour
 		this.ClearListeners();
 	}
 
-	public void UpdateOutput (string text)
-	{
-		if (string.IsNullOrEmpty(text))
-		{
-			return;
-		}
-		if (text.Contains("\n"))
-		{
-			string str = "";
-			for (int i = 0; i < text.Length; i++)
-			{
-				if (text[i] == '\n')
-				{
-					str += "\n";
-				}
-			}
-			text = str + text;
-		}
-		TextMesh component = this.pauseOverlay.transform.Find("Pause").Find("Debug").Find("InfoValue").Find("Text").GetComponent<TextMesh>();
-		if (text.ToLower().Contains("error") || text.ToLower().Contains("unknown command"))
-		{
-			if (text.Length >= 200)
-			{
-				Color color = new Color(0.8f, 0f, 0f);
-				this.PrettyTextMesh(component, color, TextAlignment.Left, 15, FontStyle.Normal, 0f);
-			}
-			else
-			{
-				this.PrettyTextMesh(component, Color.red, TextAlignment.Left, 25, FontStyle.Normal, 0f);
-			}
-		}
-		else if (text.ToLower().Contains("warning") || text.ToLower().Contains("caution"))
-		{
-			Color color = new Color(1f, 0.75f, 0.1f);
-			this.PrettyTextMesh(component, color, TextAlignment.Left, 25, FontStyle.Normal, 0f);
-		}
-		else if (!text.ToLower().Contains("error") && !text.ToLower().Contains("unknown command") && !text.ToLower().Contains("warning") && !text.ToLower().Contains("caution"))
-		{
-			this.PrettyTextMesh(component, Color.black, TextAlignment.Left, 25, FontStyle.Normal, 0f);
-		}
-		this.OutputText(text);
-	}
-
-	void OutputText (string info)
+	public void OutputText (string info)
 	{
 		GuiContentData guiContentData = new GuiContentData();
 		guiContentData.SetValue("currentInfo", info);
@@ -413,6 +387,7 @@ public class DebugMenu : MonoBehaviour
 			commands.prevComs = new List<string>();
 			currentCursorPos = 0;
 			currPrevPos = 0;
+            ModText.Instance.ClearConsole();
 			UpdateValue(true);
 		}
 		if (Input.GetKey(KeyCode.Home) || Input.GetKey(KeyCode.End) || Input.GetKey(KeyCode.Delete))
@@ -436,6 +411,8 @@ public class DebugMenu : MonoBehaviour
 		UpdateValue(true);
 	}
 
+    int textScrollPos;
+    const int MAX_PROMPT_LENGTH = 38;
 	void UpdateCursorPos (int posChange)
 	{
 		if (posChange > 0)
@@ -446,32 +423,83 @@ public class DebugMenu : MonoBehaviour
 		{
 			currentCursorPos--;
 		}
-		currentCursorPos = Mathf.Clamp(currentCursorPos, 0, currentText.Length);
-		UpdateValue(true);
+
+        currentCursorPos = Mathf.Clamp(currentCursorPos, 0, currentText.Length);
+
+        UpdateValue(true);
 	}
 
-	void PrettyUI ()
+    void ScrollText()
+    {
+        if (currentCursorPos == 0) textScrollPos = 0;
+        else if (currentCursorPos < textScrollPos) textScrollPos = currentCursorPos;
+        else if (currentCursorPos > (textScrollPos + MAX_PROMPT_LENGTH)) textScrollPos = currentCursorPos - MAX_PROMPT_LENGTH;
+    }
+
+    GameObject backgroundPrettyUI;
+
+    void PrettyUI ()
 	{
-		GameObject gameObject = this.pauseOverlay.transform.Find("Pause").transform.Find("Debug").gameObject;
-		GameObject gameObject2 = gameObject.transform.Find("Version").gameObject;
-		GameObject gameObject3 = gameObject.transform.Find("Title").gameObject;
-		GameObject gameObject4 = gameObject.transform.Find("Back").gameObject;
-		GameObject gameObject5 = gameObject.transform.Find("Confirm").gameObject;
-		GameObject gameObject6 = gameObject.transform.Find("StringValue").gameObject;
-		GameObject gameObject7 = gameObject.transform.Find("InfoValue").gameObject;
-		GameObject gameObject8 = gameObject7.transform.Find("Text").gameObject;
-		GameObject gameObject9 = UnityEngine.Object.Instantiate<GameObject>(this.pauseOverlay.transform.Find("Pause").transform.Find("Main").transform.Find("Layout").transform.Find("Background").gameObject, gameObject7.transform);
-		gameObject4.transform.localPosition = new Vector3(-2.5f, -4f, 0f);
-		gameObject5.transform.localPosition = new Vector3(2.5f, -4f, 0f);
-		gameObject7.transform.localPosition = new Vector3(-0.02f, 1.5f, 0f);
-		gameObject9.transform.localPosition = new Vector3(0f, -1.75f, 0f);
-		gameObject9.transform.localScale = new Vector3(1.8f, 2.5f, 1f);
-		gameObject2.transform.localPosition = new Vector3(3f, 4.75f, -0.1791036f);
-		gameObject6.transform.localPosition = new Vector3(-0.02f, 3f, 0f);
-		gameObject8.transform.localPosition = new Vector3(-6.32f, 0.1375f, -0.18f);
-	}
+        //Preetify title
+        TextMesh component = this.pauseOverlay.transform.Find("Pause").Find("Debug").Find("Title").Find("Text").GetComponent<TextMesh>();
+        component.text = "Debug Menu";
+        this.PrettyTextMesh(component, Color.black, TextAlignment.Center, 35, FontStyle.Normal, 0f);
 
-	public delegate void OnDoneFunc ();
+        //Erase version text
+        TextMesh component2 = this.pauseOverlay.transform.Find("Pause").Find("Debug").Find("Version").GetComponent<TextMesh>();
+        component2.text = "";
+
+        //Menu transform
+        Transform menu = this.pauseOverlay.transform.Find("Pause").transform.Find("Debug").gameObject.transform;
+        
+        //Back button
+        Transform backButton = menu.Find("Back");
+        backButton.localPosition = new Vector3(-2.5f, -5.10f, 0f);
+
+        //Confirm button
+        Transform confirmButton = menu.Find("Confirm");
+        confirmButton.localPosition = new Vector3(2.5f, -5.10f, 0f);
+        
+        //OutputText
+        GameObject infoText = menu.Find("InfoValue").gameObject;
+        infoText.transform.localPosition = new Vector3(0.3f, 5.3f, 0f);
+
+        //Command prompt
+        Transform textInput = menu.Find("StringValue");
+        textInput.GetComponentInChildren<NineSlice>().Size = new Vector2(5.5f, 0.65f);
+        textInput.localPosition = new Vector3(-0.5f, -3.75f, 0f);
+        textInput.Find("Text").localPosition = new Vector3(-4.33f, 0f, -0.18f);
+
+        if (backgroundPrettyUI == null)
+        {
+            //OutputText background
+            GameObject backgroundPrettyUI = UnityEngine.Object.Instantiate<GameObject>(this.pauseOverlay.transform.Find("Pause").transform.Find("Main").transform.Find("Layout").transform.Find("Background").gameObject, menu);
+            backgroundPrettyUI.name = "DebugBackground";
+            backgroundPrettyUI.transform.localPosition = new Vector3(-0.5f, 0.9f, 0f);
+            backgroundPrettyUI.transform.localScale = Vector3.one * 2;
+            backgroundPrettyUI.GetComponentInChildren<NineSlice>().Size = new Vector2(7.10f, 3.75f);
+
+            //Create scrollbar
+            scrollBar = UIFactory.Instance.CreateScrollBar(7.3f, 2.5f, this.transform);
+            scrollBar.name = "DebugMenuScrollBar";
+            ModText.Instance.SetupScrollBar(scrollBar);
+            TextMesh textmesh = this.pauseOverlay.transform.Find("Pause").Find("Debug").Find("InfoValue").Find("Text").GetComponent<TextMesh>();
+            PrettyTextMesh(textmesh, Color.black, TextAlignment.Left, 18, FontStyle.Normal, 0f);
+
+            //Help button
+            Transform menuTrans = pauseOverlay.transform.Find("Pause").Find("Debug");
+            UIButton help = UIFactory.Instance.CreateButton(UIButton.ButtonType.Default, 7f, -5.10f, menuTrans, "?");
+            help.ScaleBackground(new Vector2(0.2f, 1f));
+            string helpText = ModStuff.ModMaster.GetDebugMenuHelp() + "\n\nEnter 'help' to see the command list.";
+            UITextFrame helpHelp = UIFactory.Instance.CreatePopupFrame(0f, 1.5f, help, menuTrans, "");
+            helpHelp.ScaleBackground(new Vector2(3f, 2.5f));
+            helpHelp.ScaleText(0.8f);
+            helpHelp.WriteText(helpText);
+            helpHelp.transform.localPosition += new Vector3(0f, 0f, -0.4f);
+        }
+    }
+
+    public delegate void OnDoneFunc ();
 
 	delegate void CommandFunc (string com, string[] args);
 }

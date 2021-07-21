@@ -22,7 +22,7 @@ public class LevelRoom : MonoBehaviour
 	bool _lockEdit;
 
 	[SerializeField]
-	GeneralInterpolator _interpolator;
+	public GeneralInterpolator _interpolator;
 
 	[SerializeField]
 	bool _doTransition = true;

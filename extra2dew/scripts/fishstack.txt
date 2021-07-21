@@ -1,0 +1,36 @@
+//Spawn a stack of fishbuns on top of ittle, squishing her
+//-----------------
+//Use once in fluffy fields and then it can be used anywhere!
+
+#CONDITION_NPC fishbun 
+#ERRORMSG How can you make a fishbun stack without fishbuns? Go somewhere with fishbuns and use the script there, then it will be available anywhere
+
+//Hold fishbun in memory, to be spawned anywhere
+spawn fishbun -hold
+
+//Save a reference to the player's model
+find ittle -parent ittle -save -noui
+
+//Change player size
+size self 1 0.5 1 
+
+//spawn fishbun
+spawn fishbun -ai null -ittlerot -p 0 -50 0
+
+//Change the parent of the fishbun,
+//The fishbun scale is tricky. As default, fishbun's model is scaled by 40, ittle's model is scaled by 0.5 and on top of that we introduced a deformation of 0.5 in the Y axis. As such, the scale will be 40*2 for X and Z axis, and 40*2*2 for the Y axis
+
+find fishbungfx -parent2 fishbun -i 1 -changep -p 0 2.0 0 -s 80 160 80 -noui
+
+//Then we repeat 3 more times placing each fishbun slightly above the last one
+spawn fishbun -ai null -ittlerot -p 0 -50 0
+find fishbungfx -parent2 fishbun -i 1 -changep -p 0 3.3 0 -s 80 160 80 -noui
+
+spawn fishbun -ai null -ittlerot -p 0 -50 0
+find fishbungfx -parent2 fishbun -i 1 -changep -p 0 4.6 0 -s 80 160 80 -noui
+
+spawn fishbun -ai null -ittlerot -p 0 -50 0
+find fishbungfx -parent2 fishbun -i 1 -changep -p 0 5.9 0 -s 80 160 80 -noui
+
+//print message
+echo You feel squished

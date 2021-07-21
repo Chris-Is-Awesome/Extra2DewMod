@@ -30,8 +30,8 @@ namespace ModStuff
                set
                {
                     _value = value;
-                    ExplorerActivated(false, _explorer.StringValue, 0);
-                    if (_explorer.StringValue == "All directions") { _slider.Value = _value.x; }
+                    ExplorerActivated(false, _explorer.StringValue, _explorer.IndexValue);
+                    if (_explorer.IndexValue == 0) { _slider.Value = _value.x; }
                }
           }
 
@@ -50,15 +50,15 @@ namespace ModStuff
           void ExplorerActivated(bool rightArrow, string textValue, int arrayIndex)
           {
                dontRunSliderFunction = true; //We dont want the slider delegate to be activated during this function
-               switch (textValue)
+               switch (arrayIndex)
                {
-                    case "X":
+                    case 1:
                          _slider.Value = _value.x;
                          break;
-                    case "Y":
+                    case 2:
                          _slider.Value = _value.y;
                          break;
-                    case "Z":
+                    case 3:
                          _slider.Value = _value.z;
                          break;
                     default:
@@ -70,18 +70,18 @@ namespace ModStuff
           void SliderActivated(float value)
           {
                if (dontRunSliderFunction) { return; }
-               switch (_explorer.StringValue)
+               switch (_explorer.IndexValue)
                {
-                    case "All directions":
+                    case 0:
                          _value = new Vector3(value, value, value);
                          break;
-                    case "X":
+                    case 1:
                          _value.x = value;
                          break;
-                    case "Y":
+                    case 2:
                          _value.y = value;
                          break;
-                    case "Z":
+                    case 3:
                          _value.z = value;
                          break;
                     default:

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using ModStuff;
+using ModStuff.ItemRandomizer;
 using UnityEngine.SceneManagement;
 
 public class PlayerSpawner : MonoBehaviour
@@ -113,16 +114,9 @@ public class PlayerSpawner : MonoBehaviour
 			Vector3 spawnPos = entity.WorldTracePosition;
 
 			// Boss Rush:
-			if (ModeControllerNew.IsBossRush)
+			if (BossRush.Instance.IsActive)
 			{
 				spawnPos = BossRush.Instance.GetStartPosition();
-			}
-
-			// Handles Boss Rush spawn
-			ModeController mc = GameObject.Find("ModeController").GetComponent<ModeController>();
-			if (mc.isBossRush)
-			{
-				spawnPos = mc.bossRushManager.GetPlayerSpawnPoint();
 			}
 
 			LevelRoom roomForPosition = LevelRoom.GetRoomForPosition(spawnPos, null);
@@ -138,7 +132,14 @@ public class PlayerSpawner : MonoBehaviour
 		controller.name = this._controller.name;
 		entity.Activate();
 
-		if (ModSaver.LoadIntFromFile("mod/SetItems", "hasSetItems") != 0) { _varOverrider = null; }
+        //Commenting this line for now, any change in setitem would activate it and cause confusion. A different method should be used
+		//if (ModSaver.LoadIntFromFile("mod/SetItems", "hasSetItems") != 0) { _varOverrider = null; }
+
+        //Open dreams override
+        if(ItemRandomizerGM.Instance.Core.OpenDreams)
+        {
+            this._varOverrider = null;
+        }
 
 		if (this._varOverrider != null)
 		{

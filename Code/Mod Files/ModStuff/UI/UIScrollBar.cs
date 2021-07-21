@@ -96,6 +96,34 @@ namespace ModStuff
             }
         }
 
+        //Mouse scrolling
+        bool _allowScroll;
+        public bool AllowScroll
+        {
+            get { return _allowScroll; }
+            set
+            {
+                _allowScroll = value;
+            }
+        }
+        int _scrollMultiplier;
+        public int ScrollMultiplier
+        {
+            get { return _scrollMultiplier; }
+            set
+            {
+                _scrollMultiplier = value;
+            }
+        }
+        void Update()
+        {
+            if (Input.mouseScrollDelta.y < 0 || Input.mouseScrollDelta.y > 0)
+            {
+                int scrollDirection = (Input.mouseScrollDelta.y < 0 ? 1 : -1) * _scrollMultiplier;
+                Trigger(Value + scrollDirection * _step);
+            }
+        }
+
         public void Initialize()
         {
             //Set slidable
@@ -119,6 +147,8 @@ namespace ModStuff
 
             //Set default step
             SliderStep = 0.01f;
+            AllowScroll = true;
+            _scrollMultiplier = 1;
         }
 
         public void Trigger()

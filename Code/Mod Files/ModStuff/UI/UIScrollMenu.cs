@@ -135,6 +135,7 @@ namespace ModStuff
             canvasChildren = new List<UIAnchor>();
 
             ScrollBar.onInteraction += ScrollBarMoved;
+            ScrollBar.ScrollMultiplier = 5;
         }
 
         void ScrollBarMoved(float scrollValue)

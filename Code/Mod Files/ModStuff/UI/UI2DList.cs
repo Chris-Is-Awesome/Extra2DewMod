@@ -94,7 +94,6 @@ namespace ModStuff
 
         //Data handling
         string[] _explorerArray;
-        float scrollDiv;
         public string[] ExplorerArray
         {
             get { return _explorerArray; }
@@ -105,10 +104,17 @@ namespace ModStuff
                 _arrayIndex = 0;
                 ScrollBar.Value = 0f;
                 if (_explorerArray == null) { _explorerArray = new string[] { }; }
-                float extraRows = Mathf.Ceil(((float)_explorerArray.Length - (float)buttonsArray.Length) / (float)btnsX);
-                if (extraRows < 0f) extraRows = 1f;
-                scrollDiv = 1f / (extraRows + 1f);
-                ScrollBar.SliderStep = 1f / extraRows;
+                float extraRows = Mathf.Ceil((float)(_explorerArray.Length - buttonsArray.Length) / (float)btnsX);
+                if (extraRows <= 0f)
+                {
+                    ScrollBar.gameObject.SetActive(false);
+                }
+                else
+                {
+                    ScrollBar.gameObject.SetActive(true);
+                    ScrollBar.SliderStep = 1f / extraRows;
+                }
+                
                 UpdateArray();
             }
         }
@@ -175,7 +181,6 @@ namespace ModStuff
             title = gameObject.GetComponentInChildren<UITextFrame>();
             _explorerArray = new string[] { };
             ScrollBar.SliderStep = 1f;
-            scrollDiv = 1f;
             _highlightColor = Color.red;
             _highlightSelected = true;
             AutoTextResize = true;
@@ -185,8 +190,9 @@ namespace ModStuff
 
         void ScrollBarMoved(float scrollValue)
         {
-            scrollValue = Mathf.Clamp(scrollValue, 0f, 0.99f);
-            offset = btnsX * (int)Mathf.Floor(scrollValue / scrollDiv);
+            int extraRows = (int)Mathf.Ceil( (float)(_explorerArray.Length - buttonsArray.Length) / (float)btnsX);
+            if (extraRows < 0) extraRows = 0;
+            offset = (int)Math.Round(extraRows * btnsX * scrollValue, 0);
             UpdateArray();
         }
 

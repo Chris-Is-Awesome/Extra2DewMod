@@ -7,7 +7,7 @@ namespace ModStuff
 	{
 		static public string GetModVersion ()
 		{
-			return "v2.0-1.1b";
+			return "v3.0";
 		}
 
 		static public bool IsDevBuild ()

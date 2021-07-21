@@ -26,7 +26,22 @@ namespace ModStuff
 
 		}
 
-		void OnGUI ()
+        public void Init(GameObject goToFollow, Camera cam, bool selected, float time)
+        {
+            //Make texture
+            tex = new Texture2D(1, 1);
+            tex.SetPixel(0, 0, selected ? new Color(0f, 1f, 0f, 0.5f) : new Color(0f, 0f, 1f, 0.5f));
+            tex.Apply();
+            //Asign variables
+            following = goToFollow.transform;
+            camera = cam;
+            blockSize = selected ? 120 : 100;
+            offset = blockSize / 2;
+            Destroy(gameObject, time);
+
+        }
+
+        void OnGUI ()
 		{
 			if (following != null && camera != null)
 			{
@@ -36,7 +51,8 @@ namespace ModStuff
 					boxStyle.normal.background = tex;
 				}
 				Vector3 screenPos = camera.WorldToScreenPoint(following.position);
-				GUI.Box(new Rect(screenPos.x - offset, Screen.height - screenPos.y - offset, blockSize, blockSize), tex, boxStyle);
+                if (Vector3.Dot(camera.transform.forward, following.position - camera.transform.position) <= 0) screenPos = new Vector3(-100000f, -100000f, 0f);
+                GUI.Box(new Rect(screenPos.x - offset, Screen.height - screenPos.y - offset, blockSize, blockSize), tex, boxStyle);
 			}
 		}
 	}

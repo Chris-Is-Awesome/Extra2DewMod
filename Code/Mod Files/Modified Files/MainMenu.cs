@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using ModStuff;
+using ModStuff.ItemRandomizer;
 
 public class MainMenu : MonoBehaviour
 {
@@ -167,10 +169,10 @@ public class MainMenu : MonoBehaviour
 		MainMenu.SetupStartGame(this._saver, this._texts);
 
 		//Check for game modes
-		mc.SetupGameModes();
+		//mc.SetupGameModes();
 
 		//Check for door randomization and apply it if thats the case
-		DoorsRandomizer.Instance.CheckForRandomization();
+		//DoorsRandomizer.Instance.CheckForRandomization();
 
 		IDataSaver saver = this._saver.GetSaver("/local/start", true);
 		if (saver != null)
@@ -242,6 +244,9 @@ public class MainMenu : MonoBehaviour
 
 	void DoStartMenu()
 	{
+        //Save mapped input
+        UIFactory.Instance.SetMappetInput(_input);
+
 		StartMenu.InitGame(this._saver, this._input, this._texts);
 		GuiBindInData inData = new GuiBindInData(null, null);
 		GuiBindData guiBindData;
@@ -335,29 +340,6 @@ public class MainMenu : MonoBehaviour
 		public string savename;
 
 		public DataSaverData.DebugAddData[] data;
-	}
-
-	//New game data mod options
-	class NewGameModData
-	{
-		//Game modes
-		public int modeNumber; //Hopefully to be replaced in the future
-		public bool isVanilla;
-		public bool isBossRush;
-		public bool isDungeonRush;
-		public bool isHeartRush;
-		public int heartRushDifficulty;
-
-		//Randomization
-		public string seed;
-		public bool isRandomDoors;
-
-		public NewGameModData()
-		{
-			isVanilla = true;
-			seed = DoorsRandomizer.Instance.GetRandomSeed();
-			heartRushDifficulty = 3;
-		}
 	}
 
 	class MainScreen : MenuScreen<MainMenu>
@@ -628,11 +610,28 @@ public class MainMenu : MonoBehaviour
 			// Invoke OnFileLoaded events
 			GameStateNew.OnFileLoaded(false);
 
-			base.Owner.StartGame();
-			DestroyProgressText();
-		}
+            //If the item randomizer is active and there is an error, halt the start and deactivate modes
+            if(!ItemRandomizerGM.Instance.IsActive || ItemRandomizerGM.Instance.Core.Error == null)
+            {
+                base.Owner.StartGame();
+                DestroyProgressText();
+            }
+            else
+            {
+                ModeControllerNew.DeactivateModes();
+                UITextFrame errorFrame = UIFactory.Instance.CreateTextFrame(0f, 1f, GameObject.Find("GuiLayout").transform.Find("Main").Find("FileStart").transform, ItemRandomizerGM.Instance.Core.Error);
+                errorFrame.ScaleBackground(Vector2.one * 2f);
+                errorFrame.StartCoroutine(DelayDestroy(errorFrame));
+            }
+        }
+        
+        IEnumerator DelayDestroy(UITextFrame frame)
+        {
+            yield return new WaitForSeconds(2.5f);
+            if (frame != null) GameObject.Destroy(frame.gameObject);
+        }
 
-		void ClickedDuplicate(object ctx)
+        void ClickedDuplicate(object ctx)
 		{
 			DestroyProgressText();
 
@@ -681,34 +680,61 @@ public class MainMenu : MonoBehaviour
 
 	class NewGameScreen : MenuScreen<MainMenu>
 	{
-		NewGameModData startOptions;
 		public IDataSaver saver;
 
 		public NewGameScreen(MainMenu owner, string root, GuiBindData data) : base(owner, root, data)
 		{
-			startOptions = new NewGameModData();
-
 			//Mod code for main window
 			Transform gameModesParent = GameObject.Find("GuiLayout").transform.Find("Main").Find("FileCreate");
-			UIButton gameModesButton = UIFactory.Instance.CreateButton(UIButton.ButtonType.Default, 0f, -1f, gameModesParent, "Game Modes");
+			UIButton gameModesButton = UIFactory.Instance.CreateButton(UIButton.ButtonType.Default, 0f, 0f, gameModesParent, "Game Modes");
 			gameModesButton.onInteraction += OpenGameModes;
 
 			// Is speedrun button
-			UICheckBox isSpeedrun = UIFactory.Instance.CreateCheckBox(0f, 0.25f, gameModesParent, "Speedrun?");
+            
+			/*UICheckBox isSpeedrun = UIFactory.Instance.CreateCheckBox(0f, 0.25f, gameModesParent, "Speedrun?");
 			isSpeedrun.name = "isSpeedrun";
+            isSpeedrun.gameObject.SetActive(false);*/
 		}
 
 		void OpenGameModes()
 		{
-			base.MenuImpl.SwitchToScreen("newgamemodes", startOptions);
+			base.MenuImpl.SwitchToScreen("newgamemodes", null);
 			base.Owner._enterNameMenu.StopListener();
 		}
+        
+        IEnumerator DelayDestroy(UITextFrame frame)
+        {
+            yield return new WaitForSeconds(2.5f);
+            if (frame != null) GameObject.Destroy(frame.gameObject);
+        }
 
-		void EnterNameDone(bool success, string value)
+        IEnumerator DelatedSwitch()
+        {
+            yield return new WaitForSeconds(1.0f);
+            base.MenuImpl.SwitchToScreen("enterNameRoot", null);
+        }
+
+        void EnterNameDone(bool success, string value)
 		{
 			if (success && !string.IsNullOrEmpty(value))
 			{
-				DataIOBase currentIO = DataFileIO.GetCurrentIO();
+                //Before doing anything, check if item randomizer is on and do a test run to see if everything is set up properly
+                if (ModeControllerNew.IsModeReady(ModeControllerNew.ModeType.ItemRandomizer))
+                {
+                    ItemRandomizerGM.Instance.TestRunRandomize();
+                    if(ItemRandomizerGM.Instance.Core.Error != null)
+                    {
+                        UITextFrame errorFrame = UIFactory.Instance.CreateTextFrame(0f, 1f, GameObject.Find("GuiLayout").transform.Find("Main").transform, ItemRandomizerGM.Instance.Core.Error);
+                        errorFrame.ScaleBackground(Vector2.one * 2f);
+                        ItemRandomizerGM.Instance.StartCoroutine(DelayDestroy(errorFrame));
+                        ItemRandomizerGM.Instance.Core.Randomizing = false;
+                        base.SwitchToBack();
+                        //ItemRandomizerGM.Instance.StartCoroutine(DelatedSwitch());
+                        return;
+                    }
+                }
+
+                DataIOBase currentIO = DataFileIO.GetCurrentIO();
 				RealDataSaver realDataSaver = new RealDataSaver(value);
 				saver = realDataSaver;
 				DataSaverData.DebugAddData[] code = base.Owner.GetCode(value);
@@ -722,8 +748,14 @@ public class MainMenu : MonoBehaviour
 				GameStateNew.OnFileLoaded(true, value, uniqueLocalSavePath, realDataSaver);
 
 				// Gather anticheat data
-				UICheckBox isSpeedrun = GameObject.Find("isSpeedrun").GetComponent<UICheckBox>();
-				if (isSpeedrun.Value) { DebugCommands.Instance.Anticheat(realDataSaver); }
+				/*UICheckBox isSpeedrun = GameObject.Find("isSpeedrun").GetComponent<UICheckBox>();
+				if (isSpeedrun.Value)
+                {
+                    ModMaster.SetNewGameData("settings/showTime", "1", realDataSaver);
+                    ModMaster.SetNewGameData("settings/hideCutscenes", "1", realDataSaver);
+                    ModMaster.SetNewGameData("start/level", "FluffyFields", realDataSaver);
+
+                }*/
 
 				// Skip intro
 				/*
@@ -735,62 +767,14 @@ public class MainMenu : MonoBehaviour
 				}*/
 
 				//If the doors have to be randomized, randomize them and print the cheat sheet
-				if (startOptions.isRandomDoors)
-				{
-					string seed = startOptions.seed;
-					ModMaster.SetNewGameData("mod/randomizer_doorsseed", seed, realDataSaver);
-					ModMaster.SetNewGameData("mod/randomizer_doors", "1", realDataSaver);
-					DoorsRandomizer.Instance.RandomizeWithSeed(seed, true);
-				}
 
-				if (value == "expert" || value == "master") { ExpertMode.Instance.StartOfGame(realDataSaver); }
 
-				//Enable game modes
-				//0: vanilla / 1: heartrush / 2: boss rush / 3: dungeon rush
-				mc.SetupGameModes(startOptions.modeNumber);
-				switch (startOptions.modeNumber)
-				{
-					case 1:
-						ModMaster.SetNewGameData("mod/isheartrush", "1", realDataSaver);
-						break;
-					case 2:
-						ModMaster.SetNewGameData("mod/isbossrush", "1", realDataSaver);
-						break;
-					case 3:
-						ModMaster.SetNewGameData("mod/isdungeonrush", "1", realDataSaver);
-						break;
-					default:
-						break;
-				}
+				//if (value == "expert" || value == "master") { ExpertMode.Instance.StartOfGame(realDataSaver); }
 
 				// Universal settings, enable timer
 				if (ModSaver.LoadIntFromPrefs("showTime") == 1)
 				{
 					ModMaster.SetNewGameData("settings/showTime", "1", realDataSaver);
-				}
-
-				// Setup BossRush & DungeonRush
-				if (mc.isBossRush || mc.isDungeonRush)
-				{
-					ModMaster.SetNewGameData("settings/hideCutscenes", "1", realDataSaver);
-					ModMaster.SetNewGameData("settings/showTime", "1", realDataSaver);
-				}
-
-				// Setup for HeartRush
-				if (mc.isHeartRush)
-				{
-					int[] initialHpArray = ModeController.HeartRush.InitialHP();
-					int initialHpIndex = startOptions.heartRushDifficulty;
-					ModMaster.SetNewGameData("player/maxHp", initialHpArray[initialHpIndex].ToString(), realDataSaver);
-					ModMaster.SetNewGameData("player/hp", initialHpArray[initialHpIndex].ToString(), realDataSaver);
-					//If the most difficult option was selected, switch to frog mode
-					if (initialHpIndex == initialHpArray.Length - 1)
-					{
-						ModMaster.SetNewGameData("player/vars/danger", "1", realDataSaver);
-						ModMaster.SetNewGameData("player/vars/outfit", "8", realDataSaver);
-					}
-					ModMaster.SetNewGameData("settings/hideCutscenes", "1", realDataSaver);
-					ModMaster.SetNewGameData("mod/savepath", uniqueLocalSavePath, realDataSaver);
 				}
 
 				currentIO.WriteFile(uniqueLocalSavePath, realDataSaver.GetSaveData());
@@ -811,10 +795,6 @@ public class MainMenu : MonoBehaviour
 		protected override bool DoShow(MenuScreen<MainMenu> previous)
 		{
 			base.Owner._enterNameMenu.Show(base.Owner._defaultName, MenuScreen<MainMenu>.GetRoot(previous), new EnterNameMenu.OnDoneFunc(this.EnterNameDone));
-			if (base.ShowParams != null && base.ShowParams is NewGameModData)
-			{
-				startOptions = base.ShowParams as NewGameModData;
-			}
 			return false;
 		}
 
@@ -1165,53 +1145,11 @@ public class MainMenu : MonoBehaviour
 		{
 			modScreen = UIScreen.GetUIScreenComponent(Root);
 			modScreen.BackButton.onInteraction += delegate () { base.StandardBackClick(null); };
-			modScreen.GetElement<UIButton>("confirm").onInteraction += delegate ()
-			{
-				NewGameModData output = new NewGameModData();
-
-				output.isRandomDoors = modScreen.GetElement<UICheckBox>("randomizer").Value;
-				output.seed = modScreen.GetElement<UITextFrame>("seed").UIName;
-				output.modeNumber = modScreen.GetElement<UIListExplorer>("modeselector").IndexValue;
-				switch (modScreen.GetElement<UIListExplorer>("modeselector").IndexValue)
-				{
-					case 1:
-						output.isHeartRush = true;
-						break;
-					case 2:
-						output.isBossRush = true;
-						break;
-					case 3:
-						output.isDungeonRush = true;
-						break;
-					default:
-						break;
-				}
-				output.heartRushDifficulty = modScreen.GetElement<UIListExplorer>("hsdifficulty").IndexValue;
-				base.MenuImpl.SwitchToScreen("enterNameRoot", output);
-				//base.StandardSwitch(output, "enterNameRoot");
-			};
 		}
 
 		//This function runs every time the screen appears
 		protected override bool DoShow(MenuScreen<MainMenu> previous)
 		{
-			if (base.ShowParams != null && base.ShowParams is NewGameModData && modScreen != null)
-			{
-				NewGameModData loadConfig = base.ShowParams as NewGameModData;
-				modScreen.GetElement<UICheckBox>("randomizer").Value = loadConfig.isRandomDoors;
-				if (loadConfig.isRandomDoors)
-				{
-					modScreen.GetElement<UITextFrame>("seed").UIName = loadConfig.seed;
-				}
-				else
-				{
-					modScreen.GetElement<UITextFrame>("seed").UIName = DoorsRandomizer.Instance.GetRandomSeed();
-				}
-				modScreen.GetElement<UIListExplorer>("modeselector").IndexValue = loadConfig.modeNumber;
-				modScreen.GetElement<UIListExplorer>("modeselector").Trigger();
-
-				modScreen.GetElement<UIListExplorer>("hsdifficulty").IndexValue = loadConfig.heartRushDifficulty;
-			}
 			//base.DoShow(previous);
 			return true;
 		}

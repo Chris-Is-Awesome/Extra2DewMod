@@ -10,10 +10,10 @@ public class Killable : EntityHitListener, ILateUpdatable, IBaseUpdateable
 	Killable.Data _data;
 
 	[SerializeField]
-	BaseQuickEffect _deathEffect;
+	public BaseQuickEffect _deathEffect;
 
 	[SerializeField]
-	BaseQuickEffect _startDeathEffect;
+	public BaseQuickEffect _startDeathEffect;
 
 	[SerializeField]
 	string _deathAnim;

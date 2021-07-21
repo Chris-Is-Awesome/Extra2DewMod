@@ -1,0 +1,649 @@
+{
+	"list":
+	[
+		{
+	"nickName": "Tracker Chest",
+	"name": "DKEY_D1Entrance",
+	"scene": "PillowFort",
+	"room": "H",
+	"saveId": "PuzzleDoor_locked-28--39",
+	"keyTag": "DKEY_Pillow"
+},
+{
+	"nickName": "Boss Path",
+	"name": "DKEY_D1West",
+	"scene": "PillowFort",
+	"room": "G",
+	"saveId": "PuzzleDoor_locked-6--25",
+	"keyTag": "DKEY_Pillow"
+},
+
+{
+	"nickName": "Force Wand Chest",
+	"name": "DKEY_D2SpikebunDunes",
+	"scene": "SandCastle",
+	"room": "H",
+	"saveId": "PuzzleDoor_locked-69--34",
+	"keyTag": "DKEY_Sand"
+},
+{
+	"nickName": "Boss Path",
+	"name": "DKEY_D2Balls",
+	"scene": "SandCastle",
+	"room": "I",
+	"saveId": "PuzzleDoor_locked-6--25",
+	"keyTag": "DKEY_Sand"
+},
+
+{
+	"nickName": "Lobby",
+	"name": "DKEY_D3Front",
+	"scene": "ArtExhibit",
+	"room": "R",
+	"saveId": "PuzzleDoor_locked-38--73",
+	"keyTag": "DKEY_Art"
+},
+{
+	"nickName": "Dynamite Chest",
+	"name": "DKEY_D3Easel",
+	"scene": "ArtExhibit",
+	"room": "J",
+	"saveId": "PuzzleDoor_locked-17--54",
+	"keyTag": "DKEY_Art"
+},
+{
+	"nickName": "Torch Shortcut",
+	"name": "DKEY_D3Spikes",
+	"scene": "ArtExhibit",
+	"room": "E",
+	"saveId": "PuzzleDoor_locked-31--18",
+	"keyTag": "DKEY_Art"
+},
+{
+	"nickName": "Main Boss Path",
+	"name": "DKEY_D3Boss",
+	"scene": "ArtExhibit",
+	"room": "B",
+	"saveId": "PuzzleDoor_locked-28--5",
+	"keyTag": "DKEY_Art"
+},
+
+{
+	"nickName": "Boardwalk",
+	"name": "DKEY_D4Swamp",
+	"scene": "TrashCave",
+	"room": "L",
+	"saveId": "PuzzleDoor_locked-50--39",
+	"keyTag": "DKEY_Trash"
+},
+{
+	"nickName": "Fire Sword Chest",
+	"name": "DKEY_D4Sword",
+	"scene": "TrashCave",
+	"room": "F",
+	"saveId": "PuzzleDoor_locked-78--13",
+	"keyTag": "DKEY_Trash"
+},
+{
+	"nickName": "Garbage Hermits",
+	"name": "DKEY_D4Mimics",
+	"scene": "TrashCave",
+	"room": "H",
+	"saveId": "PuzzleDoor_locked-34--28",
+	"keyTag": "DKEY_Trash"
+},
+{
+	"nickName": "Warnip Maze",
+	"name": "DKEY_D4Boss",
+	"scene": "TrashCave",
+	"room": "E",
+	"saveId": "PuzzleDoor_locked-18--13",
+	"keyTag": "DKEY_Trash"
+},
+
+{
+	"nickName": "Crossway Unlocker",
+	"name": "DKEY_D5Laundry",
+	"scene": "FloodedBasement",
+	"room": "F",
+	"saveId": "PuzzleDoor_locked-33--22",
+	"keyTag": "DKEY_Basement"
+},
+{
+	"nickName": "First Pirates",
+	"name": "DKEY_D5Crossway",
+	"scene": "FloodedBasement",
+	"room": "P",
+	"saveId": "PuzzleDoor_locked-53--46",
+	"keyTag": "DKEY_Basement"
+},
+{
+	"nickName": "Beached Sharks",
+	"name": "DKEY_D5PetMines",
+	"scene": "FloodedBasement",
+	"room": "T",
+	"saveId": "PuzzleDoor_locked-69--49",
+	"keyTag": "DKEY_Basement"
+},
+{
+	"nickName": "Crayon Chest",
+	"name": "DKEY_D5Crayon",
+	"scene": "FloodedBasement",
+	"room": "H",
+	"saveId": "PuzzleDoor_locked-61--17",
+	"keyTag": "DKEY_Basement"
+},
+{
+	"nickName": "Boss Path",
+	"name": "DKEY_D5Boss",
+	"scene": "FloodedBasement",
+	"room": "H",
+	"saveId": "PuzzleDoor_locked-85--13",
+	"keyTag": "DKEY_Basement"
+},
+
+{
+	"nickName": "Crayon Path",
+	"name": "DKEY_D6BluePortal",
+	"scene": "PotassiumMine",
+	"room": "M",
+	"saveId": "PuzzleDoor_locked-58--64",
+	"keyTag": "DKEY_Mine"
+},
+{
+	"nickName": "East Wing",
+	"name": "DKEY_D6EastSegment",
+	"scene": "PotassiumMine",
+	"room": "M",
+	"saveId": "PuzzleDoor_locked-58--55",
+	"keyTag": "DKEY_Mine"
+},
+{
+	"nickName": "Ice Ring Chest",
+	"name": "DKEY_D6BunboyTunnel",
+	"scene": "PotassiumMine",
+	"room": "O",
+	"saveId": "PuzzleDoor_locked-84--37",
+	"keyTag": "DKEY_Mine"
+},
+{
+	"nickName": "Boss Path (Front)",
+	"name": "DKEY_D6GreenSlugs",
+	"scene": "PotassiumMine",
+	"room": "I",
+	"saveId": "PuzzleDoor_locked-53--25",
+	"keyTag": "DKEY_Mine"
+},
+{
+	"nickName": "Boss Path (Back)",
+	"name": "DKEY_D6Boss",
+	"scene": "PotassiumMine",
+	"room": "E",
+	"saveId": "PuzzleDoor_locked-55--13",
+	"keyTag": "DKEY_Mine"
+},
+
+{
+	"nickName": "Fire Titans",
+	"name": "DKEY_D7TitansGate",
+	"scene": "BoilingGrave",
+	"room": "Q",
+	"saveId": "PuzzleDoor_locked-62--54",
+	"keyTag": "DKEY_Grave"
+},
+{
+	"nickName": "Chain Path",
+	"name": "DKEY_D7HotBlocks",
+	"scene": "BoilingGrave",
+	"room": "S",
+	"saveId": "PuzzleDoor_locked-32--66",
+	"keyTag": "DKEY_Grave"
+},
+{
+	"nickName": "Freezer",
+	"name": "DKEY_D7CountingWithSkullnips",
+	"scene": "BoilingGrave",
+	"room": "M",
+	"saveId": "PuzzleDoor_locked-34--38",
+	"keyTag": "DKEY_Grave"
+},
+{
+	"nickName": "Royal Tomb",
+	"name": "DKEY_D7RoyalTomb",
+	"scene": "BoilingGrave",
+	"room": "G",
+	"saveId": "PuzzleDoor_locked-17--19",
+	"keyTag": "DKEY_Grave"
+},
+{
+	"nickName": "Boss Path",
+	"name": "DKEY_D7Boss",
+	"scene": "BoilingGrave",
+	"room": "H",
+	"saveId": "PuzzleDoor_locked-42--27",
+	"keyTag": "DKEY_Grave"
+},
+
+{
+	"nickName": "Locked Chambers (First)",
+	"name": "DKEY_D8LockedChambers1",
+	"scene": "GrandLibrary",
+	"room": "N",
+	"saveId": "PuzzleDoor_locked-67--25",
+	"keyTag": "DKEY_Library"
+},
+{
+	"nickName": "Locked Chambers (Second)",
+	"name": "DKEY_D8LockedChambers2",
+	"scene": "GrandLibrary",
+	"room": "H",
+	"saveId": "PuzzleDoor_locked-73--15",
+	"keyTag": "DKEY_Library"
+},
+{
+	"nickName": "Locked Chambers (Third)",
+	"name": "DKEY_D8LockedChambers3",
+	"scene": "GrandLibrary",
+	"room": "I",
+	"saveId": "PuzzleDoor_locked-80--22",
+	"keyTag": "DKEY_Library"
+},
+{
+	"nickName": "Fanfiction",
+	"name": "DKEY_D8LockedChambers4",
+	"scene": "GrandLibrary",
+	"room": "O",
+	"saveId": "PuzzleDoor_locked-98--25",
+	"keyTag": "DKEY_Library"
+},
+{
+	"nickName": "West Wing Crystals",
+	"name": "DKEY_D8RedPortalNorth",
+	"scene": "GrandLibrary",
+	"room": "W",
+	"saveId": "PuzzleDoor_locked-24--49",
+	"keyTag": "DKEY_Library"
+},
+{
+	"nickName": "West Wing Lobotomies",
+	"name": "DKEY_D8RedPortalEast",
+	"scene": "GrandLibrary",
+	"room": "W",
+	"saveId": "PuzzleDoor_locked-28--52",
+	"keyTag": "DKEY_Library"
+},
+{
+	"nickName": "Yellow Portal",
+	"name": "DKEY_D8YellowPortal",
+	"scene": "GrandLibrary",
+	"room": "X",
+	"saveId": "PuzzleDoor_locked-37--49",
+	"keyTag": "DKEY_Library"
+},
+{
+	"nickName": "Final Lock",
+	"name": "DKEY_D8Final",
+	"scene": "GrandLibrary",
+	"room": "K",
+	"saveId": "PuzzleDoor_locked-22--25",
+	"keyTag": "DKEY_Library"
+},
+
+{
+	"nickName": "Force Wand Chest",
+	"name": "DKEY_S1UpperPlaza",
+	"scene": "SunkenLabyrinth",
+	"room": "D",
+	"saveId": "PuzzleDoor_locked-16--31",
+	"keyTag": "DKEY_Sunken"
+},
+{
+	"nickName": "Boss Path",
+	"name": "DKEY_S1LowerPlaza",
+	"scene": "SunkenLabyrinth",
+	"room": "K",
+	"saveId": "PuzzleDoor_locked-28--54",
+	"keyTag": "DKEY_Sunken"
+},
+{
+	"nickName": "Crayon Chest",
+	"name": "DKEY_S1TimedBlocks",
+	"scene": "SunkenLabyrinth",
+	"room": "T",
+	"saveId": "PuzzleDoor_locked-26--79",
+	"keyTag": "DKEY_Sunken"
+},
+
+{
+	"nickName": "Lock #1",
+	"name": "DKEY_S2Trial1",
+	"scene": "MachineFortress",
+	"room": "L",
+	"saveId": "PuzzleDoor_locked-38--62",
+	"keyTag": "DKEY_Machine"
+},
+{
+	"nickName": "Lock #2",
+	"name": "DKEY_S2Trial2",
+	"scene": "MachineFortress",
+	"room": "H",
+	"saveId": "PuzzleDoor_locked-5--50",
+	"keyTag": "DKEY_Machine"
+},
+{
+	"nickName": "Lock #3",
+	"name": "DKEY_S2Trial3",
+	"scene": "MachineFortress",
+	"room": "F",
+	"saveId": "PuzzleDoor_locked-5--38",
+	"keyTag": "DKEY_Machine"
+},
+{
+	"nickName": "Lock #4",
+	"name": "DKEY_S2Trial4",
+	"scene": "MachineFortress",
+	"room": "E",
+	"saveId": "PuzzleDoor_locked-38--26",
+	"keyTag": "DKEY_Machine"
+},
+{
+	"nickName": "Lock #5",
+	"name": "DKEY_S2Trial5",
+	"scene": "MachineFortress",
+	"room": "D",
+	"saveId": "PuzzleDoor_locked-21--14",
+	"keyTag": "DKEY_Machine"
+},
+
+{
+	"nickName": "Yellow Path",
+	"name": "DKEY_S3Yellow",
+	"scene": "DarkHypostyle",
+	"room": "F",
+	"saveId": "PuzzleDoor_locked-17--20",
+	"keyTag": "DKEY_Hypo"
+},
+{
+	"nickName": "Red Path",
+	"name": "DKEY_S3Red",
+	"scene": "DarkHypostyle",
+	"room": "F",
+	"saveId": "PuzzleDoor_locked-17--30",
+	"keyTag": "DKEY_Hypo"
+},
+{
+	"nickName": "Blue Path",
+	"name": "DKEY_S3Blue",
+	"scene": "DarkHypostyle",
+	"room": "F",
+	"saveId": "PuzzleDoor_locked-17--40",
+	"keyTag": "DKEY_Hypo"
+},
+{
+	"nickName": "Ice Ring Test",
+	"name": "DKEY_S3Ice",
+	"scene": "DarkHypostyle",
+	"room": "P",
+	"saveId": "PuzzleDoor_locked-58--40",
+	"keyTag": "DKEY_Hypo"
+},
+{
+	"nickName": "Boss Path",
+	"name": "DKEY_S3Boss",
+	"scene": "DarkHypostyle",
+	"room": "H",
+	"saveId": "PuzzleDoor_locked-46--20",
+	"keyTag": "DKEY_Hypo"
+},
+
+{
+	"nickName": "First Lock",
+	"name": "DKEY_S4RedJournals1",
+	"scene": "TombOfSimulacrum",
+	"room": "V",
+	"saveId": "PuzzleDoor_locked-22--37",
+	"keyTag": "DKEY_Tomb"
+},
+{
+	"nickName": "Red Path Entry",
+	"name": "DKEY_S4RedJournals2",
+	"scene": "TombOfSimulacrum",
+	"room": "P",
+	"saveId": "PuzzleDoor_locked-17--30",
+	"keyTag": "DKEY_Tomb"
+},
+{
+	"nickName": "Red Path Middle",
+	"name": "DKEY_S4RedJournals3",
+	"scene": "TombOfSimulacrum",
+	"room": "AH",
+	"saveId": "PuzzleDoor_locked-52--61",
+	"keyTag": "DKEY_Tomb"
+},
+{
+	"nickName": "Red Path Back",
+	"name": "DKEY_S4RedJournals4",
+	"scene": "TombOfSimulacrum",
+	"room": "AC",
+	"saveId": "PuzzleDoor_locked-52--50",
+	"keyTag": "DKEY_Tomb"
+},
+{
+	"nickName": "Yellow Portal",
+	"name": "DKEY_S4RedJournals5",
+	"scene": "TombOfSimulacrum",
+	"room": "X",
+	"saveId": "PuzzleDoor_locked-52--38",
+	"keyTag": "DKEY_Tomb"
+},
+{
+	"nickName": "Green Path (1st of 5)",
+	"name": "DKEY_S4GreenJournals1",
+	"scene": "TombOfSimulacrum",
+	"room": "AQ",
+	"saveId": "PuzzleDoor_locked-91--78",
+	"keyTag": "DKEY_Tomb"
+},
+{
+	"nickName": "Green Path (2nd of 5)",
+	"name": "DKEY_S4GreenJournals2",
+	"scene": "TombOfSimulacrum",
+	"room": "AP",
+	"saveId": "PuzzleDoor_locked-76--78",
+	"keyTag": "DKEY_Tomb"
+},
+{
+	"nickName": "Green Path (3rd of 5)",
+	"name": "DKEY_S4GreenJournals3",
+	"scene": "TombOfSimulacrum",
+	"room": "J",
+	"saveId": "PuzzleDoor_locked-42--18",
+	"keyTag": "DKEY_Tomb"
+},
+{
+	"nickName": "Green Path (4th of 5)",
+	"name": "DKEY_S4GreenJournals4",
+	"scene": "TombOfSimulacrum",
+	"room": "K",
+	"saveId": "PuzzleDoor_locked-52--14",
+	"keyTag": "DKEY_Tomb"
+},
+{
+	"nickName": "Green Path (5th of 5)",
+	"name": "DKEY_S4GreenJournals5",
+	"scene": "TombOfSimulacrum",
+	"room": "D",
+	"saveId": "PuzzleDoor_locked-46--6",
+	"keyTag": "DKEY_Tomb"
+},
+
+{
+	"nickName": "First Lock",
+	"name": "DKEY_B2Entrance",
+	"scene": "DreamDynamite",
+	"room": "AU",
+	"saveId": "PuzzleDoor_locked-61--78",
+	"keyTag": "DKEY_Sync"
+},
+{
+	"nickName": "West Clock",
+	"name": "DKEY_B2WestClock",
+	"scene": "DreamDynamite",
+	"room": "R",
+	"saveId": "PuzzleDoor_locked-52--34",
+	"keyTag": "DKEY_Sync"
+},
+{
+	"nickName": "East Clock",
+	"name": "DKEY_B2EastClock",
+	"scene": "DreamDynamite",
+	"room": "N",
+	"saveId": "PuzzleDoor_locked-97--34",
+	"keyTag": "DKEY_Sync"
+},
+
+{
+	"nickName": "First Floor",
+	"name": "DKEY_B3Floor1",
+	"scene": "DreamIce",
+	"room": "I",
+	"saveId": "PuzzleDoor_locked-40--22",
+	"keyTag": "DKEY_Tower"
+},
+{
+	"nickName": "Second Floor",
+	"name": "DKEY_B3Floor2",
+	"scene": "DreamIce",
+	"room": "L",
+	"saveId": "PuzzleDoor_locked-100--22",
+	"keyTag": "DKEY_Tower"
+},
+{
+	"nickName": "Third Floor",
+	"name": "DKEY_B3Floor3",
+	"scene": "DreamIce",
+	"room": "T",
+	"saveId": "PuzzleDoor_locked-17--54",
+	"keyTag": "DKEY_Tower"
+},
+{
+	"nickName": "Bottom Floor",
+	"name": "DKEY_B3Floor4",
+	"scene": "DreamIce",
+	"room": "V",
+	"saveId": "PuzzleDoor_locked-65--70",
+	"keyTag": "DKEY_Tower"
+},
+
+{
+	"nickName": "First Lock",
+	"name": "DKEY_B4Southwest",
+	"scene": "DreamFireChain",
+	"room": "P",
+	"saveId": "PuzzleDoor_locked-19--54",
+	"keyTag": "DKEY_Anti"
+},
+{
+	"nickName": "West Gate",
+	"name": "DKEY_B4WestCentral",
+	"scene": "DreamFireChain",
+	"room": "F",
+	"saveId": "PuzzleDoor_locked-13--34",
+	"keyTag": "DKEY_Anti"
+},
+{
+	"nickName": "East Gate",
+	"name": "DKEY_B4EastCentral",
+	"scene": "DreamFireChain",
+	"room": "J",
+	"saveId": "PuzzleDoor_locked-61--35",
+	"keyTag": "DKEY_Anti"
+},
+{
+	"nickName": "Boss",
+	"name": "DKEY_B4Boss",
+	"scene": "DreamFireChain",
+	"room": "E",
+	"saveId": "PuzzleDoor_locked-37--15",
+	"keyTag": "DKEY_Anti"
+},
+
+{
+	"nickName": "Top Left Vault",
+	"name": "DKEY_B5Northwest",
+	"scene": "DreamAll",
+	"room": "M",
+	"saveId": "PuzzleDoor_locked-25--15",
+	"keyTag": "DKEY_Quiet"
+},
+{
+	"nickName": "Top Right Vault",
+	"name": "DKEY_B5Northeast",
+	"scene": "DreamAll",
+	"room": "O",
+	"saveId": "PuzzleDoor_locked-55--15",
+	"keyTag": "DKEY_Quiet"
+},
+{
+	"nickName": "Bottom Left Vault",
+	"name": "DKEY_B5Southwest",
+	"scene": "DreamAll",
+	"room": "X",
+	"saveId": "PuzzleDoor_locked-18--41",
+	"keyTag": "DKEY_Quiet"
+},
+{
+	"nickName": "Bottom Right Vault",
+	"name": "DKEY_B5Southeast",
+	"scene": "DreamAll",
+	"room": "Z",
+	"saveId": "PuzzleDoor_locked-50--41",
+	"keyTag": "DKEY_Quiet"
+},
+
+{
+	"name": "GrandLibrary2",
+	"keyTag": "Passel"
+},
+{
+	"nickName": "Dream Rock",
+	"name": "CompleteLab",
+	"keyTag": "DreamNPC"
+},
+{
+	"nickName": "Osalig",
+	"name": "CompleteSync",
+	"keyTag": "DreamNPC"
+},
+{
+	"nickName": "Turnip Lady",
+	"name": "CompleteTower",
+	"keyTag": "DreamNPC"
+},
+{
+	"nickName": "Safety Jenny",
+	"name": "CompleteAnti",
+	"keyTag": "DreamNPC"
+},
+{
+	"nickName": "Farthest Umbrella",
+	"name": "Nowhere",
+	"keyTag": "DeepSecret"
+},
+{
+	"nickName": "Treasure Spruce",
+	"name": "AbyssalPlains",
+	"keyTag": "DeepSecret"
+},
+{
+	"nickName": "Apathetic Frog",
+	"name": "MysteryCave",
+	"keyTag": "DeepSecret"
+},
+{
+	"nickName": "Chanting Hexrot",
+	"name": "HisAltar",
+	"keyTag": "DeepSecret"
+}
+	]
+}

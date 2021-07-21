@@ -15,9 +15,8 @@
 *.sln
 *.csproj
 
-# Ignore vanilla Ludo files and more VS stuff
+# Ignore more VS stuff
 **/Properties
-**/Vanilla Files
 
 # Mono auto generated files
 mono_crash.*
@@ -354,3 +353,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/References

@@ -8,7 +8,7 @@ namespace ModStuff
         //TextMesh for the title
         protected TextMesh nameTextMesh;
         public TextMesh NameTextMesh { get { return nameTextMesh; } }
-        protected void OnEnable()
+        protected virtual void OnEnable()
         {
             if (nameTextMesh != null) { nameTextMesh.text = _name; }
         }

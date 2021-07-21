@@ -44,7 +44,7 @@ namespace ModStuff
 			if (includeStackTrace)
 			{
 				string stackTrace = StackTraceUtility.ExtractStackTrace();
-				string divider = "\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+				string divider = "\n-------------------------------------------------------------";
 				errorMsg += divider + "<size=13>" + stackTrace.Remove(0, stackTrace.IndexOf(')') + 1) + "</size>";
 			}
 

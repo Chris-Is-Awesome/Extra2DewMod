@@ -3,7 +3,7 @@
 //Use once in fluffy fields and then it can be used anywhere!
 
 #CONDITION_NPC safetyjenny 
-#ERRORMSG No safetyjenny found, use this in fluffyfields, then|you will be able to use it anywhere
+#ERRORMSG No safetyjenny found, use this in fluffyfields, then you will be able to use it anywhere
 
 //Hold jenny cat in memory, to be spawned everywhere
 spawn safetyjenny -hold

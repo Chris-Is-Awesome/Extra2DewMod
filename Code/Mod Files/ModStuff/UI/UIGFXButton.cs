@@ -14,6 +14,7 @@ namespace ModStuff
 
         public void ScaleBackground(Vector2 backgroundScale)
         {
+            gameObject.GetComponentInChildren<GuiClickRect>().SetSizeAndCenter(new Vector2(4.5f * backgroundScale.x, 1f * backgroundScale.y), Vector2.zero);
             buttonGfx.transform.localScale = new Vector3(backgroundScale.x / 0.5f, backgroundScale.y / 1.6f, 1f);
         }
 

@@ -1,0 +1,2924 @@
+{"list":
+[
+{
+	"name": "Pillow Fort Treasure",
+	"scene": "PillowFort",
+	"room": "I",
+	"saveId": "Dungeon_PuzzleChest-39--28",
+	"originalItem": "Tracker",
+	"tags": ["Chest", "Dungeon", "SecondaryItem"],
+	"allConditions": [
+		{"condition": ["Weapon", "DKEY_D1Entrance"]},
+		{"condition": ["Weapon", "DKEY_Pillow", "DKEY_Pillow"]}
+	]
+},
+{
+	"name": "Pillow Fort Shellbun Nest",
+	"scene": "PillowFort",
+	"room": "J",
+	"saveId": "KeyChest-7--44",
+	"originalItem": "DKEY_Pillow",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Pillow Fort Crayons",
+	"scene": "PillowFort",
+	"room": "G",
+	"saveId": "Dungeon_EnemyChest-3--29",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Dungeon", "Crayons"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pillow Fort Safety Jenny Gate",
+	"scene": "PillowFort",
+	"room": "E",
+	"saveId": "KeyChest-17--17",
+	"originalItem": "DKEY_Pillow",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pillow Fort Boss Reward",
+	"scene": "PillowFort",
+	"room": "C",
+	"saveId": "Dungeon_Chest-37--4",
+	"originalItem": "RaftPiece",
+	"tags": ["Chest", "Dungeon", "Collectible", "Boss"],
+	"allConditions": [
+		{"condition": ["Weapon", "DKEY_D1West"]},
+		{"condition": ["Weapon", "DKEY_Pillow", "DKEY_Pillow"]}
+	]
+},
+
+{
+	"name": "Sand Castle Crayons",
+	"scene": "SandCastle",
+	"room": "G",
+	"saveId": "Dungeon_Chest-37--15",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Dungeon", "Crayons"],
+	"allConditions": [
+		{"condition": ["Chain1", "Stick"]},
+		{"condition": ["Wand"]},
+		{"condition": ["Dynamite"]},
+		{"condition": ["Mace"]}
+	]
+},
+{
+	"name": "Sand Castle Orbiting Balls",
+	"scene": "SandCastle",
+	"room": "I",
+	"saveId": "KeyChest-11--36",
+	"originalItem": "DKEY_Sand",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["Stick"]}]
+},
+{
+	"name": "Sand Castle Spikebun Dunes",
+	"scene": "SandCastle",
+	"room": "D",
+	"saveId": "KeyChest-69--3",
+	"originalItem": "DKEY_Sand",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Sand Castle Treasure",
+	"scene": "SandCastle",
+	"room": "J",
+	"saveId": "Dungeon_Chest-53--44",
+	"originalItem": "ForceWand",
+	"tags": ["Chest", "Dungeon", "MainItem"],
+	"allConditions": [
+		{"condition": ["Dynamite"]},
+		{"condition": ["Weapon", "DKEY_D2SpikebunDunes"]},
+		{"condition": ["Weapon", "DKEY_Sand", "DKEY_Sand"]}
+	]
+},
+{
+	"name": "Sand Castle Boss Reward",
+	"scene": "SandCastle",
+	"room": "A",
+	"saveId": "Dungeon_Chest-7--4",
+	"originalItem": "RaftPiece",
+	"tags": ["Chest", "Dungeon", "Collectible", "Boss"],
+	"allConditions": [
+		{"condition": ["Wand", "Sword"]},
+		{"condition": ["Wand", "Stick", "DKEY_D2Balls"]},
+		{"condition": ["Wand", "Stick", "DKEY_Sand", "DKEY_Sand"]}
+	]
+},
+
+{
+	"name": "Art Exhibit First Item",
+	"scene": "ArtExhibit",
+	"room": "R",
+	"saveId": "KeyChest-38--78",
+	"originalItem": "DKEY_Art",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Art Exhibit Lemon Easels",
+	"scene": "ArtExhibit",
+	"room": "N",
+	"saveId": "KeyChest-56--53",
+	"originalItem": "DKEY_Art",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Weapon", "DKEY_Art"]},
+		{"condition": ["Weapon", "DKEY_D3Front"]},
+		{"condition": ["Dynamite", "NotDynamite"]}
+	]
+},
+{
+	"name": "Art Exhibit Treasure",
+	"scene": "ArtExhibit",
+	"room": "L",
+	"saveId": "Dungeon_Chest-3--54",
+	"originalItem": "Dynamite",
+	"tags": ["Chest", "Dungeon", "MainItem"],
+	"allConditions": [
+		{"condition": ["Weapon", "DKEY_Art", "DKEY_Art", "DKEY_Art", "DKEY_Art"]},
+		{"condition": ["DKEY_D3Easel", "Dynamite", "NotDynamite"]},
+		{"condition": ["DKEY_D3Easel", "DKEY_D3Front", "Weapon"]}
+	]
+},
+{
+	"name": "Art Exhibit Crayons",
+	"scene": "ArtExhibit",
+	"room": "F",
+	"saveId": "Dungeon_Chest-2--27",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Dungeon", "Crayons"],
+	"allConditions": [{"condition": ["Dynamite", "NotDynamite"]}]
+},
+{
+	"name": "Art Exhibit Spike Floor",
+	"scene": "ArtExhibit",
+	"room": "E",
+	"saveId": "KeyChest-42--20",
+	"originalItem": "DKEY_Art",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Dynamite", "NotDynamite"]},
+		{"condition": ["Dynamite", "DKEY_D3Front"]}
+	]
+},
+{
+	"name": "Art Exhibit Business Casual Man",
+	"scene": "ArtExhibit",
+	"room": "A",
+	"saveId": "KeyChest-3--8",
+	"originalItem": "DKEY_Art",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Art", "DKEY_Art", "DKEY_Art"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_D3Spikes"]},
+		{"condition": ["Dynamite", "DKEY_D3Front", "DKEY_D3Spikes"]},
+		{"condition": ["Dynamite", "Sword", "DKEY_D3Boss"]}
+	]
+},
+{
+	"name": "Art Exhibit Boss Reward",
+	"scene": "ArtExhibit",
+	"room": "D",
+	"saveId": "Dungeon_Chest-52--4",
+	"originalItem": "RaftPiece",
+	"tags": ["Chest", "Dungeon", "Collectible", "Boss"],
+	"allConditions": [
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Art", "DKEY_Art", "DKEY_Art", "DKEY_Art"]},
+		{"condition": ["Dynamite", "Sword"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_D3Spikes", "DKEY_D3Boss"]},
+		{"condition": ["Dynamite", "DKEY_D3Front", "DKEY_D3Spikes", "DKEY_D3Boss"]}
+	]
+},
+
+{
+	"name": "Trash Cave Crayons",
+	"scene": "TrashCave",
+	"room": "M",
+	"saveId": "Dungeon_PuzzleChest-65--39",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Dungeon", "Crayons"],
+	"allConditions": [{"condition": ["Stick"]}]
+},
+{
+	"name": "Trash Cave Ice Barricade",
+	"scene": "TrashCave",
+	"room": "N",
+	"saveId": "KeyChest-37--51",
+	"originalItem": "DKEY_Trash",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["Stick"]}]
+},
+{
+	"name": "Trash Cave Rotnip Arena",
+	"scene": "TrashCave",
+	"room": "G",
+	"saveId": "KeyChest-93--18",
+	"originalItem": "DKEY_Trash",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Stick", "DKEY_Trash", "DKEY_Trash", "DKEY_Trash", "DKEY_Trash"]},
+		{"condition": ["Stick", "DKEY_D4Swamp"]},
+		{"condition": ["Sword", "DKEY_D4Sword"]},
+		{"condition": ["Stick", "Wand", "DKEY_D4Sword"]}
+	]
+},
+{
+	"name": "Trash Cave Treasure",
+	"scene": "TrashCave",
+	"room": "D",
+	"saveId": "Dungeon_Chest-81--3",
+	"originalItem": "FireSword",
+	"tags": ["Chest", "Dungeon", "MainItem"],
+	"allConditions": [
+		{"condition": ["Sword"]},
+		{"condition": ["Stick", "Wand"]},
+		{"condition": ["Stick", "DKEY_Trash", "DKEY_Trash"]},
+		{"condition": ["Stick", "DKEY_D4Swamp", "DKEY_D4Sword"]}
+	]
+},
+{
+	"name": "Trash Cave Mimicuties",
+	"scene": "TrashCave",
+	"room": "H",
+	"saveId": "KeyChest-41--26",
+	"originalItem": "DKEY_Trash",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["Sword"]}]
+},
+{
+	"name": "Trash Cave Cube Maze",
+	"scene": "TrashCave",
+	"room": "E",
+	"saveId": "KeyChest-19--25",
+	"originalItem": "DKEY_Trash",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Sword", "DKEY_Trash", "DKEY_Trash", "DKEY_Trash"]},
+		{"condition": ["Sword", "DKEY_D4Mimics"]}
+	]
+},
+{
+	"name": "Trash Cave Boss Reward",
+	"scene": "TrashCave",
+	"room": "B",
+	"saveId": "Dungeon_Chest-37--4",
+	"originalItem": "RaftPiece",
+	"tags": ["Chest", "Dungeon", "Collectible", "Boss"],
+	"allConditions": [
+		{"condition": ["Sword", "DKEY_Trash", "DKEY_Trash", "DKEY_Trash", "DKEY_Trash"]},
+		{"condition": ["Sword", "DKEY_D4Mimics", "DKEY_D4Boss"]}
+	]
+},
+
+{
+	"name": "Flooded Basement Portal Cube Item",
+	"scene": "FloodedBasement",
+	"room": "A",
+	"saveId": "KeyChest-20--7",
+	"originalItem": "DKEY_Basement",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["NotForce"]}]
+},
+{
+	"name": "Flooded Basement Crossway Combat Item",
+	"scene": "FloodedBasement",
+	"room": "L",
+	"saveId": "KeyChest-48--27",
+	"originalItem": "DKEY_Basement",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Ice", "Sword"]},
+		{"condition": ["Chain1", "Stick"]},
+		{"condition": ["Weapon", "DKEY_D5Laundry"]},
+		{"condition": ["Weapon", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement"]}
+	]
+},
+{
+	"name": "Flooded Basement Land Sharks Item",
+	"scene": "FloodedBasement",
+	"room": "U",
+	"saveId": "KeyChest-49--63",
+	"originalItem": "DKEY_Basement",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Ice", "Sword", "DKEY_D5Crossway"]},
+		{"condition": ["Chain1", "Stick", "DKEY_D5Crossway"]},
+		{"condition": ["Weapon", "DKEY_D5Laundry", "DKEY_D5Crossway"]},
+		{"condition": ["Weapon", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement"]}
+	]
+},
+{
+	"name": "Flooded Basement Treasure",
+	"scene": "FloodedBasement",
+	"room": "H",
+	"saveId": "Dungeon_Chest-74--20",
+	"originalItem": "Headband",
+	"tags": ["Chest", "Dungeon", "SecondaryItem"],
+	"allConditions": [
+		{"condition": ["Ice", "Stick", "Projectile", "DKEY_D5Crayon"]},
+		{"condition": ["Ice", "Sword", "DKEY_D5Crossway", "DKEY_D5PetMines"]},
+		{"condition": ["Chain1", "Stick", "DKEY_D5Crossway", "DKEY_D5PetMines"]},
+		{"condition": ["Weapon", "DKEY_D5Laundry", "DKEY_D5Crossway", "DKEY_D5PetMines"]},
+		{"condition": ["Weapon", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement"]}
+	]
+},
+{
+	"name": "Flooded Basement Crayons",
+	"scene": "FloodedBasement",
+	"room": "G",
+	"saveId": "Dungeon_Chest-51--15",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Dungeon", "Crayons"],
+	"allConditions": [
+		{"condition": ["Ice", "Stick", "Projectile"]},
+		{"condition": ["Ice", "Sword", "DKEY_D5Crossway", "DKEY_D5PetMines", "DKEY_D5Crayon"]},
+		{"condition": ["Chain1", "Stick", "DKEY_D5Crossway", "DKEY_D5PetMines", "DKEY_D5Crayon"]},
+		{"condition": ["Weapon", "DKEY_D5Laundry", "DKEY_D5Crossway", "DKEY_D5PetMines", "DKEY_D5Crayon"]},
+		{"condition": ["Weapon", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement"]}
+	]
+},
+{
+	"name": "Flooded Basement Keeled Fishbun Item",
+	"scene": "FloodedBasement",
+	"room": "R",
+	"saveId": "KeyChest-83--41",
+	"originalItem": "DKEY_Basement",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Ice", "Stick", "Projectile", "DKEY_D5Crayon"]},
+		{"condition": ["Ice", "Sword", "DKEY_D5Crossway", "DKEY_D5PetMines"]},
+		{"condition": ["Chain1", "Stick", "DKEY_D5Crossway", "DKEY_D5PetMines"]},
+		{"condition": ["Weapon", "DKEY_D5Laundry", "DKEY_D5Crossway", "DKEY_D5PetMines"]},
+		{"condition": ["Weapon", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement"]}
+	]
+},
+{
+	"name": "Flooded Basement Number Wall Item",
+	"scene": "FloodedBasement",
+	"room": "M",
+	"saveId": "KeyChest-101--28",
+	"originalItem": "DKEY_Basement",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Ice", "Stick", "Projectile", "DKEY_D5Crayon"]},
+		{"condition": ["Ice", "Sword", "DKEY_D5Crossway", "DKEY_D5PetMines"]},
+		{"condition": ["Chain1", "Stick", "DKEY_D5Crossway", "DKEY_D5PetMines"]},
+		{"condition": ["Weapon", "DKEY_D5Laundry", "DKEY_D5Crossway", "DKEY_D5PetMines"]},
+		{"condition": ["Weapon", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement"]}
+	]
+},
+{
+	"name": "Flooded Basement Boss Reward",
+	"scene": "FloodedBasement",
+	"room": "C",
+	"saveId": "Dungeon_Chest-67--4",
+	"originalItem": "RaftPiece",
+	"tags": ["Chest", "Dungeon", "Collectible", "Boss"],
+	"allConditions": [
+		{"condition": ["Ice", "Stick", "Projectile", "DKEY_D5Crayon", "DKEY_D5Boss"]},
+		{"condition": ["Ice", "Sword", "DKEY_D5Crossway", "DKEY_D5PetMines", "DKEY_D5Boss"]},
+		{"condition": ["Chain1", "Stick", "DKEY_D5Crossway", "DKEY_D5PetMines", "DKEY_D5Boss"]},
+		{"condition": ["Weapon", "DKEY_D5Laundry", "DKEY_D5Crossway", "DKEY_D5PetMines", "DKEY_D5Boss"]},
+		{"condition": ["Weapon", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement", "DKEY_Basement"]}
+	]
+},
+
+{
+	"name": "Potassium Mine Conveyor Plaza Item",
+	"scene": "PotassiumMine",
+	"room": "M",
+	"saveId": "KeyChest-45--51",
+	"originalItem": "DKEY_Mine",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Potassium Mine Far South Item",
+	"scene": "PotassiumMine",
+	"room": "T",
+	"saveId": "KeyChest-34--74",
+	"originalItem": "DKEY_Mine",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["NotDynamite"]}]
+},
+{
+	"name": "Potassium Mine Crayons",
+	"scene": "PotassiumMine",
+	"room": "G",
+	"saveId": "Dungeon_Chest-7--29",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Dungeon", "Crayons"],
+	"allConditions": [
+		{"condition": ["Weapon", "DKEY_D6BluePortal"]},
+		{"condition": ["Weapon", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine"]}
+	]
+},
+{
+	"name": "Potassium Mine Crayon Compensation Item",
+	"scene": "PotassiumMine",
+	"room": "L",
+	"saveId": "KeyChest-24--40",
+	"originalItem": "DKEY_Mine",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Ice"]},
+		{"condition": ["Dynamite", "NotDynamite"]},
+		{"condition": ["Weapon", "DKEY_D6BluePortal"]},
+		{"condition": ["Weapon", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine"]}
+	]
+},
+{
+	"name": "Potassium Mine Slug Ordered Tiles Item",
+	"scene": "PotassiumMine",
+	"room": "N",
+	"saveId": "KeyChest-62--44",
+	"originalItem": "DKEY_Mine",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Weapon", "DKEY_D6EastSegment"]},
+		{"condition": ["Weapon", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine"]}
+	]
+},
+{
+	"name": "Potassium Mine Treasure",
+	"scene": "PotassiumMine",
+	"room": "J",
+	"saveId": "Dungeon_Chest-63--27",
+	"originalItem": "IceRing",
+	"tags": ["Chest", "Dungeon", "MainItem"],
+	"allConditions": [
+		{"condition": ["Weapon", "DKEY_D6EastSegment", "DKEY_D6BunboyTunnel"]},
+		{"condition": ["Weapon", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine"]},
+		{"condition": ["Chain1", "Stick", "Wand", "DKEY_D6EastSegment"]},
+		{"condition": ["Chain1", "Stick", "Wand", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine"]},
+		{"condition": ["Chain1", "Stick", "Ice", "DKEY_D6EastSegment"]},
+		{"condition": ["Chain1", "Stick", "Ice", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine"]}
+	]
+},
+{
+	"name": "Potassium Mine Ice Tutorial Item",
+	"scene": "PotassiumMine",
+	"room": "D",
+	"saveId": "KeyChest-41--14",
+	"originalItem": "DKEY_Mine",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Ice", "Stick"]},
+		{"condition": ["Ice", "Wand"]}
+	]
+},
+{
+	"name": "Potassium Mine Boss Reward",
+	"scene": "PotassiumMine",
+	"room": "A",
+	"saveId": "Dungeon_Chest-37--4",
+	"originalItem": "RaftPiece",
+	"tags": ["Chest", "Dungeon", "Collectible", "Boss"],
+	"allConditions": [
+		{"condition": ["Ice", "DKEY_D6GreenSlugs", "DKEY_D6Boss"]},
+		{"condition": ["Ice", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine", "DKEY_Mine"]}
+	]
+},
+
+{
+	"name": "Boiling Grave Skullnips Lava Dive Item",
+	"scene": "BoilingGrave",
+	"room": "T",
+	"saveId": "KeyChest-49--62",
+	"originalItem": "DKEY_Grave",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Boiling Grave Titans Waiting Room",
+	"scene": "BoilingGrave",
+	"room": "Z",
+	"saveId": "KeyChest-64--74",
+	"originalItem": "DKEY_Grave",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Boiling Grave Treasure",
+	"scene": "BoilingGrave",
+	"room": "W",
+	"saveId": "Dungeon_Chest-18--75",
+	"originalItem": "Chain",
+	"tags": ["Chest", "Dungeon", "MainItem"],
+	"allConditions": [
+		{"condition": ["Weapon", "Roll", "DKEY_D7HotBlocks"]},
+		{"condition": ["Weapon", "Roll", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave"]}
+	]
+},
+{
+	"name": "Boiling Grave Lava Pillars Item",
+	"scene": "BoilingGrave",
+	"room": "O",
+	"saveId": "KeyChest-42--53",
+	"originalItem": "DKEY_Grave",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Roll", "Ice"]},
+		{"condition": ["Roll", "Chain1", "Stick", "DKEY_D7TitansGate"]},
+		{"condition": ["Roll", "Chain1", "Stick", "DKEY_Grave", "DKEY_Grave"]}
+	]
+},
+{
+	"name": "Boiling Grave Royal Tomb Item",
+	"scene": "BoilingGrave",
+	"room": "K",
+	"saveId": "KeyChest-27--32",
+	"originalItem": "DKEY_Grave",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Chain1", "Stick", "Roll", "DKEY_D7TitansGate", "DKEY_D7CountingWithSkullnips"]},
+		{"condition": ["Chain1", "Stick", "Roll", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave"]},
+		{"condition": ["Chain1", "Stick", "Ice", "Wand", "DKEY_D7TitansGate", "DKEY_D7CountingWithSkullnips"]},
+		{"condition": ["Chain1", "Stick", "Ice", "Wand", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave"]}
+	]
+},
+{
+	"name": "Boiling Grave Crayons",
+	"scene": "BoilingGrave",
+	"room": "B",
+	"saveId": "Dungeon_Chest-22--8",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Dungeon", "Crayons"],
+	"allConditions": [
+		{"condition": ["Chain1", "Stick", "Roll", "DKEY_D7TitansGate", "DKEY_D7CountingWithSkullnips", "DKEY_D7RoyalTomb"]},
+		{"condition": ["Chain1", "Stick", "Roll", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave"]},
+		{"condition": ["Chain1", "Stick", "Ice", "Wand", "DKEY_D7TitansGate", "DKEY_D7CountingWithSkullnips", "DKEY_D7RoyalTomb"]},
+		{"condition": ["Chain1", "Stick", "Ice", "Wand", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave"]}
+	]
+},
+{
+	"name": "Boiling Grave Frozen Gauntlet Item",
+	"scene": "BoilingGrave",
+	"room": "D",
+	"saveId": "KeyChest-57--2",
+	"originalItem": "DKEY_Grave",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"allConditions": [
+		{"condition": ["Chain1", "Stick", "Roll", "DKEY_D7TitansGate", "DKEY_D7CountingWithSkullnips"]},
+		{"condition": ["Chain1", "Stick", "Roll", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave"]},
+		{"condition": ["Chain1", "Stick", "Ice", "Wand", "DKEY_D7TitansGate", "DKEY_D7CountingWithSkullnips"]},
+		{"condition": ["Chain1", "Stick", "Ice", "Wand", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave"]}
+	]
+},
+{
+	"name": "Boiling Grave Boss Reward",
+	"scene": "BoilingGrave",
+	"room": "E",
+	"saveId": "Dungeon_Chest-67--4",
+	"originalItem": "RaftPiece",
+	"tags": ["Chest", "Dungeon", "Collectible", "Boss"],
+	"allConditions": [
+		{"condition": ["Chain1", "Stick", "Roll", "DKEY_D7TitansGate", "DKEY_D7CountingWithSkullnips", "DKEY_D7Boss"]},
+		{"condition": ["Chain1", "Stick", "Roll", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave"]},
+		{"condition": ["Chain1", "Stick", "Ice", "Wand", "DKEY_D7TitansGate", "DKEY_D7CountingWithSkullnips", "DKEY_D7Boss"]},
+		{"condition": ["Chain1", "Stick", "Ice", "Wand", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave", "DKEY_Grave"]}
+	]
+},
+
+{
+	"name": "Grand Library Treasure",
+	"scene": "GrandLibrary",
+	"room": "G",
+	"saveId": "Dungeon_Chest-54--15",
+	"originalItem": "FireMace",
+	"tags": ["Chest", "Dungeon", "MainItem"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [
+		{"condition": ["Ice", "Mace"]},
+		{"condition": ["Ice", "Chain1", "Sword"]}
+	]
+},
+{
+	"name": "Grand Library Crayons",
+	"scene": "GrandLibrary",
+	"room": "AA",
+	"saveId": "Dungeon_Chest-5--65",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Dungeon", "Crayons"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [{"condition": ["Ice", "Mace"]}]
+},
+{
+	"name": "Grand Library Patient Key",
+	"scene": "GrandLibrary",
+	"room": "AC",
+	"saveId": "KeyChest-62--63",
+	"originalItem": "DKEY_Library",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [{"condition": ["Mace", "Ice", "Wand"]}]
+},
+{
+	"name": "Grand Library Hidden Key",
+	"scene": "GrandLibrary",
+	"room": "T",
+	"saveId": "KeyChest-86--44",
+	"originalItem": "DKEY_Library",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [{"condition": ["Ice", "Mace", "Wand"]}]
+},
+{
+	"name": "Grand Library Fighter's Key",
+	"scene": "GrandLibrary",
+	"room": "AD",
+	"saveId": "KeyChest-87--62",
+	"originalItem": "DKEY_Library",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [{"condition": ["Ice", "Mace"]}]
+},
+{
+	"name": "Grand Library Stored Key",
+	"scene": "GrandLibrary",
+	"room": "AE",
+	"saveId": "KeyChest-93--63",
+	"originalItem": "DKEY_Library",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [{"condition": ["Ice", "Mace", "Wand"]}]
+},
+{
+	"name": "Grand Library Delayed Key",
+	"scene": "GrandLibrary",
+	"room": "U",
+	"saveId": "KeyChest-92--45",
+	"originalItem": "DKEY_Library",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "DKEY_D8LockedChambers1", "DKEY_D8LockedChambers2", "DKEY_D8LockedChambers3"]},
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "DKEY_Library", "DKEY_Library", "DKEY_Library"]}
+	]
+},
+{
+	"name": "Grand Library Carrot Lobotomy",
+	"scene": "GrandLibrary",
+	"room": "AB",
+	"saveId": "KeyChest-37--69",
+	"originalItem": "DKEY_Library",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "Dynamite", "DKEY_D8LockedChambers1", "DKEY_D8LockedChambers2", "DKEY_D8LockedChambers3", "DKEY_D8LockedChambers4", "DKEY_D8RedPortalEast"]},
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "Dynamite", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library"]}
+	]
+},
+{
+	"name": "Grand Library Red Crystal Ice",
+	"scene": "GrandLibrary",
+	"room": "Q",
+	"saveId": "KeyChest-27--41",
+	"originalItem": "DKEY_Library",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "Dynamite", "DKEY_D8LockedChambers1", "DKEY_D8LockedChambers2", "DKEY_D8LockedChambers3", "DKEY_D8LockedChambers4", "DKEY_D8RedPortalNorth"]},
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "Dynamite", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library"]}
+	]
+},
+{
+	"name": "Grand Library Hexrot Gauntlet",
+	"scene": "GrandLibrary",
+	"room": "A",
+	"saveId": "KeyChest-6--5",
+	"originalItem": "DKEY_Library",
+	"tags": ["Standing", "Dungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "Dynamite", "DKEY_D8LockedChambers1", "DKEY_D8LockedChambers2", "DKEY_D8LockedChambers3", "DKEY_D8LockedChambers4", "DKEY_D8RedPortalEast", "DKEY_D8YellowPortal"]},
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "Dynamite", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library"]}
+	]
+},
+{
+	"name": "Grand Library Boss Key",
+	"scene": "GrandLibrary",
+	"room": "E",
+	"saveId": "Dungeon_Chest-22--15",
+	"originalItem": "Nothing",
+	"tags": ["Chest", "Dungeon"],
+	"setFlag": "GrandLibrary2",
+	"areaCondition": {"condition": ["LibraryAccess"]},
+	"allConditions": [
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "Dynamite", "DKEY_D8LockedChambers1", "DKEY_D8LockedChambers2", "DKEY_D8LockedChambers3", "DKEY_D8LockedChambers4", "DKEY_D8RedPortalEast", "DKEY_D8RedPortalNorth", "DKEY_D8YellowPortal", "DKEY_D8Final"]},
+		{"condition": ["Mace", "Roll", "Wand", "Ice", "Dynamite", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library", "DKEY_Library"]}
+	]
+},
+
+{
+	"name": "Shifting Chamber Raft Piece",
+	"scene": "GrandLibrary2",
+	"room": "BA",
+	"saveId": "Dungeon_Chest-9--5",
+	"originalItem": "RaftPiece",
+	"tags": ["Chest", "Dungeon", "Collectible", "Boss"],
+	"areaCondition": {"condition": ["GrandLibrary2"]},
+	"allConditions": [{"condition": ["Chain1", "Mace", "Ice", "Dynamite", "Wand"]}]
+},
+{
+	"name": "Shifting Chamber Forbidden Key",
+	"scene": "GrandLibrary2",
+	"room": "BA",
+	"saveId": "Dungeon_Chest-5--5",
+	"originalItem": "SecretKey",
+	"tags": ["Chest", "Dungeon", "SecretKey", "Boss"],
+	"areaCondition": {"condition": ["GrandLibrary2"]},
+	"allConditions": [{"condition": ["Chain1", "Mace", "Ice", "Dynamite", "Wand"]}]
+},
+
+{
+	"name": "Fluffy Fields Goldbun",
+	"scene": "FluffyFieldsCaves",
+	"room": "B",
+	"saveId": "Dungeon_EnemyChest-21--2",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fluffy Fields Dynamite Cheat Shard",
+	"scene": "FluffyFieldsCaves",
+	"room": "C",
+	"saveId": "Dungeon_Chest-36--3",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fluffy Fields Timed Bridge Crayons",
+	"scene": "FluffyFieldsCaves",
+	"room": "E",
+	"saveId": "Dungeon_Chest-71--8",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Cave", "Crayons"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fluffy Fields Hermit Hint",
+	"scene": "FluffyFieldsCaves",
+	"room": "F",
+	"saveId": "Dungeon_Chest-82--4",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fluffy Fields Laser Intimidation",
+	"scene": "FluffyFieldsCaves",
+	"room": "G",
+	"saveId": "Dungeon_PuzzleChest-99--4",
+	"originalItem": "SuitTippsie",
+	"tags": ["Chest", "Cave", "Outfit"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fluffy Fields Timed Blocks Shard",
+	"scene": "FluffyFieldsCaves",
+	"room": "J",
+	"saveId": "Dungeon_Chest-33--15",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fluffy Fields Ice Blockade",
+	"scene": "FluffyFieldsCaves",
+	"room": "K",
+	"saveId": "Dungeon_Chest-48--18",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Stick"]}]
+},
+{
+	"name": "Fluffy Fields Double Spikebun",
+	"scene": "FluffyFieldsCaves",
+	"room": "M",
+	"saveId": "Dungeon_EnemyChest-82--16",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Warp Garden Health Bar",
+	"scene": "FluffyFieldsCaves",
+	"room": "P",
+	"saveId": "Dungeon_Chest-25--28",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fluffy Fields Six Buns",
+	"scene": "FluffyFieldsCaves",
+	"room": "Q",
+	"saveId": "Dungeon_EnemyChest-40--29",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Warp Garden Artist Backroom",
+	"scene": "FluffyFieldsCaves",
+	"room": "X2",
+	"saveId": "Dungeon_Chest-24--52",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+
+{
+	"name": "Sweetwater Coast Chain Cheat Shard",
+	"scene": "CandyCoastCaves",
+	"room": "B",
+	"saveId": "Dungeon_Chest-19--3",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["NotForce"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Sweetwater Coast Feral Gate Patches",
+	"scene": "CandyCoastCaves",
+	"room": "G",
+	"saveId": "Dungeon_Chest-93--3",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["NotForce"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Sweetwater Coast Coloured Grates",
+	"scene": "CandyCoastCaves",
+	"room": "H",
+	"saveId": "Dungeon_Chest-3--16",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Sweetwater Coast Four Candy Snakes",
+	"scene": "CandyCoastCaves",
+	"room": "I",
+	"saveId": "Dungeon_EnemyChest-25--17",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Cave", "Crayons"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Sweetwater Coast Portal Trick Room",
+	"scene": "CandyCoastCaves",
+	"room": "J",
+	"saveId": "Dungeon_Chest-68--27",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Roll"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Sweetwater Coast Hint Hermit",
+	"scene": "CandyCoastCaves",
+	"room": "K",
+	"saveId": "Dungeon_Chest-54--17",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Sweetwater Coast Dupe Chest",
+	"scene": "CandyCoastCaves",
+	"room": "L",
+	"saveId": "Dungeon_Chest-67--15",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["NotDynamite"]}]
+},
+{
+	"name": "Sweetwater Coast Wooden Balls",
+	"scene": "CandyCoastCaves",
+	"room": "M",
+	"saveId": "Dungeon_Chest-78--15",
+	"originalItem": "SuitIttleOriginal",
+	"tags": ["Chest", "Cave", "Outfit"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Sweetwater Coast Kung Fu Jenny",
+	"scene": "CandyCoastCaves",
+	"room": "N",
+	"saveId": "Dungeon_Chest-94--16",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+
+{
+	"name": "Fancy Ruins Two Torches",
+	"scene": "FancyRuinsCaves",
+	"room": "A",
+	"saveId": "Dungeon_Chest-6--4",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Stick"]}]
+},
+{
+	"name": "Fancy Ruins Numbered Torch",
+	"scene": "FancyRuinsCaves",
+	"room": "B",
+	"saveId": "Dungeon_Chest-20--3",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Stick"]}]
+},
+{
+	"name": "Fancy Ruins Crystal Balls",
+	"scene": "FancyRuinsCaves",
+	"room": "C",
+	"saveId": "Dungeon_Chest-37--3",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fancy Ruins Big Ogler",
+	"scene": "FancyRuinsCaves",
+	"room": "D",
+	"saveId": "Dungeon_EnemyChest-47--6",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Cave", "Crayons"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fancy Ruins Hint Turnip",
+	"scene": "FancyRuinsCaves",
+	"room": "G",
+	"saveId": "Dungeon_Chest-102--5",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fancy Ruins Rhythm Pillars",
+	"scene": "FancyRuinsCaves",
+	"room": "H",
+	"saveId": "Dungeon_PuzzleChest-9--17",
+	"originalItem": "SuitJenny",
+	"tags": ["Chest", "Cave", "Outfit"],
+	"allConditions": [{"condition": ["Stick"]}]
+},
+{
+	"name": "Fancy Ruins Block Grate",
+	"scene": "FancyRuinsCaves",
+	"room": "I",
+	"saveId": "Dungeon_Chest-23--16",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fancy Ruins Four Oglers",
+	"scene": "FancyRuinsCaves",
+	"room": "J",
+	"saveId": "Dungeon_EnemyChest-37--14",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"areaCondition": {"condition": ["NotForce"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fancy Ruins Spike Path",
+	"scene": "FancyRuinsCaves",
+	"room": "K",
+	"saveId": "Dungeon_PuzzleChest-51--18",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fancy Ruins Hiding Hermit",
+	"scene": "FancyRuinsCaves",
+	"room": "L",
+	"saveId": "Dungeon_Chest-67--16",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Fancy Ruins Iced Torch",
+	"scene": "FancyRuinsCaves",
+	"room": "M",
+	"saveId": "Dungeon_PuzzleChest-80--16",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Stick"]}]
+},
+
+{
+	"name": "Star Woods Turnip Classroom",
+	"scene": "StarWoodsCaves",
+	"room": "A",
+	"saveId": "Dungeon_EnemyChest-3--3",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Star Woods Barrel Blast",
+	"scene": "StarWoodsCaves",
+	"room": "B",
+	"saveId": "Dungeon_PuzzleChest-22--5",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"areaCondition": {"condition": ["NotForce"]},
+	"allConditions": [
+		{"condition": ["Stick"]},
+		{"condition": ["Dynamite"]}
+	]
+},
+{
+	"name": "Star Woods 4-Crystal Crayon",
+	"scene": "StarWoodsCaves",
+	"room": "C",
+	"saveId": "Dungeon_PuzzleChest-36--4",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Cave", "Crayons"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Star Woods Sleepy Safety",
+	"scene": "StarWoodsCaves",
+	"room": "D",
+	"saveId": "Dungeon_Chest-56--4",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Star Woods Rotating Spikes",
+	"scene": "StarWoodsCaves",
+	"room": "F",
+	"saveId": "Dungeon_Chest-82--2",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["NotForce"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Star Woods Five Tiles Block",
+	"scene": "StarWoodsCaves",
+	"room": "G",
+	"saveId": "Dungeon_PuzzleChest-94--3",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Star Woods Whirlwind",
+	"scene": "StarWoodsCaves",
+	"room": "H",
+	"saveId": "Dungeon_Chest-12--15",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["NotForce"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Star Woods Magic Crystal",
+	"scene": "StarWoodsCaves",
+	"room": "I",
+	"saveId": "Dungeon_Chest-24--15",
+	"originalItem": "SuitSwim",
+	"tags": ["Chest", "Cave", "Outfit"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Star Woods Artist Turnip",
+	"scene": "StarWoodsCaves",
+	"room": "J",
+	"saveId": "Dungeon_Chest-41--15",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Star Woods Hint Bee",
+	"scene": "StarWoodsCaves",
+	"room": "K",
+	"saveId": "Dungeon_Chest-50--15",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Star Woods Flame Grates",
+	"scene": "StarWoodsCaves",
+	"room": "O",
+	"saveId": "Dungeon_Chest-96--15",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["NotForce"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+
+{
+	"name": "Slippery Slope Volcanic Path",
+	"scene": "SlipperySlopeCaves",
+	"room": "A",
+	"saveId": "Dungeon_PuzzleChest-3--5",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Slippery Slope Ice Barrels",
+	"scene": "SlipperySlopeCaves",
+	"room": "B",
+	"saveId": "Dungeon_Chest-26--4",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Slippery Slopes Eight Crystals",
+	"scene": "SlipperySlopeCaves",
+	"room": "D",
+	"saveId": "Dungeon_PuzzleChest-50--3",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Melee"]}]
+},
+{
+	"name": "Slippery Slope Forgotten Jennies",
+	"scene": "SlipperySlopeCaves",
+	"room": "E",
+	"saveId": "Dungeon_Chest-64--3",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Slippery Slope Pushy Crystals",
+	"scene": "SlipperySlopeCaves",
+	"room": "F",
+	"saveId": "Dungeon_PuzzleChest-82--3",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Cave", "Crayons"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Slippery Slope Exhausted Turnip",
+	"scene": "SlipperySlopeCaves",
+	"room": "G",
+	"saveId": "Dungeon_Chest-98--3",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Slippery Slope Bee Nest",
+	"scene": "SlipperySlopeCaves",
+	"room": "I",
+	"saveId": "Dungeon_EnemyChest-25--15",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Slippery Slope Portable Fan",
+	"scene": "SlipperySlopeCaves",
+	"room": "J",
+	"saveId": "Dungeon_Chest-39--16",
+	"originalItem": "SuitDelinquent",
+	"tags": ["Chest", "Cave", "Outfit"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Slippery Slope Moving Crystals",
+	"scene": "SlipperySlopeCaves",
+	"room": "K",
+	"saveId": "Dungeon_PuzzleChest-53--16",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["NotDynamite"]}]
+},
+{
+	"name": "Slippery Slope Shark House",
+	"scene": "SlipperySlopeCaves",
+	"room": "L",
+	"saveId": "Dungeon_Chest-70--17",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+
+{
+	"name": "Pepperpain Prairie Cowbun Combat",
+	"scene": "VitaminHillsCaves",
+	"room": "A",
+	"saveId": "Dungeon_EnemyChest-7--5",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"areaCondition": {"condition": ["NotForce"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pepperpain Prairie Brutus Fight",
+	"scene": "VitaminHillsCaves",
+	"room": "B",
+	"saveId": "Dungeon_Chest-17--4",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon", "Roll"]}]
+},
+{
+	"name": "Pepperpain Prairie Fire Path",
+	"scene": "VitaminHillsCaves",
+	"room": "F",
+	"saveId": "Dungeon_Chest-92--3",
+	"originalItem": "SoundTest",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"areaCondition": {"condition": ["NotForce"]},
+	"allConditions": [
+		{"condition": ["Stick"]},
+		{"condition": ["Wand"]}
+	]
+},
+{
+	"name": "Pepperpain Prairie Spiky Hint Bee",
+	"scene": "VitaminHillsCaves",
+	"room": "G",
+	"saveId": "Dungeon_Chest-107--4",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pepperpain Prairie Cannon Path",
+	"scene": "VitaminHillsCaves",
+	"room": "H",
+	"saveId": "Dungeon_Chest-10--18",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pepperpain Prairie Volcano Trial",
+	"scene": "VitaminHillsCaves",
+	"room": "J",
+	"saveId": "Dungeon_Chest-31--15",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pepperpain Prairie Barrel Hint Bee",
+	"scene": "VitaminHillsCaves",
+	"room": "K",
+	"saveId": "Dungeon_Chest-52--15",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pepperpain Prairie Haunted Guns",
+	"scene": "VitaminHillsCaves",
+	"room": "L",
+	"saveId": "Dungeon_Chest-86--15",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pepperpain Mountain Buzzsaw Path",
+	"scene": "VitaminHillsCaves",
+	"room": "O",
+	"saveId": "Dungeon_Chest-11--27",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Roll", "Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pepperpain Mountain Count Gunfire",
+	"scene": "VitaminHillsCaves",
+	"room": "P",
+	"saveId": "Dungeon_PuzzleChest-18--27",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Cave", "Crayons"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Pepperpain Trail Pacified Brutus",
+	"scene": "VitaminHillsCaves",
+	"room": "U",
+	"saveId": "Dungeon_Chest-82--27",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+
+{
+	"name": "Frozen Court Bushfire",
+	"scene": "FrozenCourtCaves",
+	"room": "A",
+	"saveId": "Dungeon_PuzzleChest-7--9",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Cave", "Crayons"],
+	"areaCondition": {"condition": ["Stick"]},
+	"allConditions": [{"condition": ["Stick"]}]
+},
+{
+	"name": "Frozen Court Cannon Spinner",
+	"scene": "FrozenCourtCaves",
+	"room": "B",
+	"saveId": "Dungeon_PuzzleChest-20--2",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Frozen Court Mimicbuns",
+	"scene": "FrozenCourtCaves",
+	"room": "C",
+	"saveId": "Dungeon_EnemyChest-37--5",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Stick"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Frozen Court Door Maze",
+	"scene": "FrozenCourtCaves",
+	"room": "E",
+	"saveId": "Dungeon_PuzzleChest-63--3",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Frozen Court Chilly Roger",
+	"scene": "FrozenCourtCaves",
+	"room": "F",
+	"saveId": "Dungeon_EnemyChest-84--5",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Frozen Court Rickety Bridge",
+	"scene": "FrozenCourtCaves",
+	"room": "H",
+	"saveId": "Dungeon_PuzzleChest-6--15",
+	"originalItem": "SecretGallery",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Frozen Court Titans Trove",
+	"scene": "FrozenCourtCaves",
+	"room": "I",
+	"saveId": "Dungeon_Chest-17--30",
+	"originalItem": "SuitCard",
+	"tags": ["Chest", "Cave", "Outfit"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Frozen Court Crystal Path",
+	"scene": "FrozenCourtCaves",
+	"room": "J",
+	"saveId": "Dungeon_Chest-40--15",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Frozen Court Blocked Grate",
+	"scene": "FrozenCourtCaves",
+	"room": "K",
+	"saveId": "Dungeon_Chest-50--14",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Frozen Court Hint Hermit",
+	"scene": "FrozenCourtCaves",
+	"room": "L",
+	"saveId": "Dungeon_Chest-63--15",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+
+{
+	"name": "Lonely Road Brief Platforms",
+	"scene": "LonelyRoadCaves",
+	"room": "B",
+	"saveId": "Dungeon_PuzzleChest-18--6",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Lonely Road Nine Timed Tiles",
+	"scene": "LonelyRoadCaves",
+	"room": "C",
+	"saveId": "Dungeon_Chest-33--4",
+	"originalItem": "SuitArmor",
+	"tags": ["Chest", "Cave", "Outfit"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Lonely Road Restless Volcano",
+	"scene": "LonelyRoadCaves",
+	"room": "D",
+	"saveId": "Dungeon_Chest-54--5",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Lonely Road Lava Fans",
+	"scene": "LonelyRoadCaves",
+	"room": "K",
+	"saveId": "Dungeon_PuzzleChest-52--17",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Roll", "NotForce"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Lonely Road Force Blasts",
+	"scene": "LonelyRoadCaves",
+	"room": "M",
+	"saveId": "Dungeon_PuzzleChest-80--15",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Stick"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Lonely Road Hint Shark",
+	"scene": "LonelyRoadCaves",
+	"room": "P",
+	"saveId": "Dungeon_Chest-27--29",
+	"originalItem": "CaveScroll",
+	"tags": ["Chest", "Cave", "Scroll"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Lonely Road Sidewinder Cubes",
+	"scene": "LonelyRoadCaves",
+	"room": "R",
+	"saveId": "Dungeon_Chest-56--28",
+	"originalItem": "Shard",
+	"tags": ["Chest", "Cave", "Shard"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Lonely Road Dark Maze",
+	"scene": "LonelyRoadCaves",
+	"room": "S",
+	"saveId": "Dungeon_PuzzleChest-87--32",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "Cave", "Crayons"],
+	"areaCondition": {"condition": ["Stick"]},
+	"allConditions": [{"condition": ["NotDynamite"]}]
+},
+{
+	"name": "Lonely Road Block Factory",
+	"scene": "LonelyRoadCaves",
+	"room": "T",
+	"saveId": "Dungeon_PuzzleChest-67--32",
+	"originalItem": "Lockpick",
+	"tags": ["Chest", "Cave", "Collectible"],
+	"areaCondition": {"condition": ["Stick"]},
+	"allConditions": [{"condition": ["Stick"]}]
+},
+
+{
+	"name": "Autumn Climb",
+	"scene": "Deep1",
+	"room": "A",
+	"saveId": "Dungeon_Chest-6-5",
+	"originalItem": "Tracker",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"areaCondition": {"condition": ["Stick"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "The Vault",
+	"scene": "Deep2",
+	"room": "B",
+	"saveId": "Dungeon_Chest-22--3",
+	"originalItem": "Amulet",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Painful Plain",
+	"scene": "Deep3",
+	"room": "A",
+	"saveId": "Dungeon_Chest--10--4",
+	"originalItem": "Tome",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Farthest Shore",
+	"scene": "Deep4",
+	"room": "A",
+	"saveId": "Dungeon_Chest-11-9",
+	"originalItem": "Tracker",
+	"setFlag": "Nowhere",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Scrap Yard",
+	"scene": "Deep5",
+	"room": "A",
+	"saveId": "Dungeon_EnemyChest-18--3",
+	"originalItem": "Headband",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"allConditions": [
+		{"condition": ["Stick"]},
+		{"condition": ["Wand"]},
+		{"condition": ["Dynamite"]},
+		{"condition": ["Ice", "Headband"]}
+	]
+},
+{
+	"name": "Brutal Oasis",
+	"scene": "Deep6",
+	"room": "A",
+	"saveId": "Dungeon_Chest--7-5",
+	"originalItem": "Tome",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["NotDynamite", "Roll"]}]
+},
+{
+	"name": "Former Colossus",
+	"scene": "Deep7",
+	"room": "A",
+	"saveId": "Dungeon_Chest-0-6",
+	"originalItem": "Dynamite",
+	"tags": ["Chest", "PortalWorld", "MainItem"],
+	"setFlag": "MysteryCave",
+	"areaCondition": {"condition": ["NotForce", "NotDynamite"]},
+	"allConditions": [{"condition": ["Stick"]}]
+},
+{
+	"name": "Sand Crucible",
+	"scene": "Deep8",
+	"room": "A",
+	"saveId": "Dungeon_Chest-7--3",
+	"originalItem": "Amulet",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Ocean Castle",
+	"scene": "Deep9",
+	"room": "A",
+	"saveId": "Dungeon_Chest--6-8",
+	"originalItem": "ForceWand",
+	"tags": ["Chest", "PortalWorld", "MainItem"],
+	"allConditions": [{"condition": ["Weapon", "Roll"]}]
+},
+{
+	"name": "Promenade Path",
+	"scene": "Deep10",
+	"room": "A",
+	"saveId": "Dungeon_Chest--5--14",
+	"originalItem": "Tome",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"areaCondition": {"condition": ["Weapon"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Maze of Steel",
+	"scene": "Deep11",
+	"room": "A",
+	"saveId": "Dungeon_Chest-41--16",
+	"originalItem": "Headband",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Wall of Text",
+	"scene": "Deep12",
+	"room": "B",
+	"saveId": "Dungeon_Chest-56--3",
+	"originalItem": "Amulet",
+	"tags": ["Chest", "PortalWorld", "SecondaryItem"],
+	"areaCondition": {"condition": ["Stick"]},
+	"allConditions": [{"condition": ["Weapon", "Roll"]}]
+},
+{
+	"name": "Lost City of Avlopp",
+	"scene": "Deep13",
+	"room": "C",
+	"saveId": "Dungeon_Chest-8--16",
+	"originalItem": "Chain",
+	"tags": ["Chest", "PortalWorld", "MainItem"],
+	"setFlag": "HisAltar",
+	"areaCondition": {"condition": ["Weapon", "Roll"]},
+	"allConditions": [{"condition": ["Weapon"]}]
+},
+{
+	"name": "Northern End",
+	"scene": "Deep14",
+	"room": "F",
+	"saveId": "Dungeon_Chest-5--65",
+	"originalItem": "IceRing",
+	"tags": ["Chest", "PortalWorld", "MainItem"],
+	"areaCondition": {"condition": ["Stick"]},
+	"allConditions": [
+		{"condition": ["Roll", "Stick"]},
+		{"condition": ["Roll", "Wand"]},
+		{"condition": ["Roll", "Dynamite"]},
+		{"condition": ["Roll", "Ice", "Headband"]}
+	]
+},
+{
+	"name": "Moon Garden",
+	"scene": "Deep15",
+	"room": "A",
+	"saveId": "Dungeon_Chest-0-8",
+	"originalItem": "Chain",
+	"tags": ["Chest", "PortalWorld", "MainItem"],
+	"setFlag": "AbyssalPlains",
+	"areaCondition": {"condition": ["Stick"]},
+	"allConditions": [{"condition": ["Weapon", "Roll"]}]
+},
+
+{
+	"name": "Sunken Labyrinth Gold Titan Item",
+	"scene": "SunkenLabyrinth",
+	"room": "E",
+	"saveId": "KeyChest-40--17",
+	"originalItem": "DKEY_Sunken",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["8Shards"]},
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Sunken Labyrinth Laser Eyes Item",
+	"scene": "SunkenLabyrinth",
+	"room": "C",
+	"saveId": "KeyChest-2--18",
+	"originalItem": "DKEY_Sunken",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["8Shards"]},
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Sunken Labyrinth Treasure",
+	"scene": "SunkenLabyrinth",
+	"room": "J",
+	"saveId": "Dungeon_Chest-8--41",
+	"originalItem": "ForceWand",
+	"tags": ["Chest", "SecretDungeon", "MainItem"],
+	"areaCondition": {"condition": ["8Shards"]},
+	"allConditions": [
+		{"condition": ["Weapon", "DKEY_S1UpperPlaza"]},
+		{"condition": ["Weapon", "DKEY_Sunken", "DKEY_Sunken", "DKEY_Sunken"]}
+	]
+},
+{
+	"name": "Sunken Labyrinth Mimicutie Item",
+	"scene": "SunkenLabyrinth",
+	"room": "O",
+	"saveId": "KeyChest-3--50",
+	"originalItem": "DKEY_Sunken",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["8Shards"]},
+	"allConditions": [{"condition": ["Wand"]}]
+},
+{
+	"name": "Sunken Labyrinth Crayons",
+	"scene": "SunkenLabyrinth",
+	"room": "U",
+	"saveId": "Dungeon_PuzzleChest-41--80",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "SecretDungeon", "Crayons"],
+	"areaCondition": {"condition": ["8Shards"]},
+	"allConditions": [
+		{"condition": ["Wand", "DKEY_S1LowerPlaza", "DKEY_S1TimedBlocks"]},
+		{"condition": ["Wand", "DKEY_Sunken", "DKEY_Sunken", "DKEY_Sunken"]}
+	]
+},
+{
+	"name": "Sunken Labyrinth Boss Reward",
+	"scene": "SunkenLabyrinth",
+	"room": "G",
+	"saveId": "Dungeon_Chest-67--16",
+	"originalItem": "SecretKey",
+	"tags": ["Chest", "SecretDungeon", "SecretKey", "Boss"],
+	"areaCondition": {"condition": ["8Shards"]},
+	"allConditions": [
+		{"condition": ["Wand", "DKEY_S1LowerPlaza"]},
+		{"condition": ["Wand", "DKEY_Sunken", "DKEY_Sunken"]}
+	]
+},
+
+{
+	"name": "Machine Fortress Hyperdusa Conveyor",
+	"scene": "MachineFortress",
+	"room": "L",
+	"saveId": "KeyChest-21--65",
+	"originalItem": "DKEY_Machine",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["16Shards"]},
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Machine Fortress Decoy",
+	"scene": "MachineFortress",
+	"room": "O",
+	"saveId": "Dungeon_ChestBees-83--65",
+	"originalItem": "ENEMY_BeeSwarm",
+	"tags": ["Chest", "SecretDungeon", "Bees"],
+	"areaCondition": {"condition": ["16Shards"]},
+	"allConditions": [{"condition": ["Dynamite"]}]
+},
+{
+	"name": "Machine Fortress Crayons",
+	"scene": "MachineFortress",
+	"room": "M",
+	"saveId": "Dungeon_Chest-50--68",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "SecretDungeon", "Crayons"],
+	"areaCondition": {"condition": ["16Shards"]},
+	"allConditions": [{"condition": ["Dynamite"]}]
+},
+{
+	"name": "Machine Fortress Spiked Numbers",
+	"scene": "MachineFortress",
+	"room": "H",
+	"saveId": "KeyChest-13--51",
+	"originalItem": "DKEY_Machine",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["16Shards"]},
+	"allConditions": [
+		{"condition": ["NotForce", "DKEY_S2Trial1"]},
+		{"condition": ["NotForce", "DKEY_Machine"]}
+	]
+},
+{
+	"name": "Machine Fortress Grinder",
+	"scene": "MachineFortress",
+	"room": "F",
+	"saveId": "KeyChest-42--41",
+	"originalItem": "DKEY_Machine",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["16Shards"]},
+	"allConditions": [
+		{"condition": ["NotForce", "DKEY_S2Trial1", "DKEY_S2Trial2"]},
+		{"condition": ["NotForce", "DKEY_Machine", "DKEY_Machine"]}
+	]
+},
+{
+	"name": "Machine Fortress Lit Path",
+	"scene": "MachineFortress",
+	"room": "E",
+	"saveId": "KeyChest-31--29",
+	"originalItem": "DKEY_Machine",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["16Shards"]},
+	"allConditions": [
+		{"condition": ["NotForce", "DKEY_S2Trial1", "DKEY_S2Trial2", "DKEY_S2Trial3"]},
+		{"condition": ["NotForce", "DKEY_Machine", "DKEY_Machine", "DKEY_Machine"]}
+	]
+},
+{
+	"name": "Machine Fortress Robonips",
+	"scene": "MachineFortress",
+	"room": "D",
+	"saveId": "KeyChest-6--16",
+	"originalItem": "DKEY_Machine",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["16Shards"]},
+	"allConditions": [
+		{"condition": ["NotForce", "DKEY_S2Trial1", "DKEY_S2Trial2", "DKEY_S2Trial3", "DKEY_S2Trial4"]},
+		{"condition": ["NotForce", "DKEY_Machine", "DKEY_Machine", "DKEY_Machine", "DKEY_Machine"]}
+	]
+},
+{
+	"name": "Machine Fortress Treasure",
+	"scene": "MachineFortress",
+	"room": "B",
+	"saveId": "Dungeon_Chest-37--3",
+	"originalItem": "Dynamite",
+	"tags": ["Chest", "SecretDungeon", "MainItem"],
+	"areaCondition": {"condition": ["16Shards"]},
+	"allConditions": [
+		{"condition": ["NotForce", "DKEY_S2Trial1", "DKEY_S2Trial2", "DKEY_S2Trial3", "DKEY_S2Trial4", "DKEY_S2Trial5"]},
+		{"condition": ["NotForce", "DKEY_Machine", "DKEY_Machine", "DKEY_Machine", "DKEY_Machine", "DKEY_Machine"]}
+	]
+},
+{
+	"name": "Machine Fortress Boss Reward",
+	"scene": "MachineFortress",
+	"room": "G",
+	"saveId": "Dungeon_Chest-82--40",
+	"originalItem": "SecretKey",
+	"tags": ["Chest", "SecretDungeon", "SecretKey", "Boss"],
+	"areaCondition": {"condition": ["16Shards"]},
+	"allConditions": [
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_S2Trial1", "DKEY_S2Trial2", "DKEY_S2Trial3", "DKEY_S2Trial4", "DKEY_S2Trial5"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Machine", "DKEY_Machine", "DKEY_Machine", "DKEY_Machine", "DKEY_Machine"]}
+	]
+},
+
+{
+	"name": "Dark Hypostyle Initial Key",
+	"scene": "DarkHypostyle",
+	"room": "A",
+	"saveId": "KeyChest-27--8",
+	"originalItem": "DKEY_Hypo",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["24Shards"]},
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Dark Hypostyle Crayons",
+	"scene": "DarkHypostyle",
+	"room": "V",
+	"saveId": "Dungeon_Chest-38--67",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "SecretDungeon", "Crayons"],
+	"areaCondition": {"condition": ["24Shards"]},
+	"allConditions": [
+		{"condition": ["NotForce", "DKEY_S3Blue"]},
+		{"condition": ["NotForce", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]}
+	]
+},
+{
+	"name": "Dark Hypostyle Blue Reimbursement",
+	"scene": "DarkHypostyle",
+	"room": "T",
+	"saveId": "KeyChest-42--53",
+	"originalItem": "DKEY_Hypo",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["24Shards"]},
+	"allConditions": [
+		{"condition": ["NotForce", "DKEY_S3Blue"]},
+		{"condition": ["NotForce", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]}
+	]
+},
+{
+	"name": "Dark Hypostyle Yellow Monochrome",
+	"scene": "DarkHypostyle",
+	"room": "P",
+	"saveId": "KeyChest-52--45",
+	"originalItem": "DKEY_Hypo",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["24Shards"]},
+	"allConditions": [
+		{"condition": ["Stick", "DKEY_S3Yellow"]},
+		{"condition": ["Stick", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]}
+	]
+},
+{
+	"name": "Dark Hypostyle Treasure",
+	"scene": "DarkHypostyle",
+	"room": "Q",
+	"saveId": "Dungeon_Chest-63--44",
+	"originalItem": "IceRing",
+	"tags": ["Chest", "SecretDungeon", "MainItem"],
+	"areaCondition": {"condition": ["24Shards"]},
+	"allConditions": [
+		{"condition": ["Weapon", "DKEY_S3Yellow", "DKEY_S3Ice"]},
+		{"condition": ["Weapon", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]}
+	]
+},
+{
+	"name": "Dark Hypostyle Yellow Reimbursement",
+	"scene": "DarkHypostyle",
+	"room": "L",
+	"saveId": "KeyChest-33--28",
+	"originalItem": "DKEY_Hypo",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["24Shards"]},
+	"allConditions": [
+		{"condition": ["Stick", "Ice", "DKEY_S3Yellow"]},
+		{"condition": ["Stick", "Ice", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]}
+	]
+},
+{
+	"name": "Dark Hypostyle Red Gauntlet",
+	"scene": "DarkHypostyle",
+	"room": "H",
+	"saveId": "KeyChest-54--17",
+	"originalItem": "DKEY_Hypo",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["24Shards"]},
+	"allConditions": [
+		{"condition": ["Stick", "BlockCannon", "DKEY_S3Red"]},
+		{"condition": ["Dynamite", "BlockCannon", "DKEY_S3Red"]},
+		{"condition": ["Stick", "BlockCannon", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]},
+		{"condition": ["Dynamite", "BlockCannon", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]}
+	]
+},
+{
+	"name": "Dark Hypostyle Red Reimbursement",
+	"scene": "DarkHypostyle",
+	"room": "G",
+	"saveId": "KeyChest-33--19",
+	"originalItem": "DKEY_Hypo",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["24Shards"]},
+	"allConditions": [
+		{"condition": ["Stick", "BlockCannon", "DKEY_S3Red"]},
+		{"condition": ["Dynamite", "BlockCannon", "DKEY_S3Red"]},
+		{"condition": ["Stick", "BlockCannon", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]},
+		{"condition": ["Dynamite", "BlockCannon", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]}
+	]
+},
+{
+	"name": "Dark Hypostyle Boss Reward",
+	"scene": "DarkHypostyle",
+	"room": "D",
+	"saveId": "Dungeon_Chest-67--4",
+	"originalItem": "SecretKey",
+	"tags": ["Chest", "SecretDungeon", "SecretKey", "Boss"],
+	"areaCondition": {"condition": ["24Shards"]},
+	"allConditions": [
+		{"condition": ["Stick", "Ice", "DKEY_S3Red", "DKEY_S3Boss"]},
+		{"condition": ["Stick", "Ice", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo", "DKEY_Hypo"]}
+	]
+},
+
+{
+	"name": "Tomb of Simulacrum Metal Jelly",
+	"scene": "TombOfSimulacrum",
+	"room": "AK",
+	"saveId": "KeyChest-3--78",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["Dynamite"]}]
+},
+{
+	"name": "Tomb of Simulacrum Self-Locked Tile",
+	"scene": "TombOfSimulacrum",
+	"room": "AF",
+	"saveId": "KeyChest-23--65",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["Ice", "Stick"]}]
+},
+{
+	"name": "Tomb of Simulacrum 8-Tile Slider",
+	"scene": "TombOfSimulacrum",
+	"room": "AB",
+	"saveId": "KeyChest-42--51",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["Ice", "Wand"]}]
+},
+{
+	"name": "Tomb of Simulacrum Roundabout Crystal",
+	"scene": "TombOfSimulacrum",
+	"room": "U",
+	"saveId": "KeyChest-11--38",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["Dynamite", "Ice", "Wand", "Stick"]}]
+},
+{
+	"name": "Tomb of Simulacrum Corner Torch",
+	"scene": "TombOfSimulacrum",
+	"room": "Q",
+	"saveId": "KeyChest-33--26",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [
+		{"condition": ["Dynamite", "Ice", "Mace", "DKEY_S4RedJournals1"]},
+		{"condition": ["Dynamite", "Ice", "Mace", "DKEY_Tomb"]}
+	]
+},
+{
+	"name": "Tomb of Simulacrum Crayons",
+	"scene": "TombOfSimulacrum",
+	"room": "AC",
+	"saveId": "Dungeon_Chest-48--52",
+	"originalItem": "Crayons",
+	"tags": ["Chest", "SecretDungeon", "Crayons"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [
+		{"condition": ["Dynamite", "PuzzleDmg", "DKEY_S4RedJournals1", "DKEY_S4RedJournals2"]},
+		{"condition": ["Dynamite", "PuzzleDmg", "DKEY_Tomb", "DKEY_Tomb"]}
+	]
+},
+{
+	"name": "Tomb of Simulacrum Mothula Floor",
+	"scene": "TombOfSimulacrum",
+	"room": "AI",
+	"saveId": "KeyChest-83--65",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["AccessS4Yellow"]}]
+},
+{
+	"name": "Tomb of Simulacrum Blind Barrelcutie",
+	"scene": "TombOfSimulacrum",
+	"room": "S",
+	"saveId": "KeyChest-71--27",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["AccessS4Yellow"]}]
+},
+{
+	"name": "Tomb of Simulacrum Hyperdusa Hell",
+	"scene": "TombOfSimulacrum",
+	"room": "Y",
+	"saveId": "KeyChest-99--50",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["AccessS4Yellow"]}]
+},
+{
+	"name": "Tomb of Simulacrum Flaming Spiked Orbitals",
+	"scene": "TombOfSimulacrum",
+	"room": "T",
+	"saveId": "KeyChest-102--32",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["AccessS4Yellow", "Roll"]}]
+},
+{
+	"name": "Tomb of Simulacrum Molten Conveyors",
+	"scene": "TombOfSimulacrum",
+	"room": "AQ",
+	"saveId": "KeyChest-101--74",
+	"originalItem": "DKEY_Tomb",
+	"tags": ["Standing", "SecretDungeon", "DungeonKey"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["AccessS4Yellow"]}]
+},
+{
+	"name": "Tomb of Simulacrum Treasure",
+	"scene": "TombOfSimulacrum",
+	"room": "I",
+	"saveId": "Dungeon_Chest-22--15",
+	"originalItem": "EFCS",
+	"tags": ["Chest", "SecretDungeon", "MainItem"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["AccessS4Green", "Stick", "Wand", "Ice"]}]
+},
+{
+	"name": "Tomb of Simulacrum Boss Reward",
+	"scene": "TombOfSimulacrum",
+	"room": "G",
+	"saveId": "Dungeon_Chest-99--3",
+	"originalItem": "BigOldPileOfLoot",
+	"tags": ["Chest", "SecretDungeon", "Boss"],
+	"areaCondition": {"condition": ["AllSecretKeys"]},
+	"allConditions": [{"condition": ["AccessS4Yellow", "PuzzleDmg"]}]
+},
+
+{
+	"name": "Ludo City",
+	"scene": "Deep20",
+	"room": "A",
+	"saveId": "Dungeon_Chest-17--7",
+	"originalItem": "SecretGallery",
+	"tags": ["Chest", "PortalWorld", "Hidden"],
+	"areaCondition": {"condition": ["MysteryCave"]},
+	"allConditions": [{"condition": ["PuzzleDmg"]}]
+},
+
+{
+	"name": "Wizardry Lab Entrance",
+	"scene": "DreamForce",
+	"room": "AD",
+	"saveId": "CardChest-54--73",
+	"originalItem": "Card1",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Wand"]},
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Wizardry Lab West Energy Source",
+	"scene": "DreamForce",
+	"room": "W",
+	"saveId": "CardChest-18--41",
+	"originalItem": "Card2",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Wand"]},
+	"allConditions": [{"condition": ["Stick", "Wand"]}]
+},
+{
+	"name": "Wizardry Lab Cannon",
+	"scene": "DreamForce",
+	"room": "C",
+	"saveId": "CardChest-37--3",
+	"originalItem": "Card3",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Wand"]},
+	"allConditions": [{"condition": ["Stick", "Wand"]}]
+},
+{
+	"name": "Wizardry Lab East Mirrors",
+	"scene": "DreamForce",
+	"room": "M",
+	"saveId": "CardChest-77--34",
+	"originalItem": "Card4",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Wand"]},
+	"allConditions": [{"condition": ["Stick", "Wand"]}]
+},
+{
+	"name": "Wizardry Lab East Energy Source",
+	"scene": "DreamForce",
+	"room": "AA",
+	"saveId": "CardChest-77--47",
+	"originalItem": "Card5",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Wand"]},
+	"allConditions": [{"condition": ["Stick", "Wand"]}]
+},
+{
+	"name": "Wizardry Lab Boss Reward 1",
+	"scene": "DreamForce",
+	"room": "AH",
+	"saveId": "CardChest-82--55",
+	"originalItem": "Card35",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteLab",
+	"areaCondition": {"condition": ["RaftPiece", "Wand"]},
+	"allConditions": [{"condition": ["Stick", "Wand"]}]
+},
+{
+	"name": "Wizardry Lab Boss Reward 2",
+	"scene": "DreamForce",
+	"room": "AH",
+	"saveId": "CardChest (1)-84--55",
+	"originalItem": "Card29",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteLab",
+	"areaCondition": {"condition": ["RaftPiece", "Wand"]},
+	"allConditions": [{"condition": ["Stick", "Wand"]}]
+},
+{
+	"name": "Wizardry Lab Boss Reward 3",
+	"scene": "DreamForce",
+	"room": "AH",
+	"saveId": "CardChest (2)-80--55",
+	"originalItem": "Card34",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteLab",
+	"areaCondition": {"condition": ["RaftPiece", "Wand"]},
+	"allConditions": [{"condition": ["Stick", "Wand"]}]
+},
+
+{
+	"name": "Syncope Initial Key",
+	"scene": "DreamDynamite",
+	"room": "AF",
+	"saveId": "KeyChest-56--51",
+	"originalItem": "DKEY_Sync",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [{"condition": ["Dynamite"]}]
+},
+{
+	"name": "Syncope Switch Chamber",
+	"scene": "DreamDynamite",
+	"room": "AM",
+	"saveId": "CardChest-55--65",
+	"originalItem": "Card6",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Wand", "Ice", "DKEY_B2Entrance"]},
+		{"condition": ["OpenDream", "Wand", "Ice", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_B2Entrance"]},
+		{"condition": ["ClosedDream", "Dynamite", "Stick", "DKEY_Sync"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Shifting Key",
+	"scene": "DreamDynamite",
+	"room": "AG",
+	"saveId": "KeyChest-71--51",
+	"originalItem": "DKEY_Sync",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_B2Entrance"]},
+		{"condition": ["ClosedDream", "Dynamite", "Stick", "DKEY_Sync"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Foyer Item",
+	"scene": "DreamDynamite",
+	"room": "Z",
+	"saveId": "CardChest-68--39",
+	"originalItem": "Card7",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Wand"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_B2Entrance"]},
+		{"condition": ["ClosedDream", "Dynamite", "Stick", "DKEY_Sync"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Garden Item",
+	"scene": "DreamDynamite",
+	"room": "N",
+	"saveId": "KeyChest-97--24",
+	"originalItem": "DKEY_Sync",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Wand"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_B2Entrance"]},
+		{"condition": ["ClosedDream", "Dynamite", "Stick", "DKEY_Sync"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Piano Item",
+	"scene": "DreamDynamite",
+	"room": "K",
+	"saveId": "CardChest-52--15",
+	"originalItem": "Card8",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Wand"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_B2Entrance"]},
+		{"condition": ["ClosedDream", "Dynamite", "Stick", "DKEY_Sync"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Knights Hint Item",
+	"scene": "DreamDynamite",
+	"room": "C",
+	"saveId": "CardChest-37--4",
+	"originalItem": "Card9",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Wand"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_B2Entrance"]},
+		{"condition": ["ClosedDream", "Dynamite", "Stick", "DKEY_Sync"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Shadow Walker",
+	"scene": "DreamDynamite",
+	"room": "D",
+	"saveId": "KeyChest-48--2",
+	"originalItem": "DKEY_Sync",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Wand"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_B2Entrance"]},
+		{"condition": ["ClosedDream", "Dynamite", "Stick", "DKEY_Sync"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Force Blast Maze",
+	"scene": "DreamDynamite",
+	"room": "V",
+	"saveId": "CardChest-5--42",
+	"originalItem": "Card10",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Wand"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_B2Entrance"]},
+		{"condition": ["ClosedDream", "Dynamite", "Stick", "DKEY_Sync"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Boss Reward 1",
+	"scene": "DreamDynamite",
+	"room": "AO",
+	"saveId": "CardChest-82--65",
+	"originalItem": "Card36",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteSync",
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Wand"]},
+		{"condition": ["OpenDream", "Dynamite", "Ice", "DKEY_B2Entrance"]},
+		{"condition": ["OpenDream", "Dynamite", "Wand", "DKEY_B2Entrance"]},
+		{"condition": ["Dynamite", "Stick", "DKEY_B2Entrance", "DKEY_B2WestClock", "DKEY_B2EastClock"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Boss Reward 2",
+	"scene": "DreamDynamite",
+	"room": "AO",
+	"saveId": "CardChest-83--63",
+	"originalItem": "Card30",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteSync",
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Wand"]},
+		{"condition": ["OpenDream", "Dynamite", "Ice", "DKEY_B2Entrance"]},
+		{"condition": ["OpenDream", "Dynamite", "Wand", "DKEY_B2Entrance"]},
+		{"condition": ["Dynamite", "Stick", "DKEY_B2Entrance", "DKEY_B2WestClock", "DKEY_B2EastClock"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+{
+	"name": "Syncope Boss Reward 3",
+	"scene": "DreamDynamite",
+	"room": "AO",
+	"saveId": "CardChest-81--63",
+	"originalItem": "Card11",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteSync",
+	"areaCondition": {"condition": ["RaftPiece", "Dynamite"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Wand"]},
+		{"condition": ["OpenDream", "Dynamite", "Ice", "DKEY_B2Entrance"]},
+		{"condition": ["OpenDream", "Dynamite", "Wand", "DKEY_B2Entrance"]},
+		{"condition": ["Dynamite", "Stick", "DKEY_B2Entrance", "DKEY_B2WestClock", "DKEY_B2EastClock"]},
+		{"condition": ["Dynamite", "NotDynamite", "DKEY_Sync", "DKEY_Sync", "DKEY_Sync"]}
+	]
+},
+
+{
+	"name": "Bottomless Tower First Floor Card",
+	"scene": "DreamIce",
+	"room": "G",
+	"saveId": "CardChest-5--14",
+	"originalItem": "Card12",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["Ice", "Stick"]},
+		{"condition": ["OpenDream", "Ice", "Wand"]}
+	]
+},
+{
+	"name": "Bottomless Tower First Floor Key",
+	"scene": "DreamIce",
+	"room": "C",
+	"saveId": "KeyChest-35--8",
+	"originalItem": "DKEY_Tower",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["Ice", "Stick"]},
+		{"condition": ["OpenDream", "Wand"]},
+		{"condition": ["OpenDream", "Mace"]}
+	]
+},
+{
+	"name": "Bottomless Tower Second Floor Card",
+	"scene": "DreamIce",
+	"room": "D",
+	"saveId": "CardChest-71--5",
+	"originalItem": "Card13",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Sword"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower"]}
+	]
+},
+{
+	"name": "Bottomless Tower Second Floor Key",
+	"scene": "DreamIce",
+	"room": "F",
+	"saveId": "KeyChest-99--2",
+	"originalItem": "DKEY_Tower",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Sword"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower"]}
+	]
+},
+{
+	"name": "Bottomless Tower Blue Portal Reward",
+	"scene": "DreamIce",
+	"room": "A",
+	"saveId": "CardChest-6--5",
+	"originalItem": "Card14",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Sword", "Wand"]},
+		{"condition": ["OpenDream", "Sword", "Ice"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_B3Floor1", "Wand"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_Tower", "Wand"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1", "DKEY_B3Floor2"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower", "DKEY_Tower"]}
+	]
+},
+{
+	"name": "Bottomless Tower Third Floor Spike Gates",
+	"scene": "DreamIce",
+	"room": "X",
+	"saveId": "CardChest-4--63",
+	"originalItem": "Card15",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Sword"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_B3Floor1", "Wand"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_Tower", "Wand"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1", "DKEY_B3Floor2"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower", "DKEY_Tower"]}
+	]
+},
+{
+	"name": "Bottomless Tower Third Floor Key",
+	"scene": "DreamIce",
+	"room": "AB",
+	"saveId": "KeyChest-42--77",
+	"originalItem": "DKEY_Tower",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Sword"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_B3Floor1", "Wand"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_Tower", "Wand"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1", "DKEY_B3Floor2"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower", "DKEY_Tower"]}
+	]
+},
+{
+	"name": "Bottomless Tower Fourth Floor Key",
+	"scene": "DreamIce",
+	"room": "W",
+	"saveId": "KeyChest-92--57",
+	"originalItem": "DKEY_Tower",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Sword", "DKEY_B3Floor3"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_B3Floor1", "Wand", "DKEY_B3Floor3"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1", "DKEY_B3Floor2", "DKEY_B3Floor3"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower", "DKEY_Tower", "DKEY_Tower"]}
+	]
+},
+{
+	"name": "Bottomless Tower Third Floor Icy Square",
+	"scene": "DreamIce",
+	"room": "Y",
+	"saveId": "CardChest-42--67",
+	"originalItem": "Card16",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Sword", "DKEY_B3Floor3"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_B3Floor1", "Wand", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1", "DKEY_B3Floor2", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower", "DKEY_Tower", "DKEY_Tower", "DKEY_Tower"]}
+	]
+},
+{
+	"name": "Bottomless Tower Boss Reward Sun",
+	"scene": "DreamIce",
+	"room": "Z",
+	"saveId": "CardChest-97--65",
+	"originalItem": "Card39",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteTower",
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Sword", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_B3Floor1", "Wand", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1", "DKEY_B3Floor2", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower", "DKEY_Tower", "DKEY_Tower", "DKEY_Tower"]}
+	]
+},
+{
+	"name": "Bottomless Tower Boss Reward Moon",
+	"scene": "DreamIce",
+	"room": "Z",
+	"saveId": "CardChest-99--65",
+	"originalItem": "Card37",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteTower",
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Sword", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_B3Floor1", "Wand", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1", "DKEY_B3Floor2", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower", "DKEY_Tower", "DKEY_Tower", "DKEY_Tower"]}
+	]
+},
+{
+	"name": "Bottomless Tower Boss Reward Star",
+	"scene": "DreamIce",
+	"room": "Z",
+	"saveId": "CardChest-95--65",
+	"originalItem": "Card31",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteTower",
+	"areaCondition": {"condition": ["RaftPiece", "Ice"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "Sword", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["OpenDream", "Ice", "Stick", "DKEY_B3Floor1", "Wand", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["Ice", "Stick", "DKEY_B3Floor1", "DKEY_B3Floor2", "DKEY_B3Floor3", "DKEY_B3Floor4"]},
+		{"condition": ["Ice", "Stick", "DKEY_Tower", "DKEY_Tower", "DKEY_Tower", "DKEY_Tower"]}
+	]
+},
+
+{
+	"name": "Antigram Free Item",
+	"scene": "DreamFireChain",
+	"room": "R",
+	"saveId": "KeyChest-54--57",
+	"originalItem": "DKEY_Anti",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Antigram Southwest Light Path",
+	"scene": "DreamFireChain",
+	"room": "P",
+	"saveId": "CardChest-24--61",
+	"originalItem": "Card17",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Mace"]},
+		{"condition": ["Chain1", "Sword"]}
+	]
+},
+{
+	"name": "Antigram Southeast Walk of Faith",
+	"scene": "DreamFireChain",
+	"room": "R",
+	"saveId": "CardChest-50--61",
+	"originalItem": "Card18",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Mace"]},
+		{"condition": ["Chain1", "Sword"]}
+	]
+},
+{
+	"name": "Antigram West Ice Puzzle",
+	"scene": "DreamFireChain",
+	"room": "K",
+	"saveId": "CardChest-7--49",
+	"originalItem": "Card19",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "DKEY_B4Southwest"]},
+		{"condition": ["OpenDream", "Ice", "DKEY_Anti"]},
+		{"condition": ["Sword", "DKEY_B4Southwest"]},
+		{"condition": ["Sword", "DKEY_Anti"]}
+	]
+},
+{
+	"name": "Antigram East Ice Puzzle",
+	"scene": "DreamFireChain",
+	"room": "O",
+	"saveId": "CardChest-67--49",
+	"originalItem": "Card20",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["OpenDream", "Ice", "DKEY_B4Southwest"]},
+		{"condition": ["OpenDream", "Ice", "DKEY_Anti"]},
+		{"condition": ["Sword", "DKEY_B4Southwest"]},
+		{"condition": ["Sword", "DKEY_Anti"]}
+	]
+},
+{
+	"name": "Antigram Northwest Bomb Maze",
+	"scene": "DreamFireChain",
+	"room": "B",
+	"saveId": "KeyChest-12--18",
+	"originalItem": "DKEY_Anti",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["Chain1", "Sword", "DKEY_B4Southwest"]},
+		{"condition": ["Chain1", "Sword", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Chain1", "Stick", "Wand", "DKEY_B4Southwest"]},
+		{"condition": ["OpenDream", "Chain1", "Stick", "Wand", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Chain1", "Stick", "Ice", "Dynamite", "DKEY_B4Southwest"]},
+		{"condition": ["OpenDream", "Chain1", "Stick", "Ice", "Dynamite", "DKEY_Anti"]}
+	]
+},
+{
+	"name": "Antigram Northeast Bomb Maze",
+	"scene": "DreamFireChain",
+	"room": "D",
+	"saveId": "KeyChest-62--18",
+	"originalItem": "DKEY_Anti",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["Chain1", "Sword", "DKEY_B4Southwest"]},
+		{"condition": ["Chain1", "Sword", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Chain1", "Stick", "Wand", "DKEY_B4Southwest"]},
+		{"condition": ["OpenDream", "Chain1", "Stick", "Wand", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Chain1", "Stick", "Ice", "Dynamite", "DKEY_B4Southwest"]},
+		{"condition": ["OpenDream", "Chain1", "Stick", "Ice", "Dynamite", "DKEY_Anti"]}
+	]
+},
+{
+	"name": "Antigram Last Stretch East Corner",
+	"scene": "DreamFireChain",
+	"room": "E",
+	"saveId": "CardChest-42--16",
+	"originalItem": "Card21",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["Chain1", "Stick", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral"]},
+		{"condition": ["Chain1", "Stick", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]}
+	]
+},
+{
+	"name": "Antigram Last Stretch West Corner",
+	"scene": "DreamFireChain",
+	"room": "E",
+	"saveId": "KeyChest-33--16",
+	"originalItem": "DKEY_Anti",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["Chain1", "Stick", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral"]},
+		{"condition": ["Chain1", "Stick", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]}
+	]
+},
+{
+	"name": "Antigram Boss Reward 1",
+	"scene": "DreamFireChain",
+	"room": "A",
+	"saveId": "CardChest-37-7",
+	"originalItem": "Card38",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteAnti",
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["Chain1", "Stick", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral", "DKEY_B4Boss"]},
+		{"condition": ["Chain1", "Stick", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral", "DKEY_B4Boss"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral", "DKEY_B4Boss"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]}
+	]
+},
+{
+	"name": "Antigram Boss Reward 2",
+	"scene": "DreamFireChain",
+	"room": "A",
+	"saveId": "CardChest-39-7",
+	"originalItem": "Card32",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteAnti",
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["Chain1", "Stick", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral", "DKEY_B4Boss"]},
+		{"condition": ["Chain1", "Stick", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral", "DKEY_B4Boss"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral", "DKEY_B4Boss"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]}
+	]
+},
+{
+	"name": "Antigram Boss Reward 3",
+	"scene": "DreamFireChain",
+	"room": "A",
+	"saveId": "CardChest-35-7",
+	"originalItem": "Card22",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"setFlag": "CompleteAnti",
+	"areaCondition": {"condition": ["RaftPiece", "Chain1", "Sword"]},
+	"allConditions": [
+		{"condition": ["Chain1", "Stick", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral", "DKEY_B4Boss"]},
+		{"condition": ["Chain1", "Stick", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral", "DKEY_B4Boss"]},
+		{"condition": ["OpenDream", "Wand", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_B4Southwest", "DKEY_B4WestCentral", "DKEY_B4EastCentral", "DKEY_B4Boss"]},
+		{"condition": ["OpenDream", "Mace", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti", "DKEY_Anti"]}
+	]
+},
+
+{
+	"name": "Quietus Center Room",
+	"scene": "DreamAll",
+	"room": "N",
+	"saveId": "CardChest-37--21",
+	"originalItem": "Card23",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [{"condition": ["free"]}]
+},
+{
+	"name": "Quietus Tricky Floors",
+	"scene": "DreamAll",
+	"room": "F",
+	"saveId": "KeyChest-3--3",
+	"originalItem": "DKEY_Quiet",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [{"condition": ["Wand", "Ice"]}]
+},
+{
+	"name": "Quietus Tangled Wires",
+	"scene": "DreamAll",
+	"room": "J",
+	"saveId": "KeyChest-70--6",
+	"originalItem": "DKEY_Quiet",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [{"condition": ["Chain1", "Stick"]}]
+},
+{
+	"name": "Quietus Electro Bomb",
+	"scene": "DreamAll",
+	"room": "R",
+	"saveId": "KeyChest-7--33",
+	"originalItem": "DKEY_Quiet",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [{"condition": ["Dynamite", "Ice", "Stick", "Wand"]}]
+},
+{
+	"name": "Quietus Giant Mess",
+	"scene": "DreamAll",
+	"room": "V",
+	"saveId": "KeyChest-62--29",
+	"originalItem": "DKEY_Quiet",
+	"tags": ["Standing", "DreamWorld", "DungeonKey"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [{"condition": ["Sword", "Dynamite", "Ice"]}]
+},
+{
+	"name": "Quietus Northwest Vault",
+	"scene": "DreamAll",
+	"room": "G",
+	"saveId": "CardChest-17--9",
+	"originalItem": "Card24",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [
+		{"condition": ["Ice", "Wand", "Chain1", "Sword", "DKEY_B5Northwest"]},
+		{"condition": ["Ice", "Wand", "Chain1", "Sword", "DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet"]}
+	]
+},
+{
+	"name": "Quietus Northeast Vault",
+	"scene": "DreamAll",
+	"room": "I",
+	"saveId": "CardChest-48--7",
+	"originalItem": "Card25",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [
+		{"condition": ["Wand", "DKEY_B5Northeast"]},
+		{"condition": ["Wand", "DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet"]}
+	]
+},
+{
+	"name": "Quietus Southwest Vault",
+	"scene": "DreamAll",
+	"room": "S",
+	"saveId": "CardChest-26--33",
+	"originalItem": "Card26",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [
+		{"condition": ["DKEY_B5Southwest"]},
+		{"condition": ["DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet"]}
+	]
+},
+{
+	"name": "Quietus Southeast Vault",
+	"scene": "DreamAll",
+	"room": "U",
+	"saveId": "CardChest-55--34",
+	"originalItem": "Card27",
+	"tags": ["Standing", "DreamWorld", "Collectible"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [
+		{"condition": ["Ice", "Sword", "Wand", "DKEY_B5Southeast"]},
+		{"condition": ["Ice", "Sword", "Wand", "DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet"]},
+		{"condition": ["Ice", "Stick", "Wand", "Dynamite", "DKEY_B5Southeast"]},
+		{"condition": ["Ice", "Stick", "Wand", "Dynamite", "DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet", "DKEY_Quiet"]}
+	]
+},
+{
+	"name": "Quietus Boss Reward 1",
+	"scene": "DreamAll",
+	"room": "AB",
+	"saveId": "CardChest-17--56",
+	"originalItem": "Card28",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [{"condition": ["Wand", "Dynamite", "Ice", "Stick", "Chain1"]}]
+},
+{
+	"name": "Quietus Boss Reward 2",
+	"scene": "DreamAll",
+	"room": "AB",
+	"saveId": "CardChest (1)-25--56",
+	"originalItem": "Card40",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [{"condition": ["Wand", "Dynamite", "Ice", "Stick", "Chain1"]}]
+},
+{
+	"name": "Quietus Boss Reward 3",
+	"scene": "DreamAll",
+	"room": "AB",
+	"saveId": "CardChest (2)-22--61",
+	"originalItem": "Card33",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Boss"],
+	"areaCondition": {"condition": ["RaftPiece", "CompleteLab", "CompleteSync", "CompleteAnti", "CompleteTower", "Ice", "Mace"]},
+	"allConditions": [{"condition": ["Wand", "Dynamite", "Ice", "Stick", "Chain1"]}]
+},
+
+{
+	"name": "Bad Dream",
+	"scene": "Deep26",
+	"room": "A",
+	"saveId": "CardChest-0-6",
+	"originalItem": "Card41",
+	"tags": ["Standing", "DreamWorld", "Collectible", "Hidden"],
+	"areaCondition": {"condition": ["CompleteTower"]},
+	"allConditions": [{"condition": ["free"]}]
+}
+]
+}

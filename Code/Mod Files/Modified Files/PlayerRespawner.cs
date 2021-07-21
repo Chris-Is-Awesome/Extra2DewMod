@@ -163,6 +163,9 @@ public class PlayerRespawner : UpdateBehaviour, IUpdatable, IBaseUpdateable
 
      public void UpdateSpawnPoint(Vector3 pos, Vector3 dir, SceneDoor door, bool dontOverride)
      {
+        // Game Options: Fluffy warp fix
+       if (ModStuff.Options.GameOptions.Instance.FluffyWarpFix && ModMaster.GetMapName() == "FluffyFields") { return; }
+
           this.spawnPos = pos;
           this.spawnDir = dir;
           if (door != null && this.gameSaver != null)
@@ -239,21 +242,16 @@ public class PlayerRespawner : UpdateBehaviour, IUpdatable, IBaseUpdateable
           Vector3 dir = (!this.useRoomSpawn) ? this.spawnDir : this.roomSpawnDir;
 
           // Boss Rush:
-          if (ModeControllerNew.IsBossRush)
+          if (BossRush.Instance.IsActive)
           {
                BossRush brm = BossRush.Instance;
                vector = brm.GetEndPosition();
                dir = brm.GetFacingDirection();
-          }
+            ModText.QuickText("Called playerREEEEEspawner");
 
-          ModeController mc = GameObject.Find("ModeController").GetComponent<ModeController>();
-          if (mc.isBossRush)
-          {
-               vector = mc.bossRushManager.GetPlayerSpawnPoint();
-               dir = mc.bossRushManager.GetPlayerFacingDirection();
-          }
+        }
 
-          this.ent.RealTransform.position = vector;
+        this.ent.RealTransform.position = vector;
           this.ent.Activate();
           this.ent.TurnTo(dir, 0f);
           if (this.varOverrider != null)
