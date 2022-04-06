@@ -1,0 +1,1045 @@
+{
+	"scenes":
+	[
+		{
+			"name": "FluffyFields",
+			"type": "Overworld",
+			"spawns": [
+				"CaveN",
+				"FF_SW3",
+				"CaveQ",
+				"WorldWarpE",
+				"CaveH",
+				"WorldWarpI",
+				"CaveC",
+				"CaveS2",
+				"CaveB",
+				"FF_SS1",
+				"CaveL",
+				"LevelDoor",
+				"FF_SW1",
+				"CaveA",
+				"SunkenLabyrinthOutside",
+				"DreamWorldOutside",
+				"PillowFortOutside",
+				"CaveE",
+				"WorldWarpA",
+				"RestorePt1",
+				"WorldWarpH",
+				"CaveS",
+				"CaveO",
+				"CaveM",
+				"CaveX",
+				"FF_VH1",
+				"CaveR",
+				"CaveD",
+				"FF_FR4",
+				"CaveU",
+				"CaveJ",
+				"FF_FR2",
+				"WorldWarpF",
+				"WorldWarpC",
+				"FF_FR1",
+				"WorldWarpD",
+				"FF_SW4",
+				"CaveP",
+				"CaveF",
+				"CaveG",
+				"WorldWarpB",
+				"WorldWarpJ",
+				"CaveK",
+				"CaveH2",
+				"WorldWarpG",
+				"FF_CC1",
+				"StartPoint",
+				"CaveY",
+				"CaveW",
+				"CaveI"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "CandyCoast",
+			"type": "Overworld",
+			"spawns": [
+				"CaveF1",
+				"CaveD2",
+				"CaveB",
+				"CaveF2",
+				"CaveI",
+				"CaveQ",
+				"RestorePt1",
+				"RestorePt2",
+				"CaveH",
+				"WorldWarpF",
+				"CaveA",
+				"CaveN",
+				"CaveK",
+				"CC_SW2",
+				"CaveC",
+				"WorldWarpH",
+				"CaveJ",
+				"CaveD1",
+				"CaveP1",
+				"CaveL",
+				"CC_SS1",
+				"RestorePt3",
+				"CC_SW1",
+				"CaveM",
+				"CC_FF1",
+				"CaveG",
+				"CaveO",
+				"CaveE",
+				"SandCastleOutside"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "FancyRuins",
+			"type": "Overworld",
+			"spawns": [
+				"CaveM",
+				"CaveD",
+				"FR_FC1",
+				"CaveA",
+				"MachineFortressOutside",
+				"FR_SW1",
+				"CaveC",
+				"CaveQ1",
+				"CaveR",
+				"CaveJ",
+				"CaveG",
+				"CaveH",
+				"CaveF",
+				"CaveN1",
+				"WorldWarpG",
+				"FR_VH1",
+				"CaveK",
+				"CaveI",
+				"CaveL",
+				"CaveP2",
+				"RestorePt1",
+				"FR_FF1",
+				"FR_FF4",
+				"CaveB",
+				"FR_FF2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "FancyRuins2",
+			"type": "Overworld",
+			"spawns": [
+				"RestorePt1",
+				"CaveQ2",
+				"ArtExhibitOutside"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "StarWoods",
+			"type": "Overworld",
+			"spawns": [
+				"CaveG",
+				"CaveI",
+				"CaveR1",
+				"SW_CC1",
+				"CaveR2",
+				"SW_FF4",
+				"CaveQ2",
+				"CaveS1",
+				"SW_FF3",
+				"TrashCaveOutside",
+				"CaveA",
+				"WorldWarpI",
+				"CaveF",
+				"CaveE",
+				"CaveC",
+				"RestorePt1",
+				"DarkHypostyleOutside",
+				"SW_FR1",
+				"CaveB",
+				"CaveN",
+				"SW_CC2",
+				"CaveP",
+				"CaveD",
+				"CaveH",
+				"CaveQ1",
+				"CaveJ",
+				"CaveK",
+				"SW_FF1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "StarWoods2",
+			"type": "Overworld",
+			"spawns": [
+				"CaveL",
+				"CaveM",
+				"CaveT1",
+				"CaveS2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "SlipperySlope",
+			"type": "Overworld",
+			"spawns": [
+				"SS_CC1",
+				"RestorePt2",
+				"CaveL",
+				"CaveK",
+				"CaveI",
+				"CaveG",
+				"SS_VH1",
+				"CaveC",
+				"CaveF",
+				"CaveH",
+				"CaveM2",
+				"CaveB",
+				"CaveA",
+				"CaveN1",
+				"CaveM1",
+				"CaveJ",
+				"CaveE",
+				"SS_FF1",
+				"SS_LR1",
+				"CaveO",
+				"RestorePt1",
+				"WorldWarpD",
+				"CaveD"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "VitaminHills",
+			"type": "Overworld",
+			"spawns": [
+				"CaveK",
+				"WorldWarpE",
+				"CaveE",
+				"RestorePt1",
+				"CaveH",
+				"CaveN3",
+				"CaveF",
+				"CaveC1",
+				"CaveN2",
+				"CaveJ",
+				"CaveD",
+				"CaveG",
+				"CaveM",
+				"VH_SS1",
+				"CaveB",
+				"VH_FR1",
+				"CaveL",
+				"VH_FF1",
+				"CaveA",
+				"CaveI"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "VitaminHills2",
+			"type": "Overworld",
+			"spawns": [
+				"CaveU",
+				"CaveC2",
+				"CaveR1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "VitaminHills3",
+			"type": "Overworld",
+			"spawns": [
+				"WorldWarpC",
+				"PotassiumMineOutside",
+				"CaveQ",
+				"RestorePt2",
+				"CaveT",
+				"CaveS",
+				"CaveP",
+				"CaveR2",
+				"CaveO",
+				"RestorePt1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "FrozenCourt",
+			"type": "Overworld",
+			"spawns": [
+				"RestorePt1",
+				"CaveN2",
+				"FC_FR1",
+				"CaveC",
+				"CaveB",
+				"BoilingGraveOutside",
+				"CaveG1",
+				"WorldWarpJ",
+				"CaveJ",
+				"CaveA",
+				"CaveM2",
+				"CaveH",
+				"CaveF",
+				"CaveG2",
+				"CaveO",
+				"CaveM1",
+				"CaveI",
+				"CaveL",
+				"CaveD",
+				"RestorePt2",
+				"CaveK",
+				"CaveE",
+				"CaveT2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "LonelyRoad",
+			"type": "Overworld",
+			"spawns": [
+				"CaveG1",
+				"CaveA",
+				"CaveO",
+				"CaveT",
+				"CaveG2",
+				"GrandLibraryOutside",
+				"CaveH2",
+				"CaveE1",
+				"CaveI2",
+				"CaveR",
+				"CaveN",
+				"CaveM",
+				"CaveU",
+				"CaveJ1",
+				"RestorePt1",
+				"LR_SS1",
+				"CaveF2",
+				"CaveC",
+				"CaveH1",
+				"CaveL",
+				"CaveF1",
+				"CaveP",
+				"WorldWarpA",
+				"CaveE2",
+				"CaveS",
+				"CaveH3",
+				"CaveB",
+				"CaveK",
+				"CaveE3",
+				"CaveQ",
+				"CaveD"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "LonelyRoad2",
+			"type": "Overworld",
+			"spawns": [
+				"CaveJ2",
+				"RestorePt1",
+				"WorldWarpB",
+				"CaveI1",
+				"TombOfSimulacrumOutside"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "DreamWorld",
+			"type": "Overworld",
+			"spawns": [
+				"DreamAllOutside",
+				"DreamWorldInside2",
+				"DreamFireChainOutside",
+				"DreamWorldInside3",
+				"DreamDynamiteOutside",
+				"DreamIceOutside",
+				"DreamForceOutside",
+				"DreamWorldInside"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "FluffyFieldsCaves",
+			"type": "Cave",
+			"spawns": [
+				"CaveM",
+				"CaveI",
+				"CaveW",
+				"CaveS2",
+				"CaveA",
+				"CaveJ",
+				"CaveS",
+				"CaveC",
+				"CaveX",
+				"CaveF",
+				"Deep1",
+				"CaveO",
+				"CaveL",
+				"CaveH",
+				"CaveG",
+				"CaveB",
+				"CaveY",
+				"CaveU",
+				"CaveP",
+				"CaveE",
+				"CaveD",
+				"CaveH2",
+				"CaveN",
+				"CaveR",
+				"CaveQ",
+				"CaveK"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "CandyCoastCaves",
+			"type": "Cave",
+			"spawns": [
+				"CaveE",
+				"CaveO",
+				"CaveD2",
+				"CaveF1",
+				"CaveQ",
+				"Deep3",
+				"CaveJ",
+				"CaveK",
+				"Deep2",
+				"CaveI",
+				"CaveP1",
+				"CaveB",
+				"CaveC",
+				"CaveH",
+				"CaveA",
+				"CaveM",
+				"CaveG",
+				"CaveL",
+				"CaveN",
+				"CaveD1",
+				"CaveF2",
+				"CaveP2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "FancyRuinsCaves",
+			"type": "Cave",
+			"spawns": [
+				"CaveQ1",
+				"CaveA",
+				"CaveR",
+				"CaveQ2",
+				"CaveL",
+				"CaveK",
+				"CaveJ",
+				"CaveN2",
+				"CaveG",
+				"Deep4",
+				"CaveI",
+				"CaveM",
+				"CaveC",
+				"CaveN1",
+				"CaveD",
+				"CaveH",
+				"CaveB",
+				"CaveF",
+				"Deep5"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "StarWoodsCaves",
+			"type": "Cave",
+			"spawns": [
+				"CaveK",
+				"CaveT2",
+				"Deep6",
+				"CaveI",
+				"CaveP",
+				"CaveT1",
+				"CaveR1",
+				"CaveJ",
+				"CaveC",
+				"CaveH",
+				"CaveQ2",
+				"CaveS1",
+				"CaveR2",
+				"Deep7",
+				"CaveS2",
+				"CaveQ1",
+				"CaveM",
+				"CaveE",
+				"CaveG",
+				"CaveA",
+				"CaveD",
+				"CaveF",
+				"CaveN",
+				"CaveB",
+				"CaveL"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "SlipperySlopeCaves",
+			"type": "Cave",
+			"spawns": [
+				"CaveN2",
+				"CaveO",
+				"Deep8",
+				"CaveL",
+				"CaveD",
+				"CaveF",
+				"CaveG",
+				"CaveE",
+				"CaveC",
+				"CaveH",
+				"CaveJ",
+				"Deep9",
+				"CaveK",
+				"CaveI",
+				"CaveN3",
+				"CaveA",
+				"CaveM1",
+				"CaveN1",
+				"CaveM2",
+				"CaveB",
+				"FloodedBasementOutside"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "VitaminHillsCaves",
+			"type": "Cave",
+			"spawns": [
+				"CaveS",
+				"CaveG",
+				"Deep10",
+				"CaveM",
+				"CaveF",
+				"CaveE",
+				"CaveD",
+				"CaveJ",
+				"CaveK",
+				"Deep11",
+				"CaveC2",
+				"CaveC1",
+				"CaveH",
+				"CaveB",
+				"CaveO",
+				"CaveQ",
+				"CaveT",
+				"CaveA",
+				"CaveU",
+				"CaveI",
+				"CaveR2",
+				"CaveL",
+				"CaveR1",
+				"CaveP"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "FrozenCourtCaves",
+			"type": "Cave",
+			"spawns": [
+				"CaveO",
+				"CaveD",
+				"CaveJ",
+				"Deep12",
+				"Deep13",
+				"CaveC",
+				"CaveK",
+				"CaveA",
+				"CaveI",
+				"CaveM1",
+				"CaveH",
+				"CaveF",
+				"CaveG1",
+				"CaveE",
+				"CaveM2",
+				"CaveB",
+				"CaveL",
+				"CaveG2",
+				"CaveI2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "LonelyRoadCaves",
+			"type": "Cave",
+			"spawns": [
+				"CaveI1",
+				"CaveL",
+				"CaveE1",
+				"Deep14",
+				"CaveI2",
+				"CaveC",
+				"CaveH3",
+				"CaveG2",
+				"CaveU",
+				"CaveG1",
+				"CaveR",
+				"CaveA",
+				"CaveN",
+				"CaveP",
+				"CaveJ1",
+				"CaveK",
+				"CaveF1",
+				"CaveT",
+				"CaveE3",
+				"CaveB",
+				"Deep15",
+				"CaveM",
+				"CaveO",
+				"CaveS",
+				"CaveH2",
+				"CaveQ",
+				"CaveH1",
+				"CaveE2",
+				"CaveJ2",
+				"CaveD",
+				"CaveF2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep1",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep2",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep2"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep3",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep3"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep4",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep16",
+				"Deep4"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep5",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep5"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep6",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep6"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep7",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep7",
+				"Deep17"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep8",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep8"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep9",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep9"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep10",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep10"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep11",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep11"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep12",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep12"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep13",
+			"type": "PortalWorld",
+			"spawns": [
+				"TimedDoor",
+				"Deep13"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep14",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep14"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep15",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep15",
+				"Deep21"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep16",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep16"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep17",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep18",
+				"Deep17"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep18",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep23",
+				"Deep20",
+				"Deep18"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep19",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep19",
+				"RestorePt1"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep19s",
+			"type": "PortalWorld",
+			"spawns": [
+				"RestorePt1",
+				"Deep19s",
+				"Deep19_2",
+				"RestorePt2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep20",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep20",
+				"Deep20_2"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep21",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep21",
+				"Deep22"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep22",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep22",
+				"NoEntry"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep23",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep23"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep24",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep24"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "Deep25",
+			"type": "PortalWorld",
+			"spawns": [
+				"Deep25",
+				"Deep25_2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "Deep26",
+			"type": "PortalWorld",
+			"spawns": [
+				"Warper",
+				"Deep26"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "PillowFort",
+			"type": "Dungeon",
+			"spawns": [
+				"RestorePt1",
+				"PillowFortInside"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "SandCastle",
+			"type": "Dungeon",
+			"spawns": [
+				"RestorePt1",
+				"SandCastleInside"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "ArtExhibit",
+			"type": "Dungeon",
+			"spawns": [
+				"ArtExhibitInside",
+				"RestorePt1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "TrashCave",
+			"type": "Dungeon",
+			"spawns": [
+				"TrashCaveInside",
+				"RestorePt1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "FloodedBasement",
+			"type": "Dungeon",
+			"spawns": [
+				"RestorePt1",
+				"FloodedBasementInside"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "PotassiumMine",
+			"type": "Dungeon",
+			"spawns": [
+				"RestorePt1",
+				"PotassiumMineInside"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "BoilingGrave",
+			"type": "Dungeon",
+			"spawns": [
+				"BoilingGraveInside",
+				"RestorePt1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "GrandLibrary",
+			"type": "Dungeon",
+			"spawns": [
+				"GrandLibraryInside",
+				"GrandLibrary1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "GrandLibrary2",
+			"type": "Dungeon",
+			"spawns": [
+				"GrandLibrary2",
+				"RestorePt1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "SunkenLabyrinth",
+			"type": "Dungeon",
+			"spawns": [
+				"SunkenLabyrinthInside",
+				"RestorePt1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "MachineFortress",
+			"type": "Dungeon",
+			"spawns": [
+				"MachineFortressInside",
+				"RestorePt1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "DarkHypostyle",
+			"type": "Dungeon",
+			"spawns": [
+				"RestorePt1",
+				"DarkHypostyleInside"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "TombOfSimulacrum",
+			"type": "Dungeon",
+			"spawns": [
+				"TombOfSimulacrumInside"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "DreamForce",
+			"type": "Dungeon",
+			"spawns": [
+				"DreamForceInside"
+			],
+			"hasEnemies": false
+		},
+		{
+			"name": "DreamDynamite",
+			"type": "Dungeon",
+			"spawns": [
+				"RestorePt1",
+				"DreamDynamiteInside"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "DreamFireChain",
+			"type": "Dungeon",
+			"spawns": [
+				"DreamFireChainInside",
+				"RestorePt1"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "DreamIce",
+			"type": "Dungeon",
+			"spawns": [
+				"RestorePt1",
+				"DreamIceInside",
+				"DreamIceInside2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "DreamAll",
+			"type": "Dungeon",
+			"spawns": [
+				"RestorePt1",
+				"DreamAllInside2",
+				"DreamAllInside",
+				"RestorePt2"
+			],
+			"hasEnemies": true
+		},
+		{
+			"name": "SplashScreen",
+			"type": "Special",
+			"spawns": [],
+			"hasEnemies": false
+		},
+		{
+			"name": "MainMenu",
+			"type": "Special",
+			"spawns": [],
+			"hasEnemies": false
+		},
+		{
+			"name": "Intro",
+			"type": "Special",
+			"spawns": [],
+			"hasEnemies": false
+		},
+		{
+			"name": "Outro",
+			"type": "Special",
+			"spawns": [],
+			"hasEnemies": false
+		},
+		{
+			"name": "minigame_loader",
+			"type": "Special",
+			"spawns": [],
+			"hasEnemies": false
+		},
+		{
+			"name": "snobow_level",
+			"type": "Special",
+			"spawns": [],
+			"hasEnemies": false
+		},
+		{
+			"name": "snobow_title",
+			"type": "Special",
+			"spawns": [],
+			"hasEnemies": false
+		}
+	]
+}

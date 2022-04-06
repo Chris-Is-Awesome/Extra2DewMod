@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1757112840
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: faea0f00b8a547e7c13a932ac0c0ef93
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Extra2Dew/AudioClip/Music/Midna's Lament.mp3
+- Assets/Extra2Dew/AudioClip/Music/Nightmare King.mp3
+- Assets/Extra2Dew/AudioClip/Music/Sisters of Battle.mp3
+- Assets/Extra2Dew/AudioClip/Music/Star Dream.mp3
+- Assets/Extra2Dew/AudioClip/Music/Restoring the Light, Facing the Dark.mp3
+Dependencies: []

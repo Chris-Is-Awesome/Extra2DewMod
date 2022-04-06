@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 665305054
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 079654d7b1a7da87a650c1943d735d99
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9eb4f92564725008a16c8c64dc99925c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8c625ae2793db48e47688975e22d6d8e, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Extra2Dew/ScriptableObject/song_StarDream.asset
+Dependencies:
+- D:/Files/Work/Personal/Modding/Ittle Dew 2/Ittle Dew 2 v1.1.0/Assets/Extra2Dew/Bundles/extraresources/custommusic

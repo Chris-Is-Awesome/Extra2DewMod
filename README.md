@@ -1,18 +1,23 @@
-[![Extra 2 Dew Mod](/Images/logo.jpg)](https://www.youtube.com/watch?v=NwmEcC4uuUc)
+![Extra 2 Dew Mod](/Images/logo.jpg)
 
 ### [Download! Install instructions below!](https://github.com/Chris-Is-Awesome/Extra2DewMod/releases)
 
-**Credit: Ludosity** | **Modded by:** **[Chris is Awesome#9819](https://github.com/Chris-Is-Awesome)** & **[Matra#5057](https://github.com/SpaceMatra)** | **Randomizer logic by:** **Linkshot**
+
+**Credit: Ludosity** | **Modded by:** **[Chris is Awesome#9819](https://github.com/Chris-Is-Awesome)**, **[Matra#5057](https://github.com/SpaceMatra)** & **[GameWyrm#7777](https://github.com/GameWyrm)**
 
 This is a mod meant to add more content to Ittle Dew 2!
-Mainly adds several menus with options, additional game modes, a creative mode, debug console commands, fun stuff, and more.
+Mainly adds debug console commands, additional game modes, fun stuff, and more.
 
-For more Ludosity mods, visit the Ludo modding server! https://discord.gg/qVjcfT2
+https://www.youtube.com/watch?v=NwmEcC4uuUc
+
+Join the Discord server for all things Ludo modding! https://discord.gg/qVjcfT2
 
 # INSTRUCTIONS
-**Install:** Download the latests release from [here](https://github.com/Chris-Is-Awesome/Extra2DewMod/releases). Extract the folder to the directory: `[Steam Games Directory]\steamapps\common\Ittle Dew 2`. You will be asked to confirm to replace one file in the ID2_Data folder.
+**Install:** Download the ID2_Data.zip from [here](https://github.com/Chris-Is-Awesome/Extra2DewMod/releases). Extract the folder to the directory: `[Steam Games Directory]\steamapps\common\Ittle Dew 2`. You will be asked to confirm to replace some things in the ID2_Data folder. Replace. This will also add a "mods" folder inside the ID2_Data folder which is used specifically by our mod.
 
-Speficially what gets installed is a modified `Assembly-CSharp.dll` file for a new one with the mod code added. The "extra2dew" folder is added inside root of the ID2_Data folder as well.
+Speficially what gets installed is a modified `Assembly-CSharp.dll` file, which contains all the game's code. And a "mod" folder is added inside root of the ID2_Data folder. This mod folder is used by various aspects of our mod for writing data to files and such.
+
+**Usage:** Pause the game and press `F1` *(default)* to open the debug console. Type `help` in console window for a list of all commands! There are some miscelanious commands that are not listed below, but they're included in `help`!
 
 **Uninstall:** Go to `Steam -> Right click game -> Properties -> Local Files -> Verify integrity of files...`. You can also make a copy of your original `Assembly-CSharp.dll` file before installing the mod and use it to replace the modded file.
 
@@ -22,21 +27,55 @@ The mod includes several in-game menus that handle almost all the mod functions.
 # GAME MODES
 The mod includes several game modes unique to it, which multiple of them can be active at the same time. To turn a game mode on, go to the "Game mode" menu when creating a new file, select the mode you want to play and check the box on the title. The mode will be active when starting the game.
 
-# RANDOMIZERS
-There are currently 2 main randomizers in the game. The door randomizer, which changes how the island is connected together and the item randomizer, which shuffles items spawns locations. These are game modes and should be activated before starting a new game. Once a file is created, the cheat sheet will be generated inside the `extra2dew\randomizer` folder. The item randomizer configs can be found inside `extra2dew\randomizer\config` folder.
-
-For information about how to create/modify item randomizer configs, please refer to `Config Documentation.txt` inside the config folder.
-
-Note: Avoid combining the door randomizer with item randomizer configs that start with no stick or no roll.
-
-# ALTERNATIVE CAMERA MODES
-E2D includes 2 new camera modes to play the game! Those are **First person mode** and **Third person mode**. There is also a camera mode for exploring the map and taking screenshots/doing videos, **Free camera mode**. The mod requires calibrating the mouse for the alternative camera modes, so the first time any camera mode is enabled, the mouse should be left still for a couple of seconds.
+### Heart Rush
+You start with a set amount of HP. When you lose it all, you have to start all over!
+- You start with 30 hearts, but you never gain any except from Crayons, which add 4 hearts!
+- When you take damage, damage is taken from your max HP
+- When you run out of HP, it's game over! You return to main menu and Heart Rush file is deleted, making you start all over!
+- Start a Heart Rush file by making a new file named "hearts"!
+### Boss Rush
+Rush through all the bosses back to back in a nonstop frenzy of blood boiling mayhem!
+### Dungeon Rush
+Rush through all the dungeons back to back in a nonstop frenzy of mind melting puzzles!
+### Entrance Randomzier
+Randomizes all scene transitions while still making the game beatable. Randomization affects caves, dungeons, overworld connections and some secret places. Hidden entrances to caves will be randomized, such as the grass patch in fancy ruins and jenny berry's home. Connections left out of the randomization: The grand library, all mechanic dungeons, the dream world, the secret remedy and any one way connection.
+### Item Randomizer
+Randomizes the items throughout the world!
+### Cosmetic Randomizer
+Randomizes the colors a lot of cosmetic stuff (HUD, particles, water, etc.) and has randomized music as well!
+### Enemy Randomizer (alpha)
+A very experimental mode that randomizes each enemy in the game, including bosses!
 
 # CREATIVE MENU
 The creative menu is a new, GMOD like addition to the mod. It enables moving, modifying or creating new game objects. For instruction in how to use it, please click the "HELP" button on the left-bottom corner of the screen.
 
-# COMMANDS
-Almost all options in the mod menu and more can be activated through the debug menu. Here is a list of available commands.
+# CAMERA CONTROLS
+E2D includes 2 new camera modes to play the game in completely new ways! Those are **First person mode** and **Third person mode**. There is also a camera mode for exploring the map and taking screenshots/doing videos, **Free camera mode**.
+
+**Note**: Since ID2 lacks proper controla for mouse movement, the method used in this mod requires calibration. During camera mode setup and scene change, mouse movement will be disabled for some time. Please leave the mouse still to make the process quicker.
+
+### FIRST PERSON MODE
+Enter `cam -first` to activate first person mode. This mode simulates a FPS (first person shooter) and adds a fair ammount of difficulty to the game, specially for puzzles. The camera is controlled with the mouse and the movement keys are changed to the classic WASD. To use a weapon, press the primary mouse button (left click in most cases) and press 1-2-3-4 to choose which weapon will be used. Alternatively use the mouse scroll wheel to change weapons. The controls can be changed anytime with the `-controls` argument (however mouse buttons/scroll wheel cannot be changed).
+
+### THIRD PERSON MODE
+Enter `cam -third` to activate third person mode. This mode allows rotating the camera around Ittle. The camera is controlled with the mouse and the movement keys are changed to the WASD. To use a weapon, press the primary mouse button (left click in most cases) and press 1-2-3-4 to choose which weapon will be used. Alternatively use the mouse scroll wheel to change weapons. To zoom in/out, hold the secondary mouse button (right click) and scroll with the mouse wheel. The controls can be changed anytime with the `-controls` argument (however mouse buttons/scroll wheel cannot be changed).
+
+### FREE CAMERA MODE
+Enter `cam -free` to activate free camera mode. You don't control ittle in this mode, all controls are switched to the camera instead. Use it to fly around and take a closer look to the level! Also remember to leave Ittle somewhere safe first! She will be defenseless while you are gone (or make her invincible with the god command). The camera is controlled with the mouse and WASD moves it around. Use the mouse scroll wheel to change your flying speed. The controls can be changed anytime with the `-controls` argument (however the scroll wheel cannot be changed).
+
+### DEFAULT CAMERA MODE
+This is the vanilla camera. Enter `cam -default` to enter this mode.
+
+### CUSTOMIZATION
+You can customize the options below. See the `cam` command in the next sub-section for more details:
+- Camera controls: You can set the camera controls keys anytime. They are set in a specific order and use KeyCodes, more information about them can be found in the Types of Input section.
+- Field of view: Set the camera field of view, the vanilla default is 30 while 65 is used in all E2D camera modes. You can set the field of view for default mode too!
+- Mouse sensitivity: Set the sensitivity of the mouse.
+- Lock/Unlock vertical panning: In ittle dew 2, you cannot point your weapons upwards, so vertical panning can be unnecesary. You can turn it off/on anytime you want.
+- Clipping distance: By default, the camera draws the scene until a certain distance. We moved that value up for this mod, but you can set it even higher if you want. Take in mind though that higher clipping distances are more difficult for your computer.
+- Wheel acceleration: Set how strongly the mouse wheel affects your flying speed (free mode only).
+
+# DEBUG MENU COMMANDS
 - `atk`
   - Description: Change how Ittle's weapons work, making them more powerful and verastile!
   - Modifiers:
@@ -78,6 +117,7 @@ Almost all options in the mod menu and more can be activated through the debug m
 	   - `-sens <float>`: Set the sensitivity of the mouse.
 	   - `-lockvertical / -unlockvertical`: Disallow/allow vertical panning.
 	   - `-clip <float>`: Set the farclip of the camera (draw distance).
+	   - `-wheel <float>`: Set how strongly does the mouse wheel change the flying speed (free mode only)
 	   - `-controls <KeyCode> x 8`: Set the key controls for first person mode (case sensitive!)
 	   Order to enter the keycodes: Forward, backward, left, right, stick, force wand, dynamite and ice ring
 	   "Example: `cam -first`
@@ -373,14 +413,11 @@ Throughout development, it's not uncommon for developers to change the names of 
 - Ittle says "crap"! :mjau:
 
 # CONTRIBUTIONS
-Thanks to Linkshot for filling the entire database used in the item randomizer. It required a lot of time and effort, without his help the item randomizer would not exist today.
-Thanks to Mecrishio for extensively testing the creative menu, providing a lot of ideas to improve it and polish it while at the same time creating a huge amount of top notch content (https://www.youtube.com/channel/UCVQtyhiaGphmGyaGWPSOxgA )
-Thanks to all the testers who spent so many hours testing the item randomizer, finding/reporting bugs and proposing changes: Gigopler, Gamewyrm, Linkshot and Galex8
 Thank you to everyone who makes use of this wonderful mod! I hope it serves you well! :D
 If you would like to contribute or aid in development, feel free to join the [Discord server](https://discord.gg/qVjcfT2) for it!
 We can always use an extra hand! If you know Unity and/or C#, or have experience with reverse engineering, you can help a lot!
 
-# LEGAL DISCLAIMER (AKA COVER OUR ASSES)
+# LEGAL DISCLAIMER
 We are, in no way, claiming copyright ownership of this game or any of its content thereof. Copyright ownership belongs to Ludosity. A game mod, as long as it is not for commercial gain, falls under Section 107 of the Copyright Act as "fair use" due to a) this mod is for non-commercial use, b) this mod only modifies the game's code, it does not replace any visual content with that of our own or someone else's, c) we do not feel that we are negatively affecting Ludosity's business or income from this game or its content by distrubting this mod, as, if anything, it helps bring their fans together and often gets former players finding a new interest in this game, and d) we are not directly distributing Ludosity's copyrighted content; we are distributing a file that is already available to everyone, given they know where it is stored on their system.
 
 Please take any legal inquieries up with `Chris is Awesome#9819` on Discord, or you can make an Issue of it here.

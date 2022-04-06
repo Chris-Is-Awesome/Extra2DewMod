@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 802678936
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8b3502f2cc98173c1b03c45bb828aeee
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6f165f44e4778b6c9d85e7a145a54cb1
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Extra2Dew/Materials/HealthbarMat.mat
+Dependencies:
+- D:/Files/Work/Personal/Modding/Ittle Dew 2/Ittle Dew 2 v1.1.0/Assets/Extra2Dew/Bundles/extraresources/textures

@@ -1,0 +1,990 @@
+{
+	"visuals": {
+		"hud": [
+			{
+				"textureName": "Tool_Stick",
+				"overlayTextureName": "Tool_Stick_Overlay_Gray",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_FireSword",
+				"overlayTextureName": "Tool_FireSword_Overlay_Gray",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_FireMace",
+				"overlayTextureName": "Tool_FireMace_Overlay_Gray",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_EFCS",
+				"overlayTextureName": "Tool_EFCS_Overlay_Gray",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_ForceWand",
+				"overlayTextureName": "Tool_ForceWand_Overlay_Gray",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_ForceWand2",
+				"overlayTextureName": "Tool_ForceWand_Overlay_Gray_2",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_ForceWand3",
+				"overlayTextureName": "Tool_ForceWand_Overlay_Gray_3",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_Dynamite",
+				"overlayTextureName": "Tool_Dynamite_Overlay_Gray",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_Dynamite2",
+				"overlayTextureName": "Tool_Dynamite_Overlay_Gray_2",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_Dynamite3",
+				"overlayTextureName": "Tool_Dynamite_Overlay_Gray_3",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_IceRing",
+				"overlayTextureName": "Tool_IceRing_Overlay_Gray",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_IceRing2",
+				"overlayTextureName": "Tool_IceRing_Overlay_Gray_2",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Tool_IceRing3",
+				"overlayTextureName": "Tool_IceRing_Overlay_Gray_3",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"textureName": "Hearts",
+				"textureReplacement": "hearts_recolor_2",
+				"shader": "Custom/Simple/Transparent Additive Color, Multi Alpha",
+				"htmlColor": "#ffffff"
+			}
+		],
+		"water": [
+			{
+				"scene": "FluffyFields",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "CandyCoast",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FancyRuins",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "StarWoods",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "StarWoods2",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "SlipperySlope",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "VitaminHills",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "VitaminHills2",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "VitaminHills3",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FrozenCourt",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "LonelyRoad",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "LonelyRoad2",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "TrashCave",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FloodedBasement",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "GrandLibrary2",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep1",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep3",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep4",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep6",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep7",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep9",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep13",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep16",
+				"htmlColor": "#ffffff"
+			}
+		],
+		"lights": [
+			{
+				"scene": "FluffyFields",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FluffyFieldsCaves",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "CandyCoast",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "CandyCoastCaves",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FancyRuins",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FancyRuins2",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FancyRuinsCaves",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "StarWoods",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "StarWoods2",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "StarWoodsCaves",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "SlipperySlope",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "SlipperySlopeCaves",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "VitaminHills",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "VitaminHills2",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "VitaminHills3",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "VitaminHillsCaves",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FrozenCourt",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FrozenCourtCaves",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "LonelyRoad",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "LonelyRoad2",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "LonelyRoadCaves",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "DreamWorld",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "PillowFort",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "SandCastle",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "ArtExhibit",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "TrashCave",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "FloodedBasement",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "PotassiumMine",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "BoilingGrave",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "GrandLibrary",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "GrandLibrary2",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "SunkenLabyrinth",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "MachineFortress",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "DarkHypostyle",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "TombOfSimulacrum",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "DreamForce",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "DreamDynamite",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "DreamFireChain",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "DreamIce",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "DreamAll",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep1",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep2",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep3",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep4",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep5",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep6",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep7",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep8",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep9",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep10",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep11",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep12",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep13",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep14",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep15",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep16",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep17",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep18",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep19",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep19s",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep20",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep21",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep22",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep23",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep24",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep25",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			},
+			{
+				"scene": "Deep26",
+				"playerLight_htmlColor": "#ffffff",
+				"sceneLight_htmlColor": "#ffffff"
+			}
+		],
+		"objects": [
+			{
+				"name": "ittleIceBlock",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"name": "dynamiteStick",
+				"htmlColor": "#ffffff"
+			}
+		],
+		"outlines": [
+			{
+				"name": "ittleOutline",
+				"htmlColor": "#ffffff"
+			},
+			{
+				"name": "npcOutline",
+				"htmlColor": "#ffffff"
+			}
+		]
+	},
+	"audio": {
+		"music": [
+			{
+				"songName": "Midna's Lament",
+				"replacementName": "",
+				"volume": 1.5,
+				"isExtra": true
+			},
+			{
+				"songName": "Nightmare King",
+				"replacementName": "",
+				"volume": 1.5,
+				"isExtra": true
+			},
+			{
+				"songName": "Sisters of Battle",
+				"replacementName": "",
+				"volume": 1.5,
+				"isExtra": true
+			},
+			{
+				"songName": "Restoring the Light, Facing the Dark",
+				"replacementName": "",
+				"volume": 2.5,
+				"isExtra": true
+			},
+			{
+				"songName": "Star Dream",
+				"replacementName": "",
+				"volume": 1.75,
+				"isExtra": true
+			},
+			{
+				"songName": "FluffyFields",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "FishbunHills",
+				"replacementName": "",
+				"volume": 0.4
+			},
+			{
+				"songName": "WarpGarden",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "FluffyFields_Inside",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "WarpGarden_Inside",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "Vitamins",
+				"replacementName": "",
+				"volume": 0.7
+			},
+			{
+				"songName": "SweetWater",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "SweetWater_Inside",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "EmoJenny",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "BeachTent",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "FancyRuin",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "FancyRuin_Inside",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "StarWoods",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "StarWoods_Inside",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "SlipperySlope",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "SlipperySlope_Inside",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "VitaminHills",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "VitaminHills_Inside",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "FrozenCourt",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "FrozenCourt_Inside",
+				"replacementName": "",
+				"volume": 0
+			},
+			{
+				"songName": "LonelyRoad",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "LonelyRoad_Inside",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "DreamHub",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "Pillowfort",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "SandCastle",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "ArtExhibit",
+				"replacementName": "",
+				"volume": 0.85
+			},
+			{
+				"songName": "ArtExhibit_Cooky",
+				"replacementName": "",
+				"volume": 0.85
+			},
+			{
+				"songName": "TrashCave",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "FloodedBasement",
+				"replacementName": "",
+				"volume": 0.85
+			},
+			{
+				"songName": "FloodedBasement_Unpirated",
+				"replacementName": "",
+				"volume": 0.85
+			},
+			{
+				"songName": "PotassiumMine",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "BoilingGrave",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "BoilingGrave_Iced",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "GrandLibrary",
+				"replacementName": "",
+				"volume": 0.75
+			},
+			{
+				"songName": "Abomination",
+				"replacementName": "",
+				"volume": 0.4
+			},
+			{
+				"songName": "Passel",
+				"replacementName": "",
+				"volume": 0.6
+			},
+			{
+				"songName": "SunkenTemple",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "MachineFortress",
+				"replacementName": "",
+				"volume": 0.7
+			},
+			{
+				"songName": "DarkHypostyle",
+				"replacementName": "",
+				"volume": 0.925
+			},
+			{
+				"songName": "TombOfSimulacrum",
+				"replacementName": "",
+				"volume": 0.8
+			},
+			{
+				"songName": "TombOfSimulacrum_Puzzle",
+				"replacementName": "",
+				"volume": 0.8
+			},
+			{
+				"songName": "Simulacrum",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DreamForce",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "Scary_PartA_Normal",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "Scary_PartA_Puzzle",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "Scary_PartB_Ghost",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "Scary_PartB_Lite",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "Scary_PartB_Normal",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "Scary_PartB_Puzzle",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "Scary_PartB_Stress",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "Mirror",
+				"replacementName": "",
+				"volume": 0.8
+			},
+			{
+				"songName": "IceTowerBottom",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "IceTowerTop",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DropA",
+				"replacementName": "",
+				"volume": 0.8
+			},
+			{
+				"songName": "Darkside",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "MothManCometh",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DeepSlope",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DeepStrangePlaces",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "DeepForest",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DeepPirate",
+				"replacementName": "",
+				"volume": 0.95
+			},
+			{
+				"songName": "DeepMetroid",
+				"replacementName": "",
+				"volume": 0.75
+			},
+			{
+				"songName": "DeepWestern",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DeepAdventure2",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DeepSand",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DeepWinter",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "DeepLonely",
+				"replacementName": "",
+				"volume": 0.85
+			},
+			{
+				"songName": "DeepMadness",
+				"replacementName": "",
+				"volume": 0.65
+			},
+			{
+				"songName": "DeepStars",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DeepIttleDew",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "Chanting2",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "Depths",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "DeepHouse",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "AnotherDream",
+				"replacementName": "",
+				"volume": 1
+			},
+			{
+				"songName": "MiniBoss",
+				"replacementName": "",
+				"volume": 0.9
+			},
+			{
+				"songName": "Boss",
+				"replacementName": "",
+				"volume": 0.6
+			},
+			{
+				"songName": "SpaceHunk",
+				"replacementName": "",
+				"volume": 0.525
+			},
+			{
+				"songName": "MagicRoom",
+				"replacementName": "",
+				"volume": 0.6
+			},
+			{
+				"songName": "Trailer",
+				"replacementName": "",
+				"volume": 0.75,
+				"isExtra": true
+			},
+			{
+				"songName": "Chanting",
+				"replacementName": "",
+				"volume": 1,
+				"isExtra": true
+			},
+			{
+				"songName": "snowtitle2",
+				"replacementName": "",
+				"volume": 0.8,
+				"isExtra": true
+			},
+			{
+				"songName": "snow2_2",
+				"replacementName": "",
+				"volume": 0.8,
+				"isExtra": true
+			},
+			{
+				"songName": "LaughPractice",
+				"replacementName": "",
+				"volume": 0.9,
+				"isExtra": true
+			}
+		]
+	}
+}

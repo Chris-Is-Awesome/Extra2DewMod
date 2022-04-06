@@ -1,0 +1,68 @@
+Item tags:
+
+DungeonKey
+SecretKey
+LockPick
+Card
+Outfit
+RaftPiece
+ClueScroll
+Shard
+Crayon
+Overworld
+Dungeon
+Cave
+PortalWorld
+DreamWorld
+MainItem
+SecondaryItem
+Collectable
+ModSpawned
+
+Currently recognized items (the one that fires conditions):
+
+Roll
+StickLvl
+Stick
+FireSword
+FireMace
+EFCS
+ForceWand
+Dynamite
+DynamiteDev
+IceRing
+Chain
+RaftPiece
+SecretKey
+Crayon
+DKEY_*** (replace *** with anything)
+
+Item conditions:
+
+Stick
+FireSword
+FireMace
+PuzzleDmg
+ForceWand
+Dynamite
+IceRing
+Chain
+Melee
+Roll 
+Glitch
+AllRaftPieces
+LibraryAccess
+8Shards
+16Shards
+24Shards
+AllSecretKeys
+80HP
+DKEY_*** (replace *** with anything)
+
+Randomization tags:
+
+NONE
+NO_DREAM_WORLD
+NO_CARDS
+NO_RAFT_PIECES
+NO_DUNGEON_KEYS

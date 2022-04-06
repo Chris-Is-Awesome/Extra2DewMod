@@ -1,0 +1,652 @@
+{
+	"enemies":
+	[
+		{
+			"name": "AngryBee",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "ArchTriangle",
+			"type": "Common",
+			"vulnerabilities": [
+				"Explosive"
+			]
+		},
+		{
+			"name": "BeeSwarm",
+			"type": "Common",
+			"vulnerabilities": []
+		},
+		{
+			"name": "Brutus",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Brutus2",
+			"type": "Miniboss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Bunboy",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "BunboyGhost",
+			"type": "Common",
+			"vulnerabilities": []
+		},
+		{
+			"name": "BunboyStationary",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "CandySnake",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "CandySnake2",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Cannon",
+			"type": "Common",
+			"vulnerabilities": []
+		},
+		{
+			"name": "CarrotFire",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "CarrotIce",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "ChillyRoger",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "ChillyRoger2",
+			"type": "Miniboss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Construct_Boris",
+			"type": "Miniboss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Construct_Marina",
+			"type": "Miniboss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Construct_Sam",
+			"type": "Miniboss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "CyberJennyA",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "CyberJennyB",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "CyberJennyC",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "DreamMoth",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Explosive"
+			]
+		},
+		{
+			"name": "DreamMothCocoon",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Explosive"
+			]
+		},
+		{
+			"name": "EvilEasel",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Fishbun",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "FishbunCow",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "FlowerJenny",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "GroundGate",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "GroundGate2",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Harvester",
+			"type": "Miniboss",
+			"vulnerabilities": []
+		},
+		{
+			"name": "HatlessOgler",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "HatlessOgler2",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Hyperdusa",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Hyperdusa2",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Hyperdusa_Steel",
+			"type": "Common",
+			"vulnerabilities": []
+		},
+		{
+			"name": "Hyperdusa_SteelCold",
+			"type": "Common",
+			"vulnerabilities": []
+		},
+		{
+			"name": "Hyperdusa_Dream",
+			"type": "Common",
+			"vulnerabilities": []
+		},
+		{
+			"name": "Jello_Fire",
+			"type": "Common",
+			"vulnerabilities": [
+				"Ice"
+			]
+		},
+		{
+			"name": "Jello_Melee",
+			"type": "Common",
+			"vulnerabilities": [
+				"Ice"
+			]
+		},
+		{
+			"name": "Jello_Mercury",
+			"type": "Miniboss",
+			"vulnerabilities": []
+		},
+		{
+			"name": "Larvae",
+			"type": "Miniboss",
+			"vulnerabilities": []
+		},
+		{
+			"name": "LeBiadloA",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "LeBiadloB",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "LemonJenny",
+			"type": "Miniboss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "LennyA",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "LennyB",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "MechabunA",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "MechabunB",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "MechabunC",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "MeltyBod",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Mimic",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Mimic_Chest",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Mimic_Fishbun",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Mimic_Pot",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Mimic_Robot",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Mimic_Trash",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Monochrome",
+			"type": "Common",
+			"vulnerabilities": []
+		},
+		{
+			"name": "Octopurr",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Octopurr2",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "OctopurrMoving",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Ogler",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "OglerDeath",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "PasselA",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "PasselC",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "SafetyJenny",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "SafetyJenny2",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Simulacrum",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "SharkJenny",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "SharkJennyFlop",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Shellbun",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Shellbun2",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Skullnip",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Skullnip_Lava",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Skullnip_Snow",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Skullnip_Steel",
+			"type": "Common",
+			"vulnerabilities": []
+		},
+		{
+			"name": "Skully",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Fire",
+				"Explosive"
+			]
+		},
+		{
+			"name": "SlayerJenny",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "SlayerJenny2",
+			"type": "Miniboss",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Spikebun",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Spikebun2",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "StupidBee",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "SwimmyRoger",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "ThatGuy2",
+			"type": "Boss",
+			"vulnerabilities": [
+				"Puzzle"
+			]
+		},
+		{
+			"name": "Titan",
+			"type": "Common",
+			"vulnerabilities": [
+				"Void"
+			]
+		},
+		{
+			"name": "Titan2",
+			"type": "Common",
+			"vulnerabilities": [
+				"Void"
+			]
+		},
+		{
+			"name": "Titan_Gold",
+			"type": "Common",
+			"vulnerabilities": [
+				"Void"
+			]
+		},
+		{
+			"name": "Volcano",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "VolcanoExpress",
+			"type": "Common",
+			"vulnerabilities": []
+		},
+		{
+			"name": "Turnip_Bazooka",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Turnip_BazookaStationary",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Turnip_Coldnip",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Turnip_Nukenip",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Turnip_Rotnip",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Turnip_Spear",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Turnip_Sword",
+			"type": "Common",
+			"vulnerabilities": [
+				"Everything"
+			]
+		},
+		{
+			"name": "Matriarch",
+			"type": "Common",
+			"vulnerabilities": []
+		}
+	]
+}

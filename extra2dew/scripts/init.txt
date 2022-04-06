@@ -1,3 +1,11 @@
-bind f noclip
-bind b loadconfig changemodel
-bind n speed 15
+bind BackQuote speed
+bind Alpha1 speed 15
+bind Alpha2 god
+bind Alpha3 likeaboss
+bind Alpha4 noclip
+bind Alpha5 zap
+bind Alpha9 setitem all
+bind Alpha0 setitem dev
+bind Minus pos load
+bind Equals pos save
+bind Backspace test

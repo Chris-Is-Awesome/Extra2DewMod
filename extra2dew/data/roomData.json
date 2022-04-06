@@ -1,0 +1,7079 @@
+{
+	"rooms":
+	[
+		{
+			"scene": "FluffyFields",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFields",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFields",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoast",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoast",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoast",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuins",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuins",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuins",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuins2",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoods",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoods",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoods",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoods2",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlope",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlope",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "VitaminHills",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "VitaminHills",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "VitaminHills",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "VitaminHills2",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "VitaminHills3",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FrozenCourt",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoad",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoad",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoad",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoad",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoad",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoad2",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamWorld",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "E",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "Y",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "X",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "U",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "T",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "W",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "X2",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "S2",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "U2",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "R",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "DungeonRoom1x2",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "G",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "H",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "J2",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "B",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "O",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "E",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "R",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "DungeonRoom1x2",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "O",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "R",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "T",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "C",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "D",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "J",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "R",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "B",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "U",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "T",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "M",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "E",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "I",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "R",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "T",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "R",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "U",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "O",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "E",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "S",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep1",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep2",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep2",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep2",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep2",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep3",
+			"name": "A",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep3",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep4",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep4",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep5",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep5",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep5",
+			"name": "D",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep5",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "Deep5",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "Deep5",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep5",
+			"name": "B",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "Deep6",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": true,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep6",
+			"name": "A",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep7",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep7",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep8",
+			"name": "B",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep8",
+			"name": "A",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep8",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep8",
+			"name": "D",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep9",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep9",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep10",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep10",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep11",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep11",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep11",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep11",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep11",
+			"name": "C",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep11",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep12",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep12",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep12",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep13",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep13",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep13",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep13",
+			"name": "A",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep13",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep14",
+			"name": "D",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep14",
+			"name": "F",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep14",
+			"name": "C",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "Deep14",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep14",
+			"name": "B",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep14",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep15",
+			"name": "A",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep15",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep16",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep17",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep17",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep18",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"name": "R",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"name": "C",
+			"type": "Boss",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep19s",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"name": "T",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep20",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep20",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep21",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep22",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "Deep23",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep24",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep25",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "Deep26",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "C",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "PillowFort",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "A",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "I",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "D",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PillowFort",
+			"name": "E",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "D",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "A",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "I",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SandCastle",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "E",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "H",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "F",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SandCastle",
+			"name": "K",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "O",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "R",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "B",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "M",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "F",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "P",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "L",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "S",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "D",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "H",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "ArtExhibit",
+			"name": "E",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TrashCave",
+			"name": "M",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "B",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "J",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "TrashCave",
+			"name": "D",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TrashCave",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TrashCave",
+			"name": "T",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "P",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "Q",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TrashCave",
+			"name": "R",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TrashCave",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "E",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TrashCave",
+			"name": "F",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TrashCave",
+			"name": "O",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "I",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "L",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TrashCave",
+			"name": "H",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "F",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "U",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "P",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "Q",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "L",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "R",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "C",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "T",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "N",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "FloodedBasement",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "O",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "U",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "I",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "P",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "H",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "M",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "T",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "R",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "L",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "A",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "PotassiumMine",
+			"name": "D",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "R",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "U",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "A",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "S",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "V",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "T",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "Z",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "W",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "Q",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "E",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "AA",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "O",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "X",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "M",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "Y",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "I",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "P",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "D",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "C",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"name": "H",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "Q",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "AB",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "V",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "AE",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "A",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "J",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "Y",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "R",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "G",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "X",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "S",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "AA",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "D",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "Z",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "AC",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "AD",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "P",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "T",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "M",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "W",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "U",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "B",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"name": "O",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CQ",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CL",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CO",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "DD",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "DG",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "DE",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "DF",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CX",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CK",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "DC",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "BA",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "BB",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CH",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CA",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CI",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CJ",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "DH",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "EA",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CG",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CS",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CU",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CB",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "DA",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CD",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CV",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CE",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CR",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CP",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CM",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "DB",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CN",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CC",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CF",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CW",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "GrandLibrary2",
+			"name": "CT",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "P",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "E",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "Q",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "U",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "D",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "H",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "L",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "T",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "S",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "O",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "R",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "C",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "G",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "Q",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "L",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "I",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "D",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "M",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "H",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "R",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "E",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "G",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "T",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "V",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "M",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "I",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "U",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "D",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "W",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "H",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "R",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "E",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "P",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "DarkHypostyle",
+			"name": "L",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "V",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AB",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "S",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AO",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "Y",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "Q",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AK",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "T",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AN",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "G",
+			"type": "Boss",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "O",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AC",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "W",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AG",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "Z",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AQ",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AM",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AH",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AI",
+			"type": "Combat",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "R",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "H",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "X",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AJ",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AF",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "U",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AD",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "I",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AA",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AE",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "P",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AL",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "AP",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamForce",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "Z",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "X",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "AD",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "Y",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamForce",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamForce",
+			"name": "AE",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "W",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "AF",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamForce",
+			"name": "AA",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamForce",
+			"name": "I",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamForce",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamForce",
+			"name": "AH",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamForce",
+			"name": "AG",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "X",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "C",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AF",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "E",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "Y",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AO",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AG",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AL",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AB",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "W",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AM",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "V",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AT",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "HandLogic",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "Z",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AI",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "R",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AH",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AS",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AN",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "AU",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "DreamDynamite",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "L",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "H",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "P",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "M",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "O",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "I",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "R",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "A",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "D",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "F",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "B",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamFireChain",
+			"name": "C",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "Y",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "J",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "AE",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "K",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "Q",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "F",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "T",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "Z",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "R",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "X",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "I",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "V",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "U",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "W",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "M",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "AC",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "AA",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "AB",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "D",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "N",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "S",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "AD",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "L",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"name": "P",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamIce",
+			"name": "O",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "A",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "T",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "J",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "M",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "I",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "V",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "B",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": true,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "O",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "P",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "G",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "AD",
+			"type": "Boss",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "U",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "H",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "Z",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "L",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "AB",
+			"type": "Normal",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "N",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "R",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "S",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "C",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "AA",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "E",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "AC",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "X",
+			"type": "Combat",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "W",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "Q",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "Y",
+			"type": "Puzzle",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": []
+		},
+		{
+			"scene": "DreamAll",
+			"name": "F",
+			"type": "Puzzle",
+			"hasItem": true,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "D",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": true,
+			"isEntrance": false,
+			"hazards": [
+				"Hole",
+				"Spikes"
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"name": "K",
+			"type": "Normal",
+			"hasItem": false,
+			"hasEnemies": false,
+			"isEntrance": false,
+			"hazards": [
+				"Hole"
+			]
+		}
+	]
+}

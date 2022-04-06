@@ -1,0 +1,112 @@
+ManifestFileVersion: 0
+CRC: 3515723001
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 455c5f56f10fd00b01677a8ae4ec8325
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 78aa598af409b2fbba1ddc98c8481ad7
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0564501087e392f4898697cf0d2e89fc, type: 3}
+- Class: 114
+  Script: {fileID: 1327945023, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f8ff7102ce35c4e41bfccb727c38f2e0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5c200424db5de9446b3ebec82e177668, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c164aa052a5272b40a3fb56f50f59ecb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 65413fc7ddf8fba48bb983650e6f55cb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 034a67bcb4ab8b340b13ac17c19b86bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 00f19bec724f2234c89b1f9f71966e89, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Extra2Dew/Animation/Panel Disabled.anim
+- Assets/Extra2Dew/Animation/Panel Enter Right.anim
+- Assets/Extra2Dew/Texture2D/UI/ButtonNineSlice.png
+- Assets/Extra2Dew/Animation/Selected.anim
+- Assets/Extra2Dew/Animation/Panel Controller.controller
+- Assets/Extra2Dew/Animation/Button Idle.anim
+- Assets/Extra2Dew/Texture2D/UI/ButtonNineSlice2.png
+- Assets/Extra2Dew/Prefabs/TippsieTest.prefab
+- Assets/Extra2Dew/Texture2D/UI/ButtonNineSliceOutline.png
+- Assets/Extra2Dew/Texture2D/UI/ButtonNineSlice4.png
+- Assets/Extra2Dew/Animation/Panel Exit Right.anim
+- Assets/Extra2Dew/Prefabs/UI/EnemyRandomizerMenu.prefab
+- Assets/Extra2Dew/Animation/Button Controller.controller
+- Assets/Extra2Dew/Animation/Panel Enter Left.anim
+- Assets/Extra2Dew/Texture2D/UI/ButtonNineSliceSelection.png
+- Assets/Extra2Dew/Texture2D/UI/ButtonNineSlice3.png
+- Assets/Extra2Dew/Animation/Panel Exit Left.anim
+- Assets/Extra2Dew/Prefabs/Randomizer UI.prefab
+- Assets/Extra2Dew/Texture2D/UI/ButtonNineSliceSelectionThin.png
+- Assets/Extra2Dew/Prefabs/UI/CosmeticRandomizerMenu.prefab
+- Assets/Extra2Dew/Animation/Panel Idle.anim
+Dependencies: []

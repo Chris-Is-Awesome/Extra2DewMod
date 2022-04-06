@@ -1,0 +1,355 @@
+---------------------------
+THE ITEM RANDOMIZER
+---------------------------
+
+********
+How it works
+********
+
+The randomization is done before the run starts using "pools", each one containing a list of items and a list of locations. For each pool, the randomizer will simulate if the player can reach one of their locations. If a location is available, the first item of that pool is placed there and then given to the simulated player. This item might make other locations available, for example if it is a force wand or a dungeon key. This process is repeated for the rest of the items in each pool according to their list order until all items have been placed. If an item has to be placed and there are no more available locations in the pool, it will try placing items in other pools, but if no pool can advance the simulation, the randomizer will fail. When all items in a pool are placed, the rest of the locations in that pool will be filled with default items. If a location is not included in any pool, it will have no item inside. 
+
+If the randomization was successful, the game will remember which locations have each item and create a cheat sheet.
+
+Each pool has tags that indicate how they will be randomized and which locations they will randomize. Each pool requests their locations according to their pool order and locations cannot be shared between pools.
+
+********
+How to create an item randomizer config
+********
+
+First, name the file how you would like it to appear in the list, and make sure the extension at the end is .json.
+** Replace any spaces with underscores (_)
+* You don't need any special software to edit a JSON file, but Notepad++ is recommended.
+
+Next, here is what the Simple setting looks like:
+
+{
+	"info": "A simple randomization setting\nComplete the 8 main dungeons\nSecret Dungeons start opened",
+	"globalTags": ["NO_DKEYS_LOGIC"],
+	"initialItems": ["24Shards", "SecretKey", "SecretKey", "SecretKey"],
+	"itemGroups": [
+		{"groupName": "Outfit", "items": [
+			"SuitSwim",
+			"SuitJenny",
+			"SuitTippsie",
+			"SuitIttleOriginal",
+			"SuitArmor",
+			"SuitCard",
+			"SuitDelinquent"
+		]},
+		{"groupName": "EXTRA", "items": [
+			"Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons",
+			"Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick", "Lockpick",
+			"Tracker", "Tracker", "Tracker", "Tracker", "Tracker",
+			"Headband", "Headband", "Headband", "Headband", "Headband",
+			"Amulet", "Amulet", "Amulet", "Amulet", "Amulet",
+			"Tome", "Tome", "Tome", "Tome", "Tome",
+			"Chain", "Chain",
+			"IceRing",
+			"ForceWand",
+			"Dynamite",
+			"BigOldPileOfLoot",
+			"Card1", "Card2", "Card3", "Card4", "Card5", "Card6", "Card7", "Card8", "Card9", "Card10",
+			"Card11", "Card12", "Card13", "Card14", "Card15", "Card16", "Card17", "Card18", "Card19", "Card20",
+			"Card21", "Card22", "Card23", "Card24", "Card25", "Card26", "Card27", "Card28", "Card29", "Card30",
+			"Card31", "Card32", "Card33", "Card34", "Card35", "Card36", "Card37", "Card38", "Card39", "Card40",
+			"Card41",
+			"Outfit", "Outfit", "Outfit", "Outfit",
+			"YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart", "YellowHeart"
+		]}
+	],
+	"pools": [
+		{
+			"name": "Vanilla Items",
+			"tags": ["DREAM_WORLD", "DUNGEON_KEYS", "ITEM_RaftPiece", "SCENE_GrandLibrary2", "SCENE_TombOfSimulacrum", "VANILLA"],
+			"defaultItems": [],
+			"itemsList": []
+		},
+		{
+			"name": "Dungeon Items",
+			"tags": ["DUNGEONS", "SECRET_DUNGEONS"],
+			"defaultItems": ["Nothing"],
+			"allShuffles": [{"start": 0, "end": 26}],
+			"itemsList": 
+			[
+				"ForceWand", "ForceWand",
+				"Dynamite", "Dynamite",
+				"StickLvl",
+				"IceRing", "IceRing",
+				"Chain",
+				"StickLvl",
+				"Tracker",
+				"Headband",
+				"Amulet",
+				"Tome",
+				"Outfit", "Outfit", "Outfit",
+				"Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons", "Crayons"
+			]
+		},
+		{
+			"name": "Cave Bonuses",
+			"tags": ["CAVES", "PORTAL_WORLDS"],
+			"defaultItems": ["EXTRA"],
+			"itemsList": []
+		}
+	]
+}
+
+The commas separating each item are important, and you'll notice lines without commas, too. If it doesn't have a comma, it's the end of the list or set.
+Here's what each thing is doing:
+
+"info": This fills the Info button's textbox. A \n is the only way to start a new line.
+"globalTags": These are settings that affect the whole randomization and gameplay. We have "NO_DKEYS_LOGIC" here so that vanilla key placement later on doesn't jam the completion checker.
+"initialItems": These will grant the player items to start with. We've selected "24Shards" and 3 "Secretkeys" so that all the Secret Dungeons can be opened and the completion checker will be able to access Tomb of Simulacrum after Passel.
+"itemGroups": This is where randomly plucked item decks go. Let's dig into each one:
+ - "groupName": The name of this group that you'll use in the item lists. Our first one is named "Outfit".
+ - "items": The items contained in the group. We have the 7 Outfits here, and only one copy of each.
+ - In the "EXTRA" group, we have lots of copies of items. This is because as each item is picked, it's removed from the list. This way, we can have multiple of an item as well as a max amount of each.
+ - Also, take note that we have 4 "Outfit"s in the group. A group can reference another group, too.
+"pools": These are your item lists that will get placed into the game. You can decide where with sets of tags.
+ - "name": The name of your item pool. Only used in the output log. Our first is named "Vanilla Items".
+ - "tags": Which items will be populated by this list. In "Vanilla Items", we use the tag "VANILLA" to make sure the selected location sets don't have their items randomized.
+ - "defaultItems": Put items here and they'll fill out any chest that didn't get filled by the item list below. We use this with an empty item list in "Cave Bonuses" to populate all the caves and portal worlds with the "EXTRA" group.
+ - "allShuffles": Use "start" and "end" to select ranges in the item list that will get mixed around. Anything not shuffled will be placed in order. Index starts at 0.
+ - "itemsList": The items to get placed into random locations, in the order listed, unless told to be shuffled.
+ * Using "defaultItems" outside of "pools" will populate unused chests after all pools have finished
+ * "allShuffles" allows you to section off certain sets of items until later or earlier, and also mix up which items will show up first. See the "Queen of Adventure" preset for a more complex use of it.
+ * "allShuffles" start and end ranges can overlap if you so please, too, and there's no limit to how many you can have.
+
+********
+Tips
+********
+
+To ensure a seed can be completed, you will need to make sure an item that opens up a fair bit of locations is acquired before the game runs out of locations. In "Queen of Adventure", our first Shuffle only spans 4 items because there are only 4 locations available without any weapon. After that, with as many caves as there are, we can relax the item flow quite a bit. However, "Dungeon Diver" doesn't shuffle Caves, so it still needs to be careful about making sure useful keys and items are placed soon. At the end of "Dungeon Diver", the EFCS doors are opened, followed by the last Raft Piece, one of the unnecessary keys, and some bonus items. This will weight the last Raft Piece toward being near Simulacrum, or at least a fairly deep location.
+
+In "Queen of Adventure", only 7 Raft Pieces are placed in the pool, and we use a pool that only includes Passel's room to place the EFCS 'key' on Passel and then another pool that deliberately places the last Raft Piece on the Big Old Pile of Loot in Simulacrum's room. Our item list also carefully only includes as many Lockpicks, Crayons, and even Cave Scrolls as was in the original game, though the Scrolls are replaced with Yellow Hearts. With this, we have the entire game mixed up without any extra items except the Roll and initial Stick, and the goal is to beat Simulacrum.
+
+Randomization will always only fill up item locations it knows are currently available, so if it runs out of items to place or locations it can fill without completing the given locations, it will consider the seed a lost cause and try to pull a new one. If no seeds can resolve, you might need to add more items to your pool, or change when they're given to the player. Make sure the player has the necessary keys to traverse dungeons, too.
+
+If you're really stumped, you can use the "randomizeitems" command in the debug menu, followed by the config filename, and a given 8-char seed. This will generate a detailed output log showing:
+ - How many chests are available each time an item is placed
+ - What item is being placed and where at each step of randomization
+ - When the randomizer gets stuck
+ - Invalid entries for tags or items
+ - The outcome of randomization, even if it failed
+
+If you have any more questions, feel free to ask our development discord.
+
+See below for a list of valid items, keys, and tags
+
+********
+GLOSSARY
+********
+
+Global tags
+- NO_LOGIC: The randomizer will place items without checking for conditions. Might result in an unwinnable randomization.
+- GLITCHES_ALLOWED: Makes the randomizer take glitched movement into consideration for item placement.
+- NO_STICK: The player starts unable to melee attack with the stick. Any stick related item (StickLvl, Stick, FireSword, FireMace and EFCS) will make the player able to attack again.
+- NO_ROLL: The player starts unable to roll. "Roll" and "DefenseLvl" items will enable the player to roll again.
+- NO_DEV_UPGRADES: Picking up the 4th force staff, ice ring or dynamite wont give the player the DEV version of that weapon. Useful for placing extra weapons pickups without risking giving the player overpowered items.
+- NO_EFCS_UPGRADE: Picking up StickLvl while having a Fire Mace wont upgrade it to an EFCS. Useful for placing extra StickLvls pickups without giving the player a sequence-breaking weapon.
+- REPLACE_EFCS_UPGRADE: Picking up StickLvl while having a Fire Mace will open all the EFCS-only gates and doors instead of giving the player an EFCS. Useful for replicating the entire stick progression without giving the player a sequence-breaking weapon.
+- NO_DKEYS_LOGIC: Disable all checks for DKEY items. Use it only when giving the player all dungeon keys at the start or when the player has access to enough lockpicks for the entire game or when there is a pool tagged as "DUNGEON_KEYS" and "VANILLA".
+- BYPASS_NO_CHESTS_ERROR: If a pool returns a "No more chests available" error, dont make the randomization fail. This will result in unreacheable empty items and items from the items list not randomized.
+- BYPASS_DEFAULT_ITEM_ERROR: If a pool returns a "Chests with default or vanilla items left inaccesible" error, dont make the randomization fail. This will result in unreacheable empty items.
+- OPEN_DREAM_WORLD: Allow the player to enter dream worlds with all their items.
+- USE_MOD_SPAWNED: Allow the mod to spawn extra chests (it does nothing currently)
+
+Pool tags:
+Note: "Chests" refers to any important item placed inside a chest or placed on the ground.
+- ALL: Select all chests.
+- DREAM_WORLD: Select all chests in dream worlds.
+- CARDS: Select all chests which originally contained cards.
+- RAFT_PIECES: Select all chests which originally contained raft pieces.
+- DUNGEON_KEYS: Select all chests which originally contained dungeon keys.
+- CAVES: Select all chests in caves.
+- DUNGEONS: Select all chests in dungeons.
+- PORTAL_WORLDS: Select all chests in portal worlds.
+- SECRET_DUNGEONS: Select all chests in secret dungeons.
+- BOSS: Select all chests tagged as "boss reward".
+- ITEM_<name>: Select all chests which originally contained <name> item.
+- SCENE_<name>: Select all chests in the <name> scene.
+- CHESTID_<number>: Select the chest with the Chest ID <number>.
+- VANILLA: Mark the pool to be filled with its vanilla item. IMPORTANT: The item list of the pool should be empty or the randomizer will throw a "No more chests available" error.
+- NO_LOGIC: The randomizer will place items without checking for conditions in this pool. Since this affects the simulation of other pools, it is highly recommended to use it only with items that doesnt affect the simulation progress.
+
+Items:
+Items with (*) don't work as initial items.
+Nothing*: 			Empty item. Invalid items will be turned into this item.
+Stick*: 			Gives the Stick. Should be used only with NO_STICK.
+StickLvl*: 			Upgrades the melee weapon one stage at a time. It can upgrade it up to EFCS. Gives "Stick" the first time it is picked up in NO_STICK. Use with NO_EFCS_UPGRADE to stop at Fire mace or use REPLACE_EFCS_UPGRADE to give the player "FakeEFCS" instead of the real EFCS.
+FireSword: 			Gives the Fire Sword.
+FireMace: 			Gives the Fire Mace.
+EFCS: 				Gives the EFCS.
+Roll*:				Gives the player the ability to roll. Should be used only with NO_ROLL.
+Dynamite:			Gives or upgrades the Dynamite. When picked up 4 times the player will get a dev weapon capable of destroying puzzles. To avoid that, use NO_DEV_UPGRADES.
+DynamiteDev:	 		Gives the Level 4 Dynamite, an instant explosion capable of destroying puzzles.
+ForceWand: 			Gives or upgrades the Force Wand. When picked up 4 times the player will be able to shoot lightning. To avoid that, use NO_DEV_UPGRADES.
+IceRing: 			Gives or upgrades the Ice Ring. When picked up 4 times the player will get a really powerful melee weapon. To avoid that, use NO_DEV_UPGRADES.
+Chain: 				Gives or upgrades the Chain.
+Amulet: 			Gives or upgrades the Amulet.
+Headband: 			Gives or upgrades the Headband.
+Tome: 				Gives or upgrades the Tome.
+Tracker:			Gives or upgrades the Tracker.
+DefenseLvl: 			Gives the player the ability to roll if they don't have it. If they do, instead they will get an Amulet.
+FakeEFCS: 			Opens up the three gates that can only be opened by the EFCS: Two in Tomb of Simulacrum, and one in Cave of Mystery.
+SecretKey: 			Gives a Forbidden Key.
+Gallery*: 			Simulates giving the Gallery. Purely aesthetic.
+SecretGallery*: 		Simulates giving the Secret Gallery. Purely aesthetic.
+SoundTest*: 			Simulates giving the Sound Test. Purely aesthetic.
+BigOldPileOfLoot:	 	Gives the Big Ol' Pile of Loot. This item wont appear in the loot screen until the 4 secret keys have been used to enter the tomb of simulacrum.
+Lockpick: 			Gives a Lockpick.
+Crayons: 			Increases max health by one quarter heart.
+NegaCrayons: 			Decreases max health by one quarter heart. Doesn't reduce the player's max health below 1.
+RaftPiece: 			Gives a Raft Piece.
+Shard: 				Gives a Secret Shard.
+2Shards: 			Gives 2 Secret Shards.
+4Shards: 			Gives 4 Secret Shards.
+8Shards: 			Gives 8 Secret Shards.
+16Shards: 			Gives 16 Secret Shards.
+24Shards: 			Gives 24 Secret Shards.
+SuitArmor: 			Gives the "Armor" costume. When used as initial item, the player starts with it in addition to obtaining it.
+SuitDelinquent: 		Gives the "Delinquent" costume. When used as initial item, the player starts with it in addition to obtaining it.
+SuitIttleOriginal:		Gives the "Original Ittle" costume. When used as initial item, the player starts with it in addition to obtaining it.
+SuitJenny:			Gives the "Jenny" costume. When used as initial item, the player starts with it in addition to obtaining it.
+SuitSwim:			Gives the "Swimsuit" costume. When used as initial item, the player starts with it in addition to obtaining it.
+SuitTippsie:			Gives the "Tippsie" costume. When used as initial item, the player starts with it in addition to obtaining it.
+SuitBerry:			Starts the player as Jenny Berry. Only useful as an initial item.
+SuitThatGuy:			Gives the "That Guy" costume. When used as initial item, the player starts with it in addition to obtaining it.
+SuitFrog:			Starts the player as Apathetic Frog, and places the Business Casual Man barricades. Only useful as an initial item.
+YellowHeart*:			Recovers 5 of the player's hearts. Does not grant buffs yet.
+Card<x>:			Gives the Card with the desired number (for example, Card1, Card13). Goes from 1 to 41.
+DKEY_<doorname>:		Opens the desired locked door. A comprehensive list of doors is below.
+DKEY_<dungeonID>:		Gives a generic key for a specific dungeon. A full list of dungeon shorthands is below.
+
+********
+KEY INFO
+********
+
+GENERIC Key Names
+
+Pillow Fort:			DKEY_Pillow
+Sand Castle:			DKEY_Sand
+Art Exhibit:			DKEY_Art
+Trash Cave:			DKEY_Trash
+Flooded Basement:		DKEY_Basement
+Potassium Mine:			DKEY_Mine
+Boiling Grave:			DKEY_Grave
+Grand Library:			DKEY_Library
+
+Sunken Labyrinth:		DKEY_Sunken
+Machine Fortress:		DKEY_Machine
+Dark Hypostyle:			DKEY_Hypo
+Tomb of Simulacrum:		DKEY_Tomb
+
+** Wizardry Lab has no keys **
+Syncope:			DKEY_Sync
+Bottomless Tower:		DKEY_Tower
+Antigram:			DKEY_Anti
+Quietus:			DKEY_Quiet
+
+********
+Door names
+********
+
+= Pillow Fort =
+
+DKEY_D1West: 			The locked door in the Crayons room that leads to the boss.
+DKEY_D1Entrance: 		The locked door visible upon entering the dungeon
+
+= Sand Castle =
+
+DKEY_D2SpikebunDunes:		The locked door on the east side of the dungeon. Locks the Force Wand chest.
+DKEY_D2Balls:			The locked door on the west side of the dungeon. Locks the puzzle before the boss.
+
+= Art Exhibit =
+
+DKEY_D3Front:			The locked door at the beginning of the dungeon.
+DKEY_D3Easel:			The locked door in the easel showcase. Locks the Dynamite chest.
+DKEY_D3Spikes:			The locked door in the room with torches.
+DKEY_D3Boss:			The locked door at the checkpoint before the boss.
+
+= Trash Cave =
+
+DKEY_D4Swamp:			The locked door in the first encounter with Rotnips. Locks the bridge to the back half.
+DKEY_D4Sword:			The locked door in the tiled room. Locks the Fire Sword chest.
+DKEY_D4Mimics:			The first locked door on the west side where you fight garbage.
+DKEY_D4Boss:			The last locked door on the west side, with the cube maze.
+
+= Flooded Basement =
+
+DKEY_D5Laundry:			The locked door in the room with washing machines. Opens the room with the Hermit Legs.
+DKEY_D5Crossway:		The locked door in the first room with Swimmy Rogers.
+DKEY_D5PetMines:		The locked door after the sign that says "Do not pet the mines".
+DKEY_D5Crayon:			The locked door the separates the Crayons room from the Headband room.
+DKEY_D5Boss:			The locked door in the far northeast of the dungeon. Locks the boss room.
+
+= Potassium Mine =
+
+DKEY_D6BluePortal:		The locked door in the southeast that leads to the Crayons chest.
+DKEY_D6EastSegment:		The locked door in the direct east that contains the Ice Ring chest.
+DKEY_D6BunboyTunnel:		The locked door at the end of the dark room with Bunboys.
+DKEY_D6GreenSlugs:		The locked door in the first room that the Ice Ring unlocks. The first locked door before the boss.
+DKEY_D6Boss:			The locked door after the Green Slugs door. The last lock before the boss.
+
+= Boiling Grave =
+
+DKEY_D7HotBlocks:		The locked door west of the entrance that leads to the Chain. Has four blocks with flamethrowers.
+DKEY_D7TitansGate:		The locked door after the combat gate locked by Titans.
+DKEY_D7CountingWithSkullnips:	The locked door next to the tiles you have to press in order while being assaulted by Skullnips.
+DKEY_D7RoyalTomb:		The locked door in the icy room with portraits and a coffin.
+DKEY_D7Boss:			The locked door in the room with a bottomless pit and a Chilly Roger.
+
+= Grand Library =
+
+DKEY_D8LockedChambers(1..4):	Four individual locked doors in the segment labelled "Locked Chambers". The first three are required to obtain the Delayed Key.
+DKEY_D8RedPortalNorth:		The locked door on the north wall when coming out of the Red Portal. Leads to a Crystal puzzle.
+DKEY_D8RedPortalEast:		The locked door on the east wall when coming out of the Red Portal. Leads to a carpeted room with a Hexrot.
+DKEY_D8YellowPortal:		The locked door in the aforementioned carpeted room. Opens the Yellow Portal.
+DKEY_D8Final:			The locked door at the end of the room that requires entering it many times to solve.
+
+= Sunken Labyrinth =
+
+DKEY_S1UpperPlaza:		The locked door in the north half that locks the Force Wand chest.
+DKEY_S1LowerPlaza:		The locked door after the Force Wand check.
+DKEY_S1TimedBlocks:		The locked door on the east side of the room that teaches you about diagonally Forcing blocks.
+
+= Machine Fortress =
+
+DKEY_S2Trial(1..5):		Five individual locked doors all in a row that ultimately lead to the Dynamite chest.
+
+= Dark Hypostyle =
+
+DKEY_S3Blue:			The first locked door on the left when entering the dungeon. Leads to Crayons.
+DKEY_S3Red:			The second locked door on the left when entering the dungeon. Leads to Boss.
+DKEY_S3Yellow:			The last locked door on the left when entering the dungeon. Leads to the Ice Ring.
+DKEY_S3Ice:			The locked door inside the Yellow Portal path. Locks the Ice Ring chest.
+DKEY_S3Boss:			The locked door inside the Red Portal path. Locks the boss room.
+
+= Tomb of Simulacrum =
+
+DKEY_S4RedJournals(1..5)	Five individual locked doors that eventually lead to the Yellow Portal. The first is in the room after the lava pits blocked by cracked steel.
+DKEY_S4GreenJournals(1..5)	Five locked doors that lead to the final puzzles. They unlock nothing until all 5 are acquired.
+
+= Syncope =
+
+DKEY_B2Entrance:		The locked door immediately visible on the west side of the first room.
+DKEY_B2WestClock:		The locked door that denies entry to the west-most clock.
+DKEY_B2EastClock:		The locked door that denies entry to the east-most clock.
+
+= Bottomless Tower =
+
+DKEY_B3Floor(1..4):		Four individual locked doors that correspond to the depth of the floor they reside on, going from top to bottom.
+
+= Antigram =
+
+DKEY_B4Southwest:		The locked door west of entrance that leads to the rest of the dungeon.
+DKEY_B4WestCentral:		The locked door on the west side that leads to the central puzzle.
+DKEY_B4EastCentral:		The locked door on the east side that leads to the central puzzle.
+DKEY_B4Boss:			The final locked door in the dungeon.
+
+= Quietus =
+
+DKEY_B5Northwest:		The locked vault northwest of the center room.
+DKEY_B5Northeast:		The locked vault northeast of the center room.
+DKEY_B5Southwest:		The locked vault southwest of the center room.
+DKEY_B5Southeast:		The locked vault southeast of the center room.

@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 1603644129
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1268c1f9e862343676ed40323ef041d1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2e676c1f1461b1149f920e5ba361193f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 566eb28433df9e894a3edad07ddfab79, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ffd0c5279b5e94984a12e0c97372c842, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f9c9a9789ba7a1b042df294ce57a6ba8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6da1a14d01e817804eee65a0983da61f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4def011e3b1269b40aa581fcf6b6f62d, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Extra2Dew/Prefabs/Weather/SnowEvent_E2D.prefab
+Dependencies: []

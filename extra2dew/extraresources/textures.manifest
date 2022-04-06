@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 2013616632
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 45f8cf715daf698aeb9111f61d021850
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_IceRing_Overlay_Gray_3.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_EFCS_Overlay_Gray.png
+- Assets/Extra2Dew/Texture2D/UI/hearts_recolor_2.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_Dynamite_Overlay_Gray.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_Dynamite_Overlay_Gray_3.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_ForceWand_Overlay_Gray_2.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_IceRing_Overlay_Gray.png
+- Assets/Extra2Dew/Texture2D/Modified Copies/VagueCloud_E2D.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_ForceWand_Overlay_Gray_3.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_FireMace_Overlay_Gray.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_IceRing_Overlay_Gray_2.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_Level_Two_Overlay.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_Stick_Overlay_Gray.png
+- Assets/Extra2Dew/Texture2D/UI/hearts_recolor.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_Dynamite_Overlay_Gray_2.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_FireSword_Overlay_Gray.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_Level_Three_Overlay.png
+- Assets/Extra2Dew/Texture2D/UI/Grayscale weapon icons/Overlays/Tool_ForceWand_Overlay_Gray.png
+Dependencies: []
