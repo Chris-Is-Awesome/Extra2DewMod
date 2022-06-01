@@ -10,7 +10,7 @@ Mainly adds debug console commands, additional game modes, fun stuff, and more.
 
 https://www.youtube.com/watch?v=NwmEcC4uuUc
 
-Join the Discord server for all things Ludo modding! https://discord.gg/qVjcfT2
+Join the Discord server for all things Ludo modding! [https://discord.gg/qVjcfT2](https://discord.gg/juduFQefwZ)
 
 # INSTRUCTIONS
 **Install:** Download the ID2_Data.zip from [here](https://github.com/Chris-Is-Awesome/Extra2DewMod/releases). Extract the folder to the directory: `[Steam Games Directory]\steamapps\common\Ittle Dew 2`. You will be asked to confirm to replace some things in the ID2_Data folder. Replace. This will also add a "mods" folder inside the ID2_Data folder which is used specifically by our mod.
