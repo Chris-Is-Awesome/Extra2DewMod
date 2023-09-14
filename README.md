@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=NwmEcC4uuUc
 
 Join the Discord server for all things Ludo modding! [https://discord.gg/qVjcfT2](https://discord.gg/juduFQefwZ)
 
-# INSTRUCTIONS
+## INSTRUCTIONS
 **Install:** Download the ID2_Data.zip from [here](https://github.com/Chris-Is-Awesome/Extra2DewMod/releases). Extract the folder to the directory: `[Steam Games Directory]\steamapps\common\Ittle Dew 2`. You will be asked to confirm to replace some things in the ID2_Data folder. Replace. This will also add a "mods" folder inside the ID2_Data folder which is used specifically by our mod.
 
 Specifically what gets installed is a modified `Assembly-CSharp.dll` file, which contains all the game's code. And a "mod" folder is added inside root of the ID2_Data folder. This mod folder is used by various aspects of our mod for writing data to files and such.
@@ -21,10 +21,10 @@ Specifically what gets installed is a modified `Assembly-CSharp.dll` file, which
 
 **Uninstall:** Go to `Steam -> Right click game -> Properties -> Local Files -> Verify integrity of files...`. You can also make a copy of your original `Assembly-CSharp.dll` file before installing the mod and use it to replace the modded file.
 
-# USING THE MOD
+## USING THE MOD
 The mod includes several in-game menus that handle almost all the mod functions. It is recommended to navigate them using the mouse. For more advanced functions, the mod includes a debug menu. It uses commands to make precise changes into the game.
 
-# GAME MODES
+## GAME MODES
 The mod includes several game modes unique to it, which multiple of them can be active at the same time. To turn a game mode on, go to the "Game mode" menu when creating a new file, select the mode you want to play and check the box on the title. The mode will be active when starting the game.
 
 ### Heart Rush
@@ -46,10 +46,10 @@ Randomizes the colors a lot of cosmetic stuff (HUD, particles, water, etc.) and 
 ### Enemy Randomizer (alpha)
 A very experimental mode that randomizes each enemy in the game, including bosses!
 
-# CREATIVE MENU
+## CREATIVE MENU
 The creative menu is a new, GMOD like addition to the mod. It enables moving, modifying or creating new game objects. For instruction in how to use it, please click the "HELP" button on the left-bottom corner of the screen.
 
-# CAMERA CONTROLS
+## CAMERA CONTROLS
 E2D includes 2 new camera modes to play the game in completely new ways! Those are **First person mode** and **Third person mode**. There is also a camera mode for exploring the map and taking screenshots/doing videos, **Free camera mode**.
 
 **Note**: Since ID2 lacks proper controls for mouse movement, the method used in this mod requires calibration. During camera mode setup and scene change, mouse movement will be disabled for some time. Please leave the mouse still to make the process quicker.
@@ -75,7 +75,7 @@ You can customize the options below. See the `cam` command in the next sub-secti
 - Clipping distance: By default, the camera draws the scene until a certain distance. We moved that value up for this mod, but you can set it even higher if you want. Take in mind though that higher clipping distances are more difficult for your computer.
 - Wheel acceleration: Set how strongly the mouse wheel affects your flying speed (free mode only).
 
-# DEBUG MENU COMMANDS
+## DEBUG MENU COMMANDS
 - `atk`
   - Description: Change how Ittle's weapons work, making them more powerful and versatile!
   - Modifiers:
@@ -292,11 +292,11 @@ You can customize the options below. See the `cam` command in the next sub-secti
 	- Notes:
 		- Best used bound to a key. `bind n zap` will run zap every time you press the n key
 
-# PARAMETER REFERENCE
+## PARAMETER REFERENCE
 For a list of all enemy names for use with commands like `spawn`, [click here](/Reads/npcs.md).<br>
 For a list of all map names for use with commands like `goto`, [click here](/Reads/maps.md).
 
-# TYPES OF INPUTS
+## TYPES OF INPUTS
 - `float`: These are numbers. They can be positive, negative, with decimals or not. Examples: 0, -2, 1.6, -7.856
 - `int`: These are numbers like floats, but they cannot have decimals. Examples: 0, -2, 1, -7
 - `bool`: These are toggles, indicate if something is on or off. Examples: true, false, on, off, yes, no, 1, 0.
@@ -310,7 +310,7 @@ Arrows: UpArrow, DownArrow, RightArrow, LeftArrow
 F keys: F1, F2, F3, F4, and so on
 Misc keys: Space, Tab, Return, Backspace, LeftControl, RightAlt
 
-# TYPES OF COMMANDS
+## TYPES OF COMMANDS
 The commands are split in five different categories, from easier to use to harder to use:
 
 - `Simple commands`: These commands do something when they are entered. They are simple, just enter the command alone and it will do its job, no more inputs required!
@@ -324,7 +324,7 @@ Examples: `size`, `bind`, `time`
 - `Modifier commands`: These commands are multi-function, they do multiple things or do one thing with heavy customization. They are controlled by modifiers, these are words that change how the commands work, easily recognizable by their names starting with `-`. They can be put anywhere after the command and multiple of them can be used at the same time. For example, `cam -first` will activate first camera mode while `cam -fov 90` will change the field of vision to 90. Or you can enter `cam -first -fov 90` to do both at the same time! Since these commands are complex, entering any of them without arguments (`cam`) will give you a list of all available modifiers and how to use them. Keep in mind that some commands may require a arguments in a specific order before any modifiers are used.
 Examples: `spawn`, `cam`, `atk`
 
-# SCRIPT FILES
+## SCRIPT FILES
 Extra2dew can run basic scripts composed of debugmenu commands. This allows running a large group of commands easily, making it possible to create fun scenarios that can be shared!
 
 Said scripts are saved as txt files, which can be writen with any text editor. The commands are run in order from top to bottom. The script files will run exactly the same in all copies of Ittle dew 2 that have this mod installed.
@@ -351,7 +351,7 @@ If you create a file called init.txt and place it in the mod folder, it will run
 ### ONLOAD
 Similar to init, you can setup loadconfig in such a way that a script will always be run on scene change just using `loadconfig <filename> -onload`. However, if you are going to set a txt in `-onload` that uses the `goto` command, remember to use`-clearonload` before the goto command in the same file or else you will enter an infinite loop!
 
-# KNOWN ISSUES
+## KNOWN ISSUES
 *The following issues are minor and do not affect the vanilla experience of the game.*
 - Setting hp, then using goto before entering a loading zone or saving resets hp; doesn't save
 - Spawned enemies don't despawn through room transitions/reloads
@@ -361,7 +361,7 @@ Similar to init, you can setup loadconfig in such a way that a script will alway
 - Setting dynamite fuse does not apply to already existing dynamite sticks
 - Disabling level timers triggers explosion of already existing dynamite sticks, ignoring fuse time
 
-# FUN FACTS
+## FUN FACTS
 ### TEST ROOM
 There is a portal world inaccessible through normal gameplay. It contains a time telling crystal, a cannon, a bottomless pit, some movable blocks and switches that do nothing, and more!
 To access it, use debugger and type goto deep19!
@@ -372,7 +372,7 @@ Force Wand, Dynamite, and Ice Ring all have level 4 upgrades that are unobtainab
 - Dynamite IV comes with a shotgun blast which is EFCS without the charge time or recoil!
 - Ice Ring IV does more damage. Nothing special about this :(
 
- ### SECRET CODES
+### SECRET CODES
 - The debug menu can be opened up in vanilla game by pausing and while holding left control, press the following: up, down, up, down, left, right, left, right, space. This debug menu only has 3 commands: warpto (this was expanded by us in our mod), setentvar and setsavevar. These are more advanced commands.
 - When creating a save file, there is a code to start a new game with all the main items at their highest possible upgrades. The code is: 2AbyssW/Thee as file name.
 
@@ -411,13 +411,13 @@ Throughout development, it's not uncommon for developers to change the names of 
 - The NPC you meet at end of Syncope, his internal name is "DreamRescueNPCOsalig". Osalig is Swedish for "unsaved"
 - Ittle says "crap"! :mjau:
 
-# CONTRIBUTIONS
+## CONTRIBUTIONS
 Thank you to everyone who makes use of this wonderful mod! I hope it serves you well! :D
 If you would like to contribute or aid in development, feel free to join the [Discord server](https://discord.gg/qVjcfT2) for it!
 We can always use an extra hand! If you know Unity and/or C#, or have experience with reverse engineering, you can help a lot!
 
-# LEGAL DISCLAIMER
-We are, in no way, claiming copyright ownership of this game or any of its content thereof. Copyright ownership belongs to Ludosity. A game mod, as long as it is not for commercial gain, falls under Section 107 of the Copyright Act as "fair use" due to a) this mod is for non-commercial use, b) this mod only modifies the game's code, it does not replace any visual content with that of our own or someone else's, c) we do not feel that we are negatively affecting Ludosity's business or income from this game or its content by distributing this mod, as, if anything, it helps bring their fans together and often gets former players finding a new interest in this game, and d) we are not directly distributing Ludosity's copyrighted content; we are distributing a file that is already available to everyone, given they know where it is stored on their system.
+## LEGAL DISCLAIMER
+We are, in no way, claiming copyright ownership of this game or any of its content thereof. Copyright ownership belongs to Ludosity. A game mod, as long as it is not for commercial gain, falls under Section 107 of the Copyright Act as "fair use" due to a) this mod is for non-commercial use, b) we are not redistributing copyrighted material that is not already openly available to anyone who has the game, and c) we do not feel that we are negatively affecting Ludosity's business or income from this game or its content by distributing this mod, as, if anything, it helps bring their fans together and often gets former players finding a new interest in this game, and d) we are not directly distributing Ludosity's copyrighted content; we are distributing a file that is already available to everyone, given they know where it is stored on their system.
 
 Please take any legal inquiries up with `Chris is Awesome#9819` on Discord, or you can make an Issue of it here.
 
